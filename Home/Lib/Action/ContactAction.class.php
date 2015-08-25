@@ -28,3 +28,5 @@ class ContactAction extends Action {
     	//dump($_POST);
     }
 }
+
+?>

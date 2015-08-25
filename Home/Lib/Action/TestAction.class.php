@@ -10,3 +10,4 @@ class TestAction extends Action {
 		$this->display ();
 	}
 }
+?>

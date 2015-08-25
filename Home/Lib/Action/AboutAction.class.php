@@ -9,3 +9,4 @@ class AboutAction extends Action {
     	//echo "欢迎你".$_GET['name']."年龄".$_GET['age'];
     }
 }
+?>

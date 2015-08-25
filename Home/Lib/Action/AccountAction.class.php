@@ -80,3 +80,4 @@ class AccountAction extends Action {
 		$this->redirect('Index/index');
 	}
 }
+?>
