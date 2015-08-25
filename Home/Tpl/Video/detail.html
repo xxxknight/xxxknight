@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="zh-CN">
+  <head>
+  <include file="Public:head" title="video detail" />
+
+<link href="__CSS__/Classification/detail.css" rel="stylesheet" />
+<script type="text/javascript" src="__JS__/Classification/detail.js"></script>
+<script type="text/javascript">
+  $(function() {
+    $("#video").addClass("active");
+  })
+</script>
+</head>
+
+  <body>
+  <include file="Public:nav" />
+    <div class="container" id="primary">
+      
+      <div class="row">
+
+        <div class="col-sm-8 main">
+
+          <h2 class="post-title"><{$detail.name}></h2>
+            
+          <div id="movie" style="height:400px">
+          <video width="700px" height="400px" autoplay="true" controls="true" loop="true"> 
+             <!-- Firefox --> 
+             <source src="<{$detail.video}>" type="video/ogg" />  
+             <!-- Safari/Chrome-->   
+             <source src="<{$detail.video}>" type="video/mp4" />  
+             <!-- 如果浏览器不支持video标签，则使用flash -->  
+             <embed src="<{$detail.video}>" type="application/x-shockwave-flash" allowscriptaccess="always" 
+             allowfullscreen="true" width="700px" height="400px" loop="true" autostart="true" showcontrols="true">
+             </embed> 
+          </video>  
+          </div>
+          <p class="post-meta"><{$detail.createtime}> by <a href="#"><{$detail.createpeople}></a></p>
+          <nav>
+            <ul class="pager">
+              <li><a href="#">Previous</a></li>
+              <li><a href="#">Next</a></li>
+            </ul>
+          </nav>
+                 <div class="comments-title"><h4>评论列表</h4></div>
+                 <div id="pagecount"></div>
+                 <hr/>
+                 <div id="comments">
+                      
+                 </div>
+              
+          <div class="sub-comment">
+            <div class="sub-title">Submit Comment (no more than 200 words)</div>
+            <input type="hidden" id="sub-vid" value="<{$detail.id}>" /> 
+            <textarea rows="8" cols="75" id="sub-content" placeholder="欢迎吐槽......"></textarea>
+            <div class="sub-btn text-right">
+              <button id="sub" class="btn btn-primary" value="submit">submit</button>
+            </div>
+          </div>
+          
+
+
+        </div>
+
+        <div class="col-sm-3 col-sm-offset-1">
+          <div class="sidebar-module sidebar-module-inset">
+            <h4>详细信息</h4>
+            <p><{$detail.description}></p>
+          </div>
+          <div class="sidebar-module">
+            <h4>相关推荐</h4>
+            <ol class="list-unstyled">
+              <li><a href="#">March 2014</a></li>
+              <li><a href="#">February 2014</a></li>
+              <li><a href="#">January 2014</a></li>
+              <li><a href="#">December 2013</a></li>
+              <li><a href="#">November 2013</a></li>
+              <li><a href="#">October 2013</a></li>
+            </ol>
+          </div>
+          <div class="sidebar-module">
+            <h4>猜你想看</h4>
+            <ol class="list-unstyled">
+              <li><a href="#">GitHub</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Facebook</a></li>
+            </ol>
+          </div>
+        </div>
+
+      </div><!-- /.row -->
+      <include file= "Public:footer" />
+    </div><!-- /.container -->
+
+   <include file= "Public:tail" />
+  </body>
+<script type="text/javascript">
+var vid ='<{$detail.id}>';
+var curPage = 1; //当前页码
+var total,pageSize,totalPage;
+//获取数据
+function getData(page){
+
+  $.ajax({
+    type: 'GET',
+    url: '__URL__/showVcomment',
+    data: {'pageNum':page-1,'vid':vid},
+    dataType:'json',
+    beforeSend:function(){
+       $("#comments").append("<div id='loading'><img src='__IMG__/loader.gif'/></div>");
+    },
+    success:function(json){
+      $("#comments").empty();
+      if (!json.list) {
+        var empty="<div class='empty'>暂无评论</div><hr/>";
+        $("#comments").append(empty);
+        return;
+      };
+      
+      total = json.total; //总记录数
+      pageSize = json.pageSize; //每页显示条数
+      curPage = page; //当前页
+      totalPage = json.totalPage; //总页数
+      var item = "";
+      var list = json.list;
+      $.each(list,function(index,array){ //遍历json数据列
+        item += "<div id='c-item'><div class='item-title'>"+array['username']+" in "+ array['createtime'] + "</div><div class='item-body'>"+ array['content'] + "</div></div><hr/>";
+      });
+      $("#comments").append(item);
+      getPageBar();//生成分页条
+    },
+    complete:function(){
+      
+    },
+    error:function(){
+      alert("数据加载失败");
+    }
+  });
+}
+
+//获取分页条
+function getPageBar(){
+  //页码大于最大页数
+  if(curPage>totalPage) curPage=totalPage;
+  //页码小于1
+  if(curPage<1) curPage=1;
+  pageStr = "<span>共"+total+"条</span>&nbsp;<span>"+curPage+"/"+totalPage+"</span>&nbsp;";
+  
+  //如果是第一页
+  if(curPage==1){
+    pageStr += "<span>首页</span>&nbsp;<span>上一页</span>&nbsp;";
+  }else{
+    pageStr += "<span><a href='javascript:void(0)' rel='1'>首页</a></span>&nbsp;"
+    +"<span><a href='javascript:void(0)' rel='"+(curPage-1)+"'>上一页</a></span>&nbsp;";
+  }
+  
+  //如果是最后页
+  if(curPage>=totalPage){
+    pageStr += "<span>下一页</span>&nbsp;<span>尾页</span>";
+  }else{
+    pageStr += "<span><a href='javascript:void(0)' rel='"+(parseInt(curPage)+1)+"'>下一页</a></span>"
+    +"&nbsp;<span><a href='javascript:void(0)' rel='"+totalPage+"'>尾页</a></span>";
+  }
+    
+  $("#pagecount").html(pageStr);
+}
+
+$(function(){
+    getData(1);
+    $("body").on('click',"#pagecount span a",function(){
+    var rel = $(this).attr("rel");
+    if(rel){
+      getData(rel);
+    }
+  });
+});
+</script>
+</html>

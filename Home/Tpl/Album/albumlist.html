@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="zh-CN">
+<head>
+<include file="Public:head" title="Picture"/>
+
+<script src="__JS__/Album/albumlist.js" type="text/javascript"></script>
+<link href="__CSS__/Album/albumlist.css" rel="stylesheet">
+<script type="text/javascript">
+	$(function(){
+		//$("#navbar ul li").removeClass("active");
+	    $("#album").addClass("active");
+	});
+</script>
+
+<script type="text/javascript">
+			$(function() {
+
+				$('#carousel').carouFredSel({
+					width: '100%',
+					items: {
+						visible: 'odd+2'
+					},
+					scroll: {
+						pauseOnHover: true,
+						onBefore: function() {
+							$(this).children().removeClass( 'hover' );
+						}
+					},
+					auto: {
+						items: 1,
+						easing: 'linear',
+						duration: 1250,
+						timeoutDuration: 0
+					},
+					pagination: {
+						container: '#pager',
+						items: 1,
+						duration: 0.5,
+						queue: 'last',
+						onAfter: function() {
+							var cur = $(this).triggerHandler( 'currentVisible' ),
+								mid = Math.floor( cur.length / 2 );
+
+							cur.eq( mid ).addClass( 'hover' );
+						}
+					}
+				});
+
+			});
+</script>
+</head>
+
+<body>
+<include file="Public:nav" />
+<div id ="outer">
+    <div id="wrapper">
+	    <div id="carousel">
+	    	<volist name="list" id="vo">
+			<div>
+				<img src="<{$vo.link}>" alt="<{$vo.alt}>" width="200" height="200" />
+				<span><{$vo.title}></span>
+			</div>
+		    </volist>
+		</div>
+	    <div id="pager"></div>
+    </div>
+</div>
+       
+<div id="main">
+			
+<ul class="nav nav-tabs">
+  <li class="active"><a href="#albums" data-toggle="tab" aria-expanded="false">相册</a></li>
+  <li class=""><a href="#profile" data-toggle="tab" aria-expanded="true">照片墙</a></li>
+</ul>
+<div id="myTabContent" class="tab-content">
+  <div class="tab-pane active fade in" id="albums">
+  	    <volist name="albumTypeList" id="vo">
+        <div class="albums col-xs-6 col-md-3">
+        	<div class="albumtype">
+        	
+			<a href="__URL__/showAlbum/type/<{$vo.id}>" class="thumbnail">
+				<img alt="100%x180" src="<{$vo.coverImg}>" style="height: 180px; width: 100%; display: block;" >
+			</a>
+			<div class="caption">
+				<div>&nbsp;&nbsp;<{$vo.name}>&nbsp;&nbsp; <span class="badge">00</span></div>
+				<p>&nbsp;&nbsp;<{$vo.summary}></p>
+			</div>  
+		    </div>
+		    
+		</div>
+		</volist>
+		
+		
+  </div>
+  <div class="tab-pane fade" id="profile">
+    <p>we are not supporting this function!!!</p>
+  </div>
+  
+</div>
+</div>
+	
+<include file= "Public:tail" />
+
+
+</body>
+
+</html>
