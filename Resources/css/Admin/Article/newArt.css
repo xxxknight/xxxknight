@@ -1,0 +1,19 @@
+#art{
+	margin-left: 15px; 
+	margin-right: 15px;
+	margin-bottom: 100px;
+}
+
+#editor{
+   margin-bottom: 10px;
+}
+
+.hint{
+	padding-top: 2px;
+	padding-left: 2px;
+}
+
+.tag-span{
+	display: inline-block;
+	cursor: pointer;
+}

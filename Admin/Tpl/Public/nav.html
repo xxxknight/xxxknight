@@ -1,0 +1,35 @@
+ <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <span class="pull-left"><img src="__IMG__/admin/login/xk.png" style="width:50px;height:50px">
+          </span>
+          <a class="navbar-brand" href="#">&nbsp; xxxknight's muse</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown" style="margin-right:20px">
+              <a class="dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" 
+              href="<?php echo $_SESSION['admin']['id'] ?>">
+                <?php echo session('adminname');?>
+              </a>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1" style="min-width:100px;">
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="__APP__/System/profile">
+                    <i class="glyphicon glyphicon-user"></i>
+                    个人中心</a></li>
+                  <li role="presentation" class="divider"></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="__APP__/Login/logout">
+                    <i class="glyphicon glyphicon-off"></i>
+                    注销</a></li>
+                </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+</nav>
+

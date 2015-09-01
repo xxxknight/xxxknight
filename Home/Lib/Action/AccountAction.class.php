@@ -71,12 +71,9 @@ class AccountAction extends Action {
 	
 	// 注销用户
 	public function signout() {
-		$_SESSION=array();
-		if(isset($_COOKIE[session_name()])){
-			setcookie(session_name(),'',time()-1,'/');
-		}
-		session(null); // 清空当前的session
-		session_destroy();
+		session ( 'isExist', null );
+		session('user',null);
+		session('username',null);
 		$this->redirect('Index/index');
 	}
 }

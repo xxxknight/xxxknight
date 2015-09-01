@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="zh-CN">
+<head>
+<include file="Public:head" title="Picture"/>
+<link type="text/css" rel="stylesheet" href="__ROOT__/Plugins/TN3/TN3.css"/>
+
+<script type="text/javascript">
+	$(function(){
+		//$("#navbar ul li").removeClass("active");
+	    $("#album").addClass("active");
+	});
+
+</script>
+</head>
+
+<body>
+<!-- 代码 开始 -->
+<div id="content">
+    <div class="mygallery clearfix">
+    
+	<div class="tn3 album">
+	    <!-- <h4>Fixed Dimensions</h4>
+	    <div class="tn3 description">Images with fixed dimensions</div>
+	    <div class="tn3 thumb">images/35x35/1.jpg</div> -->
+	    <ol>
+        <volist name="list" id="vo">
+        	<li>
+		        <h4><{$vo.title}></h4>
+		        <div class="tn3 description"><{$vo.remark}></div>
+		        <a href="<{$vo.link}>">
+			    <img src="<{$vo.link}>"/>
+		        </a>
+		    </li>
+
+        </volist>
+		
+		
+	    </ol>
+	</div>
+	
+    </div>
+</div>
+<div id="close"></div>
+<include file= "Public:tail" />
+
+<script src="__ROOT__/Plugins/TN3/jquery.tn3lite.min.js"></script>
+<script>
+$(document).ready(function() {
+	var tn1 = $('.mygallery').tn3({
+		skinDir:"skins",
+		imageClick:"fullscreen",
+		image:{
+		maxZoom:1.5,
+		crop:true,
+		clickEvent:"dblclick",
+		transitions:[{
+		type:"blinds"
+		},{
+		type:"grid"
+		},{
+		type:"grid",
+		duration:460,
+		easing:"easeInQuad",
+		gridX:1,
+		gridY:8,
+		// flat, diagonal, circle, random
+		sort:"random",
+		sortReverse:false,
+		diagonalStart:"bl",
+		// fade, scale
+		method:"scale",
+		partDuration:360,
+		partEasing:"easeOutSine",
+		partDirection:"left"
+		}]
+		}
+	});
+	$(".tn3-prev-page").click(function(){
+		location.href="__URL__/showAlbum/type/<{$previd}>";
+	});
+
+	$(".tn3-next-page").click(function(){
+		location.href="__URL__/showAlbum/type/<{$lastid}>";
+	});
+
+	$("#close").click(function(){
+		location.href="__URL__/albumlist";
+	})
+
+});
+</script>
+<!-- 代码 结束 -->
+
+</body>
+
+</html>

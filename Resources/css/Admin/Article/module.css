@@ -1,0 +1,37 @@
+.list{
+	margin:20px 0px; 
+}
+
+#tip , #tag-tip ,#type-tip{
+	padding-left: 0px;
+	margin-top: 7px;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+.tips{
+	text-align: left;
+	color: red;
+}
+
+/*.table th, .table td { 
+text-align: center; 
+}*/
+
+/*
+ * empty
+ */
+.empty{
+  color: red;
+  text-align: center;
+}
+
+
+#pagecount{
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 50px;
+
+}
+
+

@@ -1,0 +1,17 @@
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<title>Page test</title>
+	</head>
+	<body>
+		<foreach name='list' item='vo'>
+		<p>留言题目：</p><{$vo.id}><br/>
+		<p>留言内容：</p><{$vo.name}><br/>
+		<p>留言时间：</p><{$vo.image}><br/>
+		<p>留言人：</p><{$vo.video}><br/>
+		<p>附件名：</p><{$vo.tag1}><br/>
+		<hr/>
+		</foreach>
+		<{$show}>
+	</body>
+</html>

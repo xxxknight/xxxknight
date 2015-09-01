@@ -25,14 +25,20 @@
             <h2 class="blog-post-title"><{$detail.title}></h2>
             <div class="blog-post-meta">
             <span>分类： <{$detail.typeid}></span>
-            <!-- <span class="link_view">1000000</span> -->
-            <span class="blog-span-right"><{$detail.createtime}> view:<{$detail.viewnum}> 
-              comments:<{$detail.commentnum}></span>
+            <span class="blog-span-right">
+              <{$detail.createtime}>&nbsp;
+              <span class="glyphicon glyphicon-eye-open"></span>
+              <{$detail.viewnum}>&nbsp;
+              <span class="glyphicon glyphicon-comment"></span> 
+              <{$detail.commentnum}>
+            </span>
 
             </div>
-            <div class="blog-post-badge"><span class="badge"><{$detail.tag1}></span>
-              <span class="badge"><{$detail.tag2}></span>
-              <span class="badge"><{$detail.tag3}></span>
+            <div class="blog-post-badge">
+              <span class="glyphicon glyphicon-tags"></span>&nbsp;
+              <volist name="taglist" id="vo">
+                  &nbsp;<span class="badge"><{$vo}></span>
+              </volist>
             </div>
             
             <p class="blog-post-content">

@@ -1,0 +1,803 @@
+[ 2015-08-12T08:48:53+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xingshiyang24
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000689s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000782s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003447s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xingshiyang24' ) LIMIT 1   [ RunTime:0.000303s ]
+
+[ 2015-08-12T09:13:25+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xingshiyang24
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000761s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000854s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.004325s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xingshiyang24' ) LIMIT 1   [ RunTime:0.000355s ]
+
+[ 2015-08-12T09:13:28+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xingshiyang24
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001179s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001393s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003615s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xingshiyang24' ) LIMIT 1   [ RunTime:0.000470s ]
+
+[ 2015-08-12T09:13:29+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xingshiyang24
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001452s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003650s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xingshiyang24' ) LIMIT 1   [ RunTime:0.000358s ]
+
+[ 2015-08-12T09:50:20+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T09:50:24+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxx
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001708s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003567s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxx' ) LIMIT 1   [ RunTime:0.000543s ]
+
+[ 2015-08-12T20:54:35+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T20:54:39+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001064s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001212s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003583s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight' ) LIMIT 1   [ RunTime:0.000355s ]
+
+[ 2015-08-12T20:54:51+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T20:54:56+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T20:55:05+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001146s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001305s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003487s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight' ) LIMIT 1   [ RunTime:0.000363s ]
+
+[ 2015-08-12T20:55:24+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T21:00:03+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T21:11:44+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T21:11:46+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001107s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001262s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003747s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = '' ) LIMIT 1   [ RunTime:0.000338s ]
+
+[ 2015-08-12T21:12:02+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000832s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000957s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003402s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = '' ) LIMIT 1   [ RunTime:0.000322s ]
+
+[ 2015-08-12T21:12:06+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000642s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000730s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003594s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight' ) LIMIT 1   [ RunTime:0.000309s ]
+
+[ 2015-08-12T21:12:15+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T21:12:18+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T21:12:20+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000817s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000943s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003516s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight' ) LIMIT 1   [ RunTime:0.000394s ]
+
+[ 2015-08-12T21:12:42+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T21:12:46+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001057s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001208s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003536s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight' ) LIMIT 1   [ RunTime:0.000397s ]
+
+[ 2015-08-12T21:12:47+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000655s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000780s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003508s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight' ) LIMIT 1   [ RunTime:0.000271s ]
+
+[ 2015-08-12T21:13:16+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000901s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001024s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003867s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight' ) LIMIT 1   [ RunTime:0.000347s ]
+
+[ 2015-08-12T21:13:42+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000765s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000887s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003699s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight' ) LIMIT 1   [ RunTime:0.000293s ]
+
+[ 2015-08-12T21:13:49+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T21:13:50+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001272s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001399s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003937s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight' ) LIMIT 1   [ RunTime:0.000307s ]
+
+[ 2015-08-12T21:14:48+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T21:14:51+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000756s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000874s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.012848s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight' ) LIMIT 1   [ RunTime:0.000330s ]
+
+[ 2015-08-12T21:15:08+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T21:15:11+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001512s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003497s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight' ) LIMIT 1   [ RunTime:0.000665s ]
+
+[ 2015-08-12T21:23:31+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T21:23:50+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxkngiht
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000699s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000789s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003339s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxkngiht' ) LIMIT 1   [ RunTime:0.000411s ]
+
+[ 2015-08-12T21:23:59+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxkngiht
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000741s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000831s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003728s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxkngiht' ) LIMIT 1   [ RunTime:0.000557s ]
+
+[ 2015-08-12T21:24:01+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxkngiht
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001442s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003535s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxkngiht' ) LIMIT 1   [ RunTime:0.000391s ]
+
+[ 2015-08-12T21:24:28+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T21:24:34+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001193s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.021128s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight' ) LIMIT 1   [ RunTime:0.000346s ]
+
+[ 2015-08-12T21:24:37+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000645s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000731s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003373s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight' ) LIMIT 1   [ RunTime:0.000281s ]
+
+[ 2015-08-12T21:24:39+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight2
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000606s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000691s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003308s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight2' ) LIMIT 1   [ RunTime:0.000383s ]
+
+[ 2015-08-12T21:24:50+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknig
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000669s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000754s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003549s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknig' ) LIMIT 1   [ RunTime:0.000354s ]
+
+[ 2015-08-12T21:31:57+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknig
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000775s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000871s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003404s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknig' ) LIMIT 1   [ RunTime:0.000303s ]
+
+[ 2015-08-12T21:32:00+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknig
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000583s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000664s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003296s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknig' ) LIMIT 1   [ RunTime:0.000382s ]
+
+[ 2015-08-12T21:50:21+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T21:50:27+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000656s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000759s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003455s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight' ) LIMIT 1   [ RunTime:0.000331s ]
+
+[ 2015-08-12T21:50:39+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000593s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000680s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.004842s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight' ) LIMIT 1   [ RunTime:0.000290s ]
+
+[ 2015-08-12T21:50:43+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001511s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003797s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight' ) LIMIT 1   [ RunTime:0.000387s ]
+
+[ 2015-08-12T21:53:13+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T21:53:20+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000926s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001071s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.004196s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight' ) LIMIT 1   [ RunTime:0.000412s ]
+
+[ 2015-08-12T21:53:30+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001134s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001303s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003675s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight' ) LIMIT 1   [ RunTime:0.000295s ]
+
+[ 2015-08-12T21:53:33+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000560s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000641s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003928s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight' ) LIMIT 1   [ RunTime:0.000367s ]
+
+[ 2015-08-12T21:53:41+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001132s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001308s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003516s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight' ) LIMIT 1   [ RunTime:0.000358s ]
+
+[ 2015-08-12T21:55:05+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000565s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000651s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003292s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight' ) LIMIT 1   [ RunTime:0.000294s ]
+
+[ 2015-08-12T21:55:07+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T21:56:16+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T21:56:20+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000631s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000725s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003476s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight' ) LIMIT 1   [ RunTime:0.000315s ]
+
+[ 2015-08-12T21:56:22+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight1
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000645s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000741s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003632s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight1' ) LIMIT 1   [ RunTime:0.000317s ]
+
+[ 2015-08-12T21:56:40+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000758s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000870s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.099780s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight' ) LIMIT 1   [ RunTime:0.000504s ]
+
+[ 2015-08-12T21:56:42+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight1
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000644s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000735s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003603s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight1' ) LIMIT 1   [ RunTime:0.000383s ]
+
+[ 2015-08-12T21:56:51+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight1
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000818s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000924s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003393s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight1' ) LIMIT 1   [ RunTime:0.000486s ]
+
+[ 2015-08-12T21:57:08+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000594s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000682s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003471s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight' ) LIMIT 1   [ RunTime:0.000283s ]
+
+[ 2015-08-12T21:57:16+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000696s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000788s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003504s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight' ) LIMIT 1   [ RunTime:0.000511s ]
+
+[ 2015-08-12T21:57:18+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000607s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000703s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.016029s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight' ) LIMIT 1   [ RunTime:0.000321s ]
+
+[ 2015-08-12T21:57:20+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001075s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001250s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003607s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight' ) LIMIT 1   [ RunTime:0.000342s ]
+
+[ 2015-08-12T21:57:21+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001196s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003499s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight' ) LIMIT 1   [ RunTime:0.000329s ]
+
+[ 2015-08-12T21:57:22+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000633s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000724s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003420s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight' ) LIMIT 1   [ RunTime:0.000290s ]
+
+[ 2015-08-12T21:57:25+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001493s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.026493s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight' ) LIMIT 1   [ RunTime:0.000350s ]
+
+[ 2015-08-12T21:57:45+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000635s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000736s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.029428s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight' ) LIMIT 1   [ RunTime:0.000321s ]
+
+[ 2015-08-12T21:57:47+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000726s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000839s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003568s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight' ) LIMIT 1   [ RunTime:0.000341s ]
+
+[ 2015-08-12T21:57:54+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000782s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000886s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003561s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight' ) LIMIT 1   [ RunTime:0.000394s ]
+
+[ 2015-08-12T21:57:57+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000668s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000752s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003348s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight' ) LIMIT 1   [ RunTime:0.000295s ]
+
+[ 2015-08-12T22:06:05+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T22:06:24+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000706s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000807s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003817s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight' ) LIMIT 1   [ RunTime:0.000364s ]
+
+[ 2015-08-12T22:06:27+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight2
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000689s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000798s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003542s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight2' ) LIMIT 1   [ RunTime:0.000307s ]
+
+[ 2015-08-12T22:06:29+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight2
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000582s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000666s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003355s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight2' ) LIMIT 1   [ RunTime:0.000290s ]
+
+[ 2015-08-12T22:06:31+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight2
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000592s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000678s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003493s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight2' ) LIMIT 1   [ RunTime:0.000286s ]
+
+[ 2015-08-12T22:06:33+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight2
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000577s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000661s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003414s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight2' ) LIMIT 1   [ RunTime:0.000322s ]
+
+[ 2015-08-12T22:06:35+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight2
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000626s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000713s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003808s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight2' ) LIMIT 1   [ RunTime:0.000476s ]
+
+[ 2015-08-12T22:06:36+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight2
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000618s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000705s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003547s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight2' ) LIMIT 1   [ RunTime:0.000332s ]
+
+[ 2015-08-12T22:06:37+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight2
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000610s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000699s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003416s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight2' ) LIMIT 1   [ RunTime:0.000270s ]
+
+[ 2015-08-12T22:06:38+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight2
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000581s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000666s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003518s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight2' ) LIMIT 1   [ RunTime:0.000312s ]
+
+[ 2015-08-12T22:06:39+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight2
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000608s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000694s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003633s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight2' ) LIMIT 1   [ RunTime:0.000296s ]
+
+[ 2015-08-12T22:06:52+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000840s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000961s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003623s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight' ) LIMIT 1   [ RunTime:0.000303s ]
+
+[ 2015-08-12T22:06:56+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000646s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000728s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003531s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight' ) LIMIT 1   [ RunTime:0.000441s ]
+
+[ 2015-08-12T22:06:57+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000620s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000713s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.006467s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight' ) LIMIT 1   [ RunTime:0.000305s ]
+
+[ 2015-08-12T22:06:58+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000754s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000864s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003920s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight' ) LIMIT 1   [ RunTime:0.000363s ]
+
+[ 2015-08-12T22:06:59+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000754s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000864s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003602s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight' ) LIMIT 1   [ RunTime:0.000306s ]
+
+[ 2015-08-12T22:07:00+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000553s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000635s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003638s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight' ) LIMIT 1   [ RunTime:0.000348s ]
+
+[ 2015-08-12T22:07:03+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001189s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003305s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight' ) LIMIT 1   [ RunTime:0.000286s ]
+
+[ 2015-08-12T22:07:20+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T22:07:25+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxkni
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001169s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003236s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxkni' ) LIMIT 1   [ RunTime:0.000296s ]
+
+[ 2015-08-12T22:07:26+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknig
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001193s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003142s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknig' ) LIMIT 1   [ RunTime:0.000286s ]
+
+[ 2015-08-12T22:07:26+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknigh
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000838s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000957s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003155s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknigh' ) LIMIT 1   [ RunTime:0.000283s ]
+
+[ 2015-08-12T22:07:26+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001163s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.005664s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight' ) LIMIT 1   [ RunTime:0.000452s ]
+
+[ 2015-08-12T22:07:44+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight2
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000758s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000896s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.004301s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight2' ) LIMIT 1   [ RunTime:0.000379s ]
+
+[ 2015-08-12T22:07:49+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001173s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.005631s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight' ) LIMIT 1   [ RunTime:0.000409s ]
+
+[ 2015-08-12T22:11:01+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T22:11:37+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T22:11:46+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknigh
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001010s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001153s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003412s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknigh' ) LIMIT 1   [ RunTime:0.000329s ]
+
+[ 2015-08-12T22:12:36+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T22:12:39+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000790s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000925s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.004436s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight' ) LIMIT 1   [ RunTime:0.000383s ]
+
+[ 2015-08-12T22:12:42+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight2
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000662s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000743s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003716s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight2' ) LIMIT 1   [ RunTime:0.000322s ]
+
+[ 2015-08-12T22:12:43+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight2
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000630s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000725s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003610s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight2' ) LIMIT 1   [ RunTime:0.000366s ]
+
+[ 2015-08-12T22:13:10+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000742s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000835s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003253s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight' ) LIMIT 1   [ RunTime:0.000300s ]
+
+[ 2015-08-12T22:13:14+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000970s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001109s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003613s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight' ) LIMIT 1   [ RunTime:0.000338s ]
+
+[ 2015-08-12T22:13:17+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000565s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000650s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003509s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight' ) LIMIT 1   [ RunTime:0.000335s ]
+
+[ 2015-08-12T22:13:19+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000730s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000845s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003754s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight' ) LIMIT 1   [ RunTime:0.000323s ]
+
+[ 2015-08-12T22:13:20+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000806s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000920s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003598s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight' ) LIMIT 1   [ RunTime:0.000335s ]
+
+[ 2015-08-12T22:13:22+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000562s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000640s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003420s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight' ) LIMIT 1   [ RunTime:0.000455s ]
+
+[ 2015-08-12T22:13:24+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight2
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001137s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001292s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003544s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight2' ) LIMIT 1   [ RunTime:0.000327s ]
+
+[ 2015-08-12T22:13:26+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T22:14:16+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T22:22:45+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T22:26:41+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T22:26:44+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000596s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000678s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003597s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight' ) LIMIT 1   [ RunTime:0.000315s ]
+
+[ 2015-08-12T22:27:12+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T22:27:41+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T22:27:45+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000873s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000990s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003746s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight' ) LIMIT 1   [ RunTime:0.000329s ]
+
+[ 2015-08-12T22:27:47+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight2
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000709s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000803s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.004374s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight2' ) LIMIT 1   [ RunTime:0.000405s ]
+
+[ 2015-08-12T22:27:56+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight2
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001156s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001329s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003626s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight2' ) LIMIT 1   [ RunTime:0.000292s ]
+
+[ 2015-08-12T22:28:04+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T22:32:18+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T22:32:20+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T22:32:22+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000682s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000767s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003755s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight' ) LIMIT 1   [ RunTime:0.000330s ]
+
+[ 2015-08-12T22:32:33+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T22:35:58+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T22:36:01+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001124s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001288s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003682s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight' ) LIMIT 1   [ RunTime:0.000307s ]
+
+[ 2015-08-12T22:36:37+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T22:36:38+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001168s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001350s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003980s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight' ) LIMIT 1   [ RunTime:0.000306s ]
+
+[ 2015-08-12T22:36:59+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T22:37:00+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000752s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000843s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003454s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight' ) LIMIT 1   [ RunTime:0.000334s ]
+
+[ 2015-08-12T22:37:04+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T22:41:13+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T22:41:17+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight2
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000690s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003374s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight2' ) LIMIT 1   [ RunTime:0.000393s ]
+
+[ 2015-08-12T22:41:27+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T22:42:20+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T22:42:22+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T22:42:25+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight2
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001249s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003301s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight2' ) LIMIT 1   [ RunTime:0.000382s ]
+
+[ 2015-08-12T22:42:28+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight3
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001199s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003778s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight3' ) LIMIT 1   [ RunTime:0.000311s ]
+
+[ 2015-08-12T22:42:38+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T22:42:54+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T22:42:57+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000644s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000741s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003388s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight' ) LIMIT 1   [ RunTime:0.000459s ]
+
+[ 2015-08-12T22:42:59+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight4
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000632s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000721s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003347s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight4' ) LIMIT 1   [ RunTime:0.000325s ]
+
+[ 2015-08-12T22:43:10+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T22:43:34+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T22:43:35+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T22:43:39+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight20
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000607s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000696s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003282s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight20' ) LIMIT 1   [ RunTime:0.000289s ]
+
+[ 2015-08-12T22:43:49+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T22:47:01+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T22:47:02+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T22:47:07+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight5
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000594s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000683s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003486s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight5' ) LIMIT 1   [ RunTime:0.000341s ]
+
+[ 2015-08-12T22:47:17+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T22:55:31+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T22:55:32+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T22:55:34+08:00 ] 127.0.0.1 /xxxknight/index.php/Account/checkName?username=xxxknight
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000996s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001136s ]
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.003557s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight' ) LIMIT 1   [ RunTime:0.000291s ]
+
+[ 2015-08-12T22:55:49+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T23:11:25+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T23:11:26+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T23:11:27+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T23:11:28+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T23:11:29+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T23:11:30+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T23:11:31+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T23:11:31+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T23:11:32+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T23:11:33+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T23:12:06+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T23:12:07+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T23:25:33+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T23:25:34+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T23:26:27+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T23:27:00+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T23:27:12+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T23:27:13+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T23:27:13+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T23:27:16+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T23:27:16+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T23:28:05+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T23:28:14+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T23:28:15+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T23:28:24+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T23:28:32+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T23:28:54+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T23:29:12+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T23:29:34+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T23:29:38+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T23:29:46+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T23:30:46+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T23:31:28+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T23:31:30+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T23:31:31+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T23:31:32+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T23:31:32+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T23:31:33+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T23:31:41+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T23:31:42+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T23:31:43+08:00 ] ERR: (ThinkException) 无法加载模块:favicon
+[ 2015-08-12T23:32:12+08:00 ] ERR: (ThinkException) 无法加载模块:favicon

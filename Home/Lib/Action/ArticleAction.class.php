@@ -66,7 +66,11 @@ class ArticleAction extends Action {
 		$article= M('Articles');
 		$where['id']=$id;
 		$art= $article->where($where)->find();
-		//dump($art);
+		$tags = $art['tags'];
+		if($tags){
+			$taglist = explode(",", $tags);
+            $this->assign("taglist",$taglist);
+		}
 
 		$prev = $this->selectPrevOne($id);
 		//dump($prev);

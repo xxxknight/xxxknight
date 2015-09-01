@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<include file="Public:head" title="Sign in"/>
+
+<link href="__CSS__/Account/sign.css" rel="stylesheet">
+
+</head>
+<!-- NAVBAR
+================================================== -->
+<body>
+	<include file="Public:nav" />
+
+	<div class="container">
+		<form class="form-signin" method="post" action="__APP__/Account/login">
+			<h2 class="form-signin-heading">Sign in</h2>
+			<label for="username" class="sr-only">Username</label> 
+			<input type="text" id="username" class="form-control" name="username"
+				placeholder="Username" value="<php> echo $_COOKIE['username']; </php>" required autofocus /> 
+			<label for="password" class="sr-only">Password</label> 
+			<input type="password" id="password" class="form-control"
+				name="password" placeholder="Password" value="<php> echo $_COOKIE['password']; </php>" required /> 
+			<label for="captcha" class="sr-only">Captcha</label> 
+			<input type="text" id="captcha" class="form-control" name="captcha"
+				placeholder="Captcha" required /> 
+			<img src="__APP__/Public/verify/" width="60px"
+				onclick='this.src=this.src+"?"+Math.random()' />
+			<div class="checkbox">
+				<label> <?php if($_COOKIE['remember'] == 1){?><input type="checkbox"
+				name="remember" value="1" checked><?php }else{($_COOKIE['remember'] == "")?><input
+				type="checkbox" name="remember" value="1"><?php }?>
+					Remember me
+				</label>
+			</div>
+			<button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+		</form>
+	</div>
+	<!-- /.container -->
+
+    <include file= "Public:tail" />
+</body>
+</html>
