@@ -110,7 +110,7 @@ $(function(){
         </a>
         <div id="systemModule" class="collapse">
             <ul class="nav nav-sidebar secondmenu">
-                <li><a href="#"><i class="glyphicon glyphicon-user"></i>
+                <li><a href="__APP__/Account/index"><i class="glyphicon glyphicon-user"></i>
                     用户管理</a>
                 </li>
                 <li><a href="#"><i class="glyphicon glyphicon-th-list"></i>
@@ -121,6 +121,9 @@ $(function(){
                 </li>
                 <li><a href="__APP__/System/profile"><i class="glyphicon glyphicon-edit"></i>
                     个人中心</a>
+                </li>
+                <li><a href="__APP__/Contact/contact"><i class="glyphicon glyphicon-phone"></i>
+                    问题反馈</a>
                 </li>
                 <li><a href="#"><i class="glyphicon glyphicon-eye-open"></i>
                     日志查看</a>
@@ -178,14 +181,19 @@ $(function(){
 
     <li id="li-album">
         <a href="#albumModule" class="nav-header collapsed" data-toggle="collapse">
-            <i class="glyphicon glyphicon-picture"></i>
+            <i class="glyphicon glyphicon-camera"></i>
             相册模块
             <span class="pull-right glyphicon glyphicon-chevron-left"></span>
         </a>
         <div id="albumModule" class="collapse">
             <ul class="nav nav-sidebar secondmenu">
                 <li>
-                    <a href="#"><i class="glyphicon glyphicon-camera"></i>
+                    <a href="__APP__/Album/uploadPic"><i class="glyphicon glyphicon-picture"></i>
+                    上传照片
+                    </a>
+                </li>
+                <li>
+                    <a href="__APP__/Album/createAlbum"><i class="glyphicon glyphicon-camera"></i>
                     创建新相册
                     </a>
                 </li>
@@ -243,7 +251,7 @@ $(function(){
     </li>
     
     <li id="li-about">
-        <a href="#">
+        <a href="__APP__/About/about">
             <i class="glyphicon glyphicon-wrench"></i>
             关于系统
         </a>

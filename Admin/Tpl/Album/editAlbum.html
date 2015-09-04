@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="zh-CN">
+<head>
+<include file="Public:head" title="编辑相册"/>
+<link href="__CSS__/Admin/Album/module.css" rel="stylesheet">
+<script type="text/javascript">
+$(function(){
+    $("#albumModule>ul>li:nth-child(3)").addClass("active");
+    $("#albumModule").addClass("in");
+    $("#li-album>a>span").removeClass("glyphicon-chevron-left").addClass("glyphicon-chevron-down");
+
+    $("#albumid").val('<{$album.id}>');
+    $("#name").val('<{$album.name}>');
+    $("#summary").val('<{$album.summary}>');
+});
+</script>
+<script type="text/javascript" src="__JS__/Admin/Album/editAlbum.js"></script>
+</head>
+
+<body>
+<include file="Public:nav"/>
+    <div class="container-fluid">
+        <div class="row">
+        
+            <div class="col-sm-3 col-md-2 sidebar">
+              <include file="Public:left"/>
+            </div>
+            <div id="mainpart" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+                <ol class="breadcrumb">
+                  <span>您的位置：</span>
+                  <li><a>相册模块</a></li>
+                  <li><a href="__URL__/manageAlbum">相册管理</a></li>
+                  <li class="active">管理相册</li>
+                </ol> 
+                        
+                <h3 class="page-header"><i class="glyphicon glyphicon-edit"></i> 
+                    管理相册——<{$album.name}> (共<{$album.imgnum}>张照片)
+                </h3>
+                <div class="btngroup">
+                    <button class="btn btn-success">
+                        上传照片
+                    </button>
+                    <button class="btn btn-primary" id="updateAlbum">
+                        编辑相册
+                    </button>
+                    <button class="btn btn-danger" id="deleteAlbum">
+                        删除相册
+                    </button>
+
+                </div>
+                <hr/>
+                <div id="showlist">
+                    <volist name="picturelist" id="vo">
+                        <div class="col-xs-6 col-md-3" style="height:250px;">
+                            <div class="pic" style="overflow:hidden;">
+                                <a href="#modal<{$vo.id}>" data-toggle="modal" class="thumbnail">
+                                    <img alt="<{$vo.title}>" src="<{$vo.link}>"/>
+                                    <div class="pic-text"><{$vo.title}></div>
+                                </a>
+
+                            </div>
+                        </div>
+                        <div class="modal" id="modal<{$vo.id}>">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                        <h4 class="modal-title">编辑照片——<{$vo.title}></h4>
+                                    </div>
+                                    <form class="form-horizontal" action="__URL__/updatePicture" method="post">
+                                    <div class="modal-body">
+                                       
+                                            <input type="hidden" name="tid" value="<{$vo.typeid}>"/>
+                                            <input type="hidden" name="pid" value="<{$vo.id}>"/>
+                                            <div class="form-group">
+                                                <label for="title" class="col-lg-2 control-label">标题</label>
+                                                <div class="col-lg-7">
+                                                    <input type="text" value="<{$vo.title}>" class="form-control" id="title" placeholder="title" required maxlength="20">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="alt"  class="col-lg-2 control-label">替代文字</label>
+                                                <div class="col-lg-7">
+                                                    <input type="text" value="<{$vo.alt}>" class="form-control" id="alt" placeholder="alt" maxlength="20">
+                                                </div>
+                                            </div>    
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger pull-left" onclick="javascript:deletePicture(<{$vo.id}>)">删除
+                                        </button>
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                                        <button type="submit" class="btn btn-primary">更新</button>
+                                    </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </volist>
+                </div>
+
+<div class="alert alert-dismissible alert-danger" style="width:300px; position:fixed;" id="delete-alert">
+  <button type="button" class="close" id="close-delete">×</button>
+  <strong>Oh snap!</strong> <a href="#" class="alert-link">Change a few things up</a> and try submitting again.
+</div>
+                
+            </div>
+        </div>
+    </div>
+
+<div class="modal" id="albumModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title">编辑相册基本参数</h4>
+            </div>
+            <form class="form-horizontal" action="__URL__/saveUpdateAlbum" enctype="multipart/form-data" method="post">
+            <div class="modal-body">
+                        <input type="hidden" id="albumid" name="albumid"/>
+                
+                        <div class="form-group">
+                            <label for="name" class="col-lg-2 control-label">相册名</label>
+                            <div class="col-lg-6">
+                                <input type="text" class="form-control" id="name" name="name" placeholder="相册名" required/>
+                            </div>
+                            <div class="col-lg-4 hint help-block">
+                                注：相册名为1到20个字符.
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="cover" class="col-lg-2 control-label">封面图</label>
+                            <div class="col-lg-6">
+                                <input type="file" class="form-control" id="cover" name="cover"/>
+                            </div>
+                            <div class="col-lg-4 hint help-block">
+                                注：封面为240px*180px.
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="summary" class="col-lg-2 control-label">相册描述</label>
+                            <div class="col-lg-6">
+                                <textarea class="form-control" rows="4" id="summary" name="summary"></textarea>
+                            </div>
+                            <div class="col-lg-4 hint help-block">
+                                注：描述不超过50个字符.
+                            </div>
+                        </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="submit" class="btn btn-primary" onclick="return checkSaveUpdateAlbum()">更新</button>
+            </div>
+
+            </form>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+
+<include file= "Public:tail" />
+</body>
+
+</html>

@@ -8,7 +8,7 @@ admin<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="author" content="xxxknight">
 <link rel="icon" href="__IMG__/icons/favicon.ico">
 
-<title>Admin management</title>
+<title>Admin manage</title>
 
 
 <!-- Bootstrap core CSS -->
@@ -27,19 +27,18 @@ admin<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <!-- Custom styles for this template -->
 <link href="__CSS__/Admin/common.css" rel="stylesheet">
+<link href="__CSS__/Admin/Index/index.css" rel="stylesheet">
 
 <script type="text/javascript">
-	$(function(){
-    $("#li-index").addClass("active");
-     
-	});
-
+$(function(){
+    $("#li-index").addClass("active");  
+});
 </script>
 </head>
 <!-- NAVBAR
 ================================================== -->
 <body>
-     <nav class="navbar navbar-inverse navbar-fixed-top">
+ <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -76,10 +75,10 @@ admin<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 
     <div class="container-fluid">
-      <div class="row">
+        <div class="row">
         
-        <div class="col-sm-3 col-md-2 sidebar">
-          <ul id="main-nav" class="nav nav-sidebar">
+            <div class="col-sm-3 col-md-2 sidebar">
+              <ul id="main-nav" class="nav nav-sidebar">
     <li id="li-index">
         <a href="__APP__">
             <i class="glyphicon glyphicon-home"></i> 
@@ -94,7 +93,7 @@ admin<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         </a>
         <div id="systemModule" class="collapse">
             <ul class="nav nav-sidebar secondmenu">
-                <li><a href="#"><i class="glyphicon glyphicon-user"></i>
+                <li><a href="__APP__/Account/index"><i class="glyphicon glyphicon-user"></i>
                     用户管理</a>
                 </li>
                 <li><a href="#"><i class="glyphicon glyphicon-th-list"></i>
@@ -105,6 +104,9 @@ admin<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
                 </li>
                 <li><a href="__APP__/System/profile"><i class="glyphicon glyphicon-edit"></i>
                     个人中心</a>
+                </li>
+                <li><a href="__APP__/Contact/contact"><i class="glyphicon glyphicon-phone"></i>
+                    问题反馈</a>
                 </li>
                 <li><a href="#"><i class="glyphicon glyphicon-eye-open"></i>
                     日志查看</a>
@@ -162,19 +164,24 @@ admin<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
     <li id="li-album">
         <a href="#albumModule" class="nav-header collapsed" data-toggle="collapse">
-            <i class="glyphicon glyphicon-picture"></i>
+            <i class="glyphicon glyphicon-camera"></i>
             相册模块
             <span class="pull-right glyphicon glyphicon-chevron-left"></span>
         </a>
         <div id="albumModule" class="collapse">
             <ul class="nav nav-sidebar secondmenu">
                 <li>
-                    <a href="#"><i class="glyphicon glyphicon-camera"></i>
+                    <a href="__APP__/Album/uploadPic"><i class="glyphicon glyphicon-picture"></i>
+                    上传照片
+                    </a>
+                </li>
+                <li>
+                    <a href="__APP__/Album/createAlbum"><i class="glyphicon glyphicon-camera"></i>
                     创建新相册
                     </a>
                 </li>
                 <li>
-                    <a href="#"><i class="glyphicon glyphicon-th-list"></i>
+                    <a href="__APP__/Album/manageAlbum"><i class="glyphicon glyphicon-th-list"></i>
                     相册管理
                     </a>
                 </li>
@@ -227,7 +234,7 @@ admin<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     </li>
     
     <li id="li-about">
-        <a href="#">
+        <a href="__APP__/About/about">
             <i class="glyphicon glyphicon-wrench"></i>
             关于系统
         </a>
@@ -238,164 +245,107 @@ admin<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
    
 
-        </div>
-        <div id="mainpart" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-<div id ="main1" style="height:400px"></div>
-            <h3 class="page-header"><i class="glyphicon glyphicon-dashboard"></i> 
-                基本参数
-            </h3>
+            </div>
+            <div id="mainpart" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+                        
+                <h3 class="page-header"><i class="glyphicon glyphicon-dashboard"></i> 
+                    基本参数
+                </h3>
+                <div class="row placeholders">
+                    <div class="col-xs-6 col-sm-4 placeholder">
+                        <div id="ec1" class="ec-pic" style="height:300px"></div>
+                        <span class="text-muted">在线人数</span>
+                    </div>
 
-          <div class="row placeholders">
-            <div class="col-xs-6 col-sm-4 placeholder">
-              
-            </div>
-            <div class="col-xs-6 col-sm-4 placeholder">
-              <img data-src="holder.js/200x200/auto/sky" class="img-responsive" alt="Generic placeholder thumbnail">
-              <h4>Label</h4>
-              <span class="text-muted">注册人数</span>
-            </div>
-            <div class="col-xs-6 col-sm-4 placeholder">
-              <img data-src="holder.js/200x200/auto/sky" class="img-responsive" alt="Generic placeholder thumbnail">
-              <h4>Label</h4>
-              <span class="text-muted">负载率</span>
-            </div>
-           
-          </div>
+                    <div class="col-xs-6 col-sm-4 placeholder">
+                        <div id="ec2" class="ec-pic" style="height:300px"></div>
+                        <span class="text-muted">注册人数</span>
+                    </div>
 
-          <h2 class="sub-header">Section title</h2>
-          <div class="table-responsive">
-            <table class="table table-striped">
-              <thead>
-                <tr>
-                  <th>#</th>
-                  <th>Header</th>
-                  <th>Header</th>
-                  <th>Header</th>
-                  <th>Header</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1,001</td>
-                  <td>Lorem</td>
-                  <td>ipsum</td>
-                  <td>dolor</td>
-                  <td>sit</td>
-                </tr>
-                <tr>
-                  <td>1,002</td>
-                  <td>amet</td>
-                  <td>consectetur</td>
-                  <td>adipiscing</td>
-                  <td>elit</td>
-                </tr>
-                <tr>
-                  <td>1,003</td>
-                  <td>Integer</td>
-                  <td>nec</td>
-                  <td>odio</td>
-                  <td>Praesent</td>
-                </tr>
-                <tr>
-                  <td>1,003</td>
-                  <td>libero</td>
-                  <td>Sed</td>
-                  <td>cursus</td>
-                  <td>ante</td>
-                </tr>
-                <tr>
-                  <td>1,004</td>
-                  <td>dapibus</td>
-                  <td>diam</td>
-                  <td>Sed</td>
-                  <td>nisi</td>
-                </tr>
-                <tr>
-                  <td>1,005</td>
-                  <td>Nulla</td>
-                  <td>quis</td>
-                  <td>sem</td>
-                  <td>at</td>
-                </tr>
-                <tr>
-                  <td>1,006</td>
-                  <td>nibh</td>
-                  <td>elementum</td>
-                  <td>imperdiet</td>
-                  <td>Duis</td>
-                </tr>
-                <tr>
-                  <td>1,007</td>
-                  <td>sagittis</td>
-                  <td>ipsum</td>
-                  <td>Praesent</td>
-                  <td>mauris</td>
-                </tr>
-                <tr>
-                  <td>1,008</td>
-                  <td>Fusce</td>
-                  <td>nec</td>
-                  <td>tellus</td>
-                  <td>sed</td>
-                </tr>
-                <tr>
-                  <td>1,009</td>
-                  <td>augue</td>
-                  <td>semper</td>
-                  <td>porta</td>
-                  <td>Mauris</td>
-                </tr>
-                <tr>
-                  <td>1,010</td>
-                  <td>massa</td>
-                  <td>Vestibulum</td>
-                  <td>lacinia</td>
-                  <td>arcu</td>
-                </tr>
-                <tr>
-                  <td>1,011</td>
-                  <td>eget</td>
-                  <td>nulla</td>
-                  <td>Class</td>
-                  <td>aptent</td>
-                </tr>
-                <tr>
-                  <td>1,012</td>
-                  <td>taciti</td>
-                  <td>sociosqu</td>
-                  <td>ad</td>
-                  <td>litora</td>
-                </tr>
-                <tr>
-                  <td>1,013</td>
-                  <td>torquent</td>
-                  <td>per</td>
-                  <td>conubia</td>
-                  <td>nostra</td>
-                </tr>
-                <tr>
-                  <td>1,014</td>
-                  <td>per</td>
-                  <td>inceptos</td>
-                  <td>himenaeos</td>
-                  <td>Curabitur</td>
-                </tr>
-                <tr>
-                  <td>1,015</td>
-                  <td>sodales</td>
-                  <td>ligula</td>
-                  <td>in</td>
-                  <td>libero</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        
-        
+                    <div class="col-xs-6 col-sm-4 placeholder">
+                        <div id="ec3" class="ec-pic" style="height:300px"></div>
+                        <span class="text-muted">负载率</span>
+                    </div>
+
+            </div>
+
         </div>
-      </div>
     </div>
-	<!-- Bootstrap core JavaScript ================================================== -->
+<!-- ECharts单文件引入 -->
+<script src="__ROOT__/Plugins/echarts/echarts.js"></script>
+<script type="text/javascript">
+// 路径配置
+require.config({
+    paths: {
+        echarts: '__ROOT__/Plugins/echarts'
+    }
+});
+                            
+// 使用
+require(
+[
+    'echarts',
+    'echarts/chart/gauge' // 使用柱状图就加载bar模块，按需加载
+],
+function (ec) {
+    // 基于准备好的dom，初始化echarts图表
+    var myChart1 = ec.init(document.getElementById('ec1')); 
+    var myChart2 = ec.init(document.getElementById('ec2')); 
+    var myChart3 = ec.init(document.getElementById('ec3')); 
+
+    var option1 = {
+        tooltip : {
+            formatter: "{a} <br/>{b} : {c}"
+        },
+        series : [
+            {
+            name:'在线人数统计',
+            max: 500,
+            min: 0,
+            type:'gauge',
+            // detail : {formatter:'{value}%'},
+            data:[{value: 500, name: '在线人数'}],
+
+            }
+        ]
+    };
+    var option2 = {
+        tooltip : {
+            formatter: "{a} <br/>{b} : {c}"
+        },
+        series : [
+            {
+            name:'注册人数统计',
+            type:'gauge',
+            max: 1000,
+            //detail : {formatter:'{value}%'},
+            data:[{value: 500, name: '注册人数'}]
+            }
+        ]
+    };
+
+    var option3 = {
+        tooltip : {
+            formatter: "{a} <br/>{b} : {c}%"
+        },
+        series : [
+            {
+            name:'负载指标',
+            type:'gauge',
+            detail : {formatter:'{value}%'},
+            data:[{value: 50, name: '负载率'}]
+            }
+        ]
+    };
+                            
+    // 为echarts对象加载数据 
+    myChart1.setOption(option1); 
+    myChart2.setOption(option2); 
+    myChart3.setOption(option3); 
+    }
+);
+</script>
+<!-- Bootstrap core JavaScript ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
 	
 	<script src="__ROOT__/Plugins/bootstrap/js/bootstrap.min.js"></script>
@@ -409,52 +359,4 @@ admin<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 </body>
 
-<!-- ECharts单文件引入 -->
-    <script src="http://echarts.baidu.com/build/dist/echarts.js"></script>
-    <script type="text/javascript">
-        // 路径配置
-        require.config({
-            paths: {
-                echarts: 'http://echarts.baidu.com/build/dist'
-            }
-        });
-        
-        // 使用
-        require(
-            [
-                'echarts',
-                'echarts/chart/gauge' // 使用柱状图就加载bar模块，按需加载
-            ],
-            function (ec) {
-                // 基于准备好的dom，初始化echarts图表
-                var myChart = ec.init(document.getElementById('main1')); 
-                
-              var option = {
-    tooltip : {
-        formatter: "{a} <br/>{b} : {c}%"
-    },
-    toolbox: {
-        show : true,
-        feature : {
-            mark : {show: true},
-            restore : {show: true},
-            saveAsImage : {show: true}
-        }
-    },
-    series : [
-        {
-            name:'业务指标',
-            type:'gauge',
-            detail : {formatter:'{value}%'},
-            data:[{value: 50, name: '完成率'}]
-        }
-    ]
-};
-
-
-                    
-    myChart.setOption(option);
-            }
-        );
-    </script>
 </html>

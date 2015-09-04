@@ -157,7 +157,7 @@
 				<img alt="100%x180" src="<?php echo ($vo["coverImg"]); ?>" style="height: 180px; width: 100%; display: block;" >
 			</a>
 			<div class="caption">
-				<div>&nbsp;&nbsp;<?php echo ($vo["name"]); ?>&nbsp;&nbsp; <span class="badge">00</span></div>
+				<div>&nbsp;&nbsp;<?php echo ($vo["name"]); ?>&nbsp;&nbsp; <span class="badge"><?php echo ($vo["imgnum"]); ?></span></div>
 				<p>&nbsp;&nbsp;<?php echo ($vo["summary"]); ?></p>
 			</div>  
 		    </div>

@@ -99,7 +99,7 @@ admin<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         </a>
         <div id="systemModule" class="collapse">
             <ul class="nav nav-sidebar secondmenu">
-                <li><a href="#"><i class="glyphicon glyphicon-user"></i>
+                <li><a href="__APP__/Account/index"><i class="glyphicon glyphicon-user"></i>
                     用户管理</a>
                 </li>
                 <li><a href="#"><i class="glyphicon glyphicon-th-list"></i>
@@ -108,8 +108,11 @@ admin<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
                 <li><a href="#"><i class="glyphicon glyphicon-asterisk"></i>
                     角色管理</a>
                 </li>
-                <li><a href="#"><i class="glyphicon glyphicon-edit"></i>
+                <li><a href="__APP__/System/profile"><i class="glyphicon glyphicon-edit"></i>
                     个人中心</a>
+                </li>
+                <li><a href="__APP__/Contact/contact"><i class="glyphicon glyphicon-phone"></i>
+                    问题反馈</a>
                 </li>
                 <li><a href="#"><i class="glyphicon glyphicon-eye-open"></i>
                     日志查看</a>
@@ -232,7 +235,7 @@ admin<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     </li>
     
     <li id="li-about">
-        <a href="#">
+        <a href="__APP__/About/about">
             <i class="glyphicon glyphicon-wrench"></i>
             关于系统
         </a>

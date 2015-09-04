@@ -1,231 +1,125 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="zh-CN">
 <head>
-<include file="Public:head" title="Admin management"/>
+<include file="Public:head" title="Admin manage"/>
+<link href="__CSS__/Admin/Index/index.css" rel="stylesheet">
 
 <script type="text/javascript">
-	$(function(){
-    $("#li-index").addClass("active");
-     
-	});
-
+$(function(){
+    $("#li-index").addClass("active");  
+});
 </script>
 </head>
 <!-- NAVBAR
 ================================================== -->
 <body>
-    <include file="Public:nav"/>
+<include file="Public:nav"/>
     <div class="container-fluid">
-      <div class="row">
+        <div class="row">
         
-        <div class="col-sm-3 col-md-2 sidebar">
-          <include file="Public:left"/>
-        </div>
-        <div id="mainpart" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-<div id ="main1" style="height:400px"></div>
-            <h3 class="page-header"><i class="glyphicon glyphicon-dashboard"></i> 
-                基本参数
-            </h3>
+            <div class="col-sm-3 col-md-2 sidebar">
+              <include file="Public:left"/>
+            </div>
+            <div id="mainpart" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+                        
+                <h3 class="page-header"><i class="glyphicon glyphicon-dashboard"></i> 
+                    基本参数
+                </h3>
+                <div class="row placeholders">
+                    <div class="col-xs-6 col-sm-4 placeholder">
+                        <div id="ec1" class="ec-pic" style="height:300px"></div>
+                        <span class="text-muted">在线人数</span>
+                    </div>
 
-          <div class="row placeholders">
-            <div class="col-xs-6 col-sm-4 placeholder">
-              
-            </div>
-            <div class="col-xs-6 col-sm-4 placeholder">
-              <img data-src="holder.js/200x200/auto/sky" class="img-responsive" alt="Generic placeholder thumbnail">
-              <h4>Label</h4>
-              <span class="text-muted">注册人数</span>
-            </div>
-            <div class="col-xs-6 col-sm-4 placeholder">
-              <img data-src="holder.js/200x200/auto/sky" class="img-responsive" alt="Generic placeholder thumbnail">
-              <h4>Label</h4>
-              <span class="text-muted">负载率</span>
-            </div>
-           
-          </div>
+                    <div class="col-xs-6 col-sm-4 placeholder">
+                        <div id="ec2" class="ec-pic" style="height:300px"></div>
+                        <span class="text-muted">注册人数</span>
+                    </div>
 
-          <h2 class="sub-header">Section title</h2>
-          <div class="table-responsive">
-            <table class="table table-striped">
-              <thead>
-                <tr>
-                  <th>#</th>
-                  <th>Header</th>
-                  <th>Header</th>
-                  <th>Header</th>
-                  <th>Header</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1,001</td>
-                  <td>Lorem</td>
-                  <td>ipsum</td>
-                  <td>dolor</td>
-                  <td>sit</td>
-                </tr>
-                <tr>
-                  <td>1,002</td>
-                  <td>amet</td>
-                  <td>consectetur</td>
-                  <td>adipiscing</td>
-                  <td>elit</td>
-                </tr>
-                <tr>
-                  <td>1,003</td>
-                  <td>Integer</td>
-                  <td>nec</td>
-                  <td>odio</td>
-                  <td>Praesent</td>
-                </tr>
-                <tr>
-                  <td>1,003</td>
-                  <td>libero</td>
-                  <td>Sed</td>
-                  <td>cursus</td>
-                  <td>ante</td>
-                </tr>
-                <tr>
-                  <td>1,004</td>
-                  <td>dapibus</td>
-                  <td>diam</td>
-                  <td>Sed</td>
-                  <td>nisi</td>
-                </tr>
-                <tr>
-                  <td>1,005</td>
-                  <td>Nulla</td>
-                  <td>quis</td>
-                  <td>sem</td>
-                  <td>at</td>
-                </tr>
-                <tr>
-                  <td>1,006</td>
-                  <td>nibh</td>
-                  <td>elementum</td>
-                  <td>imperdiet</td>
-                  <td>Duis</td>
-                </tr>
-                <tr>
-                  <td>1,007</td>
-                  <td>sagittis</td>
-                  <td>ipsum</td>
-                  <td>Praesent</td>
-                  <td>mauris</td>
-                </tr>
-                <tr>
-                  <td>1,008</td>
-                  <td>Fusce</td>
-                  <td>nec</td>
-                  <td>tellus</td>
-                  <td>sed</td>
-                </tr>
-                <tr>
-                  <td>1,009</td>
-                  <td>augue</td>
-                  <td>semper</td>
-                  <td>porta</td>
-                  <td>Mauris</td>
-                </tr>
-                <tr>
-                  <td>1,010</td>
-                  <td>massa</td>
-                  <td>Vestibulum</td>
-                  <td>lacinia</td>
-                  <td>arcu</td>
-                </tr>
-                <tr>
-                  <td>1,011</td>
-                  <td>eget</td>
-                  <td>nulla</td>
-                  <td>Class</td>
-                  <td>aptent</td>
-                </tr>
-                <tr>
-                  <td>1,012</td>
-                  <td>taciti</td>
-                  <td>sociosqu</td>
-                  <td>ad</td>
-                  <td>litora</td>
-                </tr>
-                <tr>
-                  <td>1,013</td>
-                  <td>torquent</td>
-                  <td>per</td>
-                  <td>conubia</td>
-                  <td>nostra</td>
-                </tr>
-                <tr>
-                  <td>1,014</td>
-                  <td>per</td>
-                  <td>inceptos</td>
-                  <td>himenaeos</td>
-                  <td>Curabitur</td>
-                </tr>
-                <tr>
-                  <td>1,015</td>
-                  <td>sodales</td>
-                  <td>ligula</td>
-                  <td>in</td>
-                  <td>libero</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        
-        
+                    <div class="col-xs-6 col-sm-4 placeholder">
+                        <div id="ec3" class="ec-pic" style="height:300px"></div>
+                        <span class="text-muted">负载率</span>
+                    </div>
+
+            </div>
+
         </div>
-      </div>
     </div>
-	<include file= "Public:tail" />
-</body>
-
 <!-- ECharts单文件引入 -->
-    <script src="http://echarts.baidu.com/build/dist/echarts.js"></script>
-    <script type="text/javascript">
-        // 路径配置
-        require.config({
-            paths: {
-                echarts: 'http://echarts.baidu.com/build/dist'
+<script src="__ROOT__/Plugins/echarts/echarts.js"></script>
+<script type="text/javascript">
+// 路径配置
+require.config({
+    paths: {
+        echarts: '__ROOT__/Plugins/echarts'
+    }
+});
+                            
+// 使用
+require(
+[
+    'echarts',
+    'echarts/chart/gauge' // 使用柱状图就加载bar模块，按需加载
+],
+function (ec) {
+    // 基于准备好的dom，初始化echarts图表
+    var myChart1 = ec.init(document.getElementById('ec1')); 
+    var myChart2 = ec.init(document.getElementById('ec2')); 
+    var myChart3 = ec.init(document.getElementById('ec3')); 
+
+    var option1 = {
+        tooltip : {
+            formatter: "{a} <br/>{b} : {c}"
+        },
+        series : [
+            {
+            name:'在线人数统计',
+            max: 500,
+            min: 0,
+            type:'gauge',
+            // detail : {formatter:'{value}%'},
+            data:[{value: 500, name: '在线人数'}],
+
             }
-        });
-        
-        // 使用
-        require(
-            [
-                'echarts',
-                'echarts/chart/gauge' // 使用柱状图就加载bar模块，按需加载
-            ],
-            function (ec) {
-                // 基于准备好的dom，初始化echarts图表
-                var myChart = ec.init(document.getElementById('main1')); 
-                
-              var option = {
-    tooltip : {
-        formatter: "{a} <br/>{b} : {c}%"
-    },
-    toolbox: {
-        show : true,
-        feature : {
-            mark : {show: true},
-            restore : {show: true},
-            saveAsImage : {show: true}
-        }
-    },
-    series : [
-        {
-            name:'业务指标',
+        ]
+    };
+    var option2 = {
+        tooltip : {
+            formatter: "{a} <br/>{b} : {c}"
+        },
+        series : [
+            {
+            name:'注册人数统计',
+            type:'gauge',
+            max: 1000,
+            //detail : {formatter:'{value}%'},
+            data:[{value: 500, name: '注册人数'}]
+            }
+        ]
+    };
+
+    var option3 = {
+        tooltip : {
+            formatter: "{a} <br/>{b} : {c}%"
+        },
+        series : [
+            {
+            name:'负载指标',
             type:'gauge',
             detail : {formatter:'{value}%'},
-            data:[{value: 50, name: '完成率'}]
-        }
-    ]
-};
-
-
-                    
-    myChart.setOption(option);
+            data:[{value: 50, name: '负载率'}]
             }
-        );
-    </script>
+        ]
+    };
+                            
+    // 为echarts对象加载数据 
+    myChart1.setOption(option1); 
+    myChart2.setOption(option2); 
+    myChart3.setOption(option3); 
+    }
+);
+</script>
+<include file= "Public:tail" />
+</body>
+
 </html>

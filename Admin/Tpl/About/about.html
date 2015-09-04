@@ -1,20 +1,35 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="zh-CN">
 <head>
-<include file="Public:head" title="About"/>
-<script type="text/javascript">
-	$(function(){
-		//$("#navbar ul li").removeClass("active");
-	    $("#about").addClass("active");
-	})
+<include file="Public:head" title="关于系统"/>
 
+<script type="text/javascript">
+$(function(){
+    $("#li-about").addClass("active");  
+});
 </script>
 </head>
-
 <!-- NAVBAR
 ================================================== -->
 <body>
-<include file="Public:nav" />
+<include file="Public:nav"/>
+    <div class="container-fluid">
+        <div class="row">
+        
+            <div class="col-sm-3 col-md-2 sidebar">
+              <include file="Public:left"/>
+            </div>
+            <div id="mainpart" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+                        
+                <h3 class="page-header"><i class="glyphicon glyphicon-wrench"></i> 
+                    关于系统
+                </h3>
+                This is xxxknight's personal homepage.
+                
+
+        </div>
+    </div>
+
 <include file= "Public:tail" />
 </body>
 

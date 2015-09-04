@@ -24,5 +24,8 @@ return array(
 				'__IMG__'=>__ROOT__.'/Resources/images',
 				'__MED__'=>__ROOT__.'/Resources/media',
 		),
+
+		//加载自定义的配置文件
+		'LOAD_EXT_CONFIG' => 'verify,mail',
 );
 ?>

@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="zh-CN">
+<head>
+<include file="Public:head" title="相册管理"/>
+<link href="__CSS__/Admin/Album/module.css" rel="stylesheet">
+
+<script type="text/javascript">
+$(function(){
+    $("#albumModule>ul>li:nth-child(3)").addClass("active");
+    $("#albumModule").addClass("in");
+    $("#li-album>a>span").removeClass("glyphicon-chevron-left").addClass("glyphicon-chevron-down");
+});
+</script>
+
+<script type="text/javascript" src="__JS__/Admin/Album/manageAlbum.js"></script>
+</head>
+
+<body>
+<include file="Public:nav"/>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3 col-md-2 sidebar">
+              <include file="Public:left"/>
+            </div>
+            <div id="mainpart" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+
+                <ol class="breadcrumb">
+                  <span>您的位置：</span>
+                  <li><a>相册模块</a></li>
+                  <li class="active">相册管理</li>
+                </ol> 
+
+                <h3 class="page-header"><i class="glyphicon glyphicon-th-list"></i> 
+                    相册管理
+                </h3>
+                <volist name="albumTypeList" id="vo">
+                    <div class="col-xs-6 col-md-3">
+                        <div>
+                        <a href="__URL__/editAlbum/type/<{$vo.id}>" class="thumbnail">
+                            <img alt="相册" src="<{$vo.coverImg}>" style="height: 180px; width: 100%; display: block;" >
+                        </a>
+                        <div class="caption">
+                            <div>&nbsp;&nbsp;<{$vo.name}>&nbsp;&nbsp; <span class="badge"><{$vo.imgnum}>
+                            </span></div>
+                            <p>&nbsp;&nbsp;<{$vo.summary}></p>
+                        </div>  
+                        </div>
+                    </div>
+                </volist>
+                            
+
+            </div>
+        </div>
+    </div>
+     
+<include file= "Public:tail" />
+</body>
+
+</html>

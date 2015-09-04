@@ -34,10 +34,12 @@ admin<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     $("#systemModule>ul>li:nth-child(4)").addClass("active");
     $("#systemModule").addClass("in");
     $("#li-system>a>span").removeClass("glyphicon-chevron-left").addClass("glyphicon-chevron-down");
-     
+    $("input[name='options'][value=<?php echo ($admin["sex"]); ?>]").prop("checked",true);
   });
 
 </script>
+
+<script type="text/javascript" src="__JS__/Admin/System/profile.js"></script>
 </head>
 <!-- NAVBAR
 ================================================== -->
@@ -96,7 +98,7 @@ admin<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         </a>
         <div id="systemModule" class="collapse">
             <ul class="nav nav-sidebar secondmenu">
-                <li><a href="#"><i class="glyphicon glyphicon-user"></i>
+                <li><a href="__APP__/Account/index"><i class="glyphicon glyphicon-user"></i>
                     用户管理</a>
                 </li>
                 <li><a href="#"><i class="glyphicon glyphicon-th-list"></i>
@@ -107,6 +109,9 @@ admin<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
                 </li>
                 <li><a href="__APP__/System/profile"><i class="glyphicon glyphicon-edit"></i>
                     个人中心</a>
+                </li>
+                <li><a href="__APP__/Contact/contact"><i class="glyphicon glyphicon-phone"></i>
+                    问题反馈</a>
                 </li>
                 <li><a href="#"><i class="glyphicon glyphicon-eye-open"></i>
                     日志查看</a>
@@ -229,7 +234,7 @@ admin<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     </li>
     
     <li id="li-about">
-        <a href="#">
+        <a href="__APP__/About/about">
             <i class="glyphicon glyphicon-wrench"></i>
             关于系统
         </a>
@@ -255,6 +260,7 @@ admin<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
             <li class="active"><a href="#info" data-toggle="tab">个人信息</a></li>
             <li><a href="#updatepw" data-toggle="tab">修改密码</a></li>
           </ul>
+          <input id="uid" value="<?php echo ($admin["id"]); ?>" type="hidden"/>
           <div id="myTabContent" class="tab-content">
           <div class="tab-pane fade active in" id="info">
             <form class="form-horizontal">
@@ -262,13 +268,15 @@ admin<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
             <div class="form-group">
               <label for="username" class="col-lg-2 control-label">用户名</label>
               <div class="col-lg-4">
-                <input type="text" class="form-control" id="username" placeholder="username"/>
+                <input type="text" class="form-control" id="username" placeholder="username" 
+                    value="<?php echo ($admin["username"]); ?>"/>
               </div>
             </div>
             <div class="form-group">
               <label for="email" class="col-lg-2 control-label">email</label>
               <div class="col-lg-4">
-                <input type="text" class="form-control" id="email" placeholder="email" />
+                <input type="text" class="form-control" id="email" placeholder="email" 
+                value="<?php echo ($admin["email"]); ?>"/>
               </div>
             </div>
 
@@ -284,7 +292,7 @@ admin<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
                   &nbsp;
                   <label>
                   <input type="radio" name="options" id="option-f" value="1" />
-                    女
+                  女
                   </label>
                 </div>
               </div>
@@ -293,50 +301,56 @@ admin<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
             <div class="form-group">
               <label for="phone" class="col-lg-2 control-label">phone</label>
               <div class="col-lg-3">
-                <input type="text" class="form-control" id="phone" placeholder="phone" />
+                <input type="text" class="form-control" id="phone" placeholder="phone" 
+                value="<?php echo ($admin["phone"]); ?>" />
               </div>
             </div>
 
             <div class="form-group">
               <label for="birth" class="col-lg-2 control-label">生日</label>
               <div class="col-lg-3">
-                <input type="text" class="Wdate" id="birth" onfocus="WdatePicker({})" placeholder="请选择生日" />
+                <input type="text" class="Wdate" id="birth" onfocus="WdatePicker({})" 
+                placeholder="请选择生日" value="<?php echo ($admin["birth"]); ?>"/>
               </div>
             </div>
 
     
             <div class="form-group">
               <div class="col-lg-10 col-lg-offset-2">
-              <button type="reset" class="btn btn-danger">Cancel</button>
-              <button type="submit" class="btn btn-primary">Submit</button>
+              <button type="reset" class="btn btn-danger">重置</button>
+              <button id="sub-info" class="btn btn-primary">提交</button>
               </div>
             </div>
           </fieldset>
           </form>
           </div>
 
-
-
         <div class="tab-pane fade" id="updatepw">
             <form class="form-horizontal">
             <fieldset>
             <div class="form-group">
-              <label for="password" class="col-lg-2 control-label">输入密码</label>
+              <label for="password" class="col-lg-2 control-label">输入新密码</label>
               <div class="col-lg-4">
                 <input type="password" class="form-control" id="password" placeholder="password"/>
               </div>
+              <div class="col-lg-4">
+                  <div class="tip">注：密码为6到20位的数字或字母组合</div>
+              </div>
             </div>
             <div class="form-group">
-              <label for="repassword" class="col-lg-2 control-label">再次输入密码</label>
+              <label for="repassword" class="col-lg-2 control-label">请再次输入密码</label>
               <div class="col-lg-4">
                 <input type="password" class="form-control" id="repassword" placeholder="repeat password" />
+              </div>
+              <div class="col-lg-4">
+                  <div id="repw-tip" class="tip"></div>
               </div>
             </div>
 
             <div class="form-group">
               <div class="col-lg-10 col-lg-offset-2">
-                  <button type="reset" class="btn btn-danger">Cancel</button>
-                  <button type="submit" class="btn btn-primary">Submit</button>
+                  <button type="reset" class="btn btn-danger">重置</button>
+                  <button id="sub-pw" class="btn btn-primary">提交</button>
               </div>
             </div>
           </fieldset>
@@ -344,8 +358,6 @@ admin<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
           </div>
         </div>
 
-     
-        
         </div>
       </div>
     </div>

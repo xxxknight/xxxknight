@@ -2,7 +2,7 @@
 	margin:20px 0px; 
 }
 
-#tip , #tag-tip ,#type-tip{
+#tip{
 	padding-left: 0px;
 	margin-top: 7px;
 	font-size: 13px;
@@ -32,6 +32,10 @@ text-align: center;
   margin-top: 15px;
   margin-bottom: 50px;
 
+}
+
+.red{
+	color: red;
 }
 
 

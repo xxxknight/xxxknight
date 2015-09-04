@@ -38,6 +38,7 @@ class AccountAction extends Action {
 		$account = M ( 'Account' );
 		$data ['username'] = $_POST ['username'];
 		$data ['password'] = md5 ( $_POST ['password'] );
+		$data ['flag'] = 1;
 		$captcha = $_POST ['captcha'];
 		if ($_SESSION ['verify'] !== md5 ( $captcha )) {
 			$this->error ( 'Please check your captcha' );

@@ -128,7 +128,7 @@ to {
 }
 
 #wrap .box {
-	width: 280px;
+	width: 180px;
 	height: auto;
 	padding: 10px;
 	border: none;
@@ -136,7 +136,7 @@ to {
 }
 
 #wrap .box .info {
-	width: 280px;
+	width: 180px;
 	height: auto;
 	border-radius: 8px;
 	box-shadow: 0 0 11px #666;
@@ -144,7 +144,7 @@ to {
 }
 
 #wrap .box .info .pic {
-	width: 260px;
+	width: 160px;
 	height: auto;
 	margin: 0 auto;
 	padding-top: 10px;
@@ -159,12 +159,12 @@ to {
 }
 
 #wrap .box .info .pic img {
-	width: 260px;
+	width: 160px;
 	border-radius: 3px;
 }
 
 #wrap .box .info .title {
-	width: 260px;
+	width: 160px;
 	height: 40px;
 	margin: 0 auto;
 	line-height: 40px;
