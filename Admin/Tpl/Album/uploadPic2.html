@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="zh-CN">
+<head>
+<include file="Public:head" title="上传照片"/>
+<link href="__CSS__/Admin/Album/module.css" rel="stylesheet">
+
+<script type="text/javascript">
+$(function(){
+    $("#albumModule>ul>li:nth-child(1)").addClass("active");
+    $("#albumModule").addClass("in");
+    $("#li-album>a>span").removeClass("glyphicon-chevron-left").addClass("glyphicon-chevron-down");
+});
+</script>
+
+<link rel="stylesheet" href="__ROOT__/Plugins/fileupload/css/jquery.fileupload.css">
+<link rel="stylesheet" href="__ROOT__/Plugins/fileupload/css/jquery.fileupload-ui.css">
+<script src="__ROOT__/Plugins/fileupload/js/vendor/jquery.ui.widget.js"></script>
+<script src="__ROOT__/Plugins/fileupload/js/jquery.fileupload.js"></script>
+<script src="__ROOT__/Plugins/fileupload/js/jquery.iframe-transport.js"></script>
+
+</head>
+<!-- NAVBAR
+================================================== -->
+<body>
+<include file="Public:nav"/>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3 col-md-2 sidebar">
+              <include file="Public:left"/>
+            </div>
+            <div id="mainpart" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+
+                <ol class="breadcrumb">
+                  <span>您的位置：</span>
+                  <li><a>相册模块</a></li>
+                  <li class="active">上传照片</li>
+                </ol> 
+
+                <h3 class="page-header"><i class="glyphicon glyphicon-picture"></i> 
+                    上传照片
+                </h3>
+                
+                <div class="row fileupload-buttonbar" style="padding-left:15px;">
+                    <div class="thumbnail col-sm-6">
+                    <img id="weixin_show" style="height:180px;margin-top:10px;margin-bottom:8px;"  src="__IMG__/img/fruit1.png" data-holder-rendered="true">
+                    <div class="progress progress-striped active" role="progressbar" aria-valuemin="10" aria-valuemax="100" aria-valuenow="0"><div id="weixin_progress" class="progress-bar progress-bar-success" style="width:0%;"></div></div>
+                    <div class="caption" align="center">
+                    <span id="weixin_upload" class="btn btn-primary fileinput-button">
+                    <span>上传</span>
+                    <input type="file" id="weixin_image" name="weixin_image" multiple>
+                    </span>
+                    <a id="weixin_cancle" href="javascript:void(0)" class="btn btn-warning" role="button" onclick="cancleUpload('weixin')" style="display:none">删除</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+$(function() {
+    $("#weixin_image").fileupload({
+            url: '__URL__/uploadImg',
+            sequentialUploads: true,
+            formData: {'name':'haha'}
+        }).bind('fileuploadprogress', function (e, data) {
+            var progress = parseInt(data.loaded / data.total * 100, 10);
+            $("#weixin_progress").css('width',progress + '%');
+            $("#weixin_progress").html(progress + '%');
+        }).bind('fileuploaddone', function (e, data) {
+            // $("#weixin_show").attr("src","__PUBLIC__/"+data.result);
+            // $("#weixin_upload").css({display:"none"});
+            // $("#weixin_cancle").css({display:""});
+            alert("e: "+e);
+            alert("data: "+ data.result);
+        });
+           
+    });
+</script>
+<include file= "Public:tail" />
+</body>
+
+</html>

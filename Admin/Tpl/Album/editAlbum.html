@@ -100,8 +100,15 @@ $(function(){
                 </div>
 
 <div class="alert alert-dismissible alert-danger" style="width:300px; position:fixed;" id="delete-alert">
-  <button type="button" class="close" id="close-delete">×</button>
-  <strong>Oh snap!</strong> <a href="#" class="alert-link">Change a few things up</a> and try submitting again.
+    <button type="button" class="close" id="close-delete">×</button>
+    <div class="alert-body">
+        <strong>您确定删除该相册？这将删除该相册下所有的照片，且不可恢复！</strong>
+    </div>
+    <div class="btngroup2">
+        <button class="btn btn-danger" id="confirm-delete">确定</button>
+        <button class="btn btn-default" id="cancel-delete">取消</button>
+    </div>
+
 </div>
                 
             </div>

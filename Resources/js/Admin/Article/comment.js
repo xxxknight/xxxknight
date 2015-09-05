@@ -45,7 +45,7 @@ function getData(page){
         tr.append(handle);
         $("#commentlist tbody").append(tr);
 
-        var content = $("<td colspan='5'></td").append("评论内容： "+array['content']);
+        var content = $("<td colspan='6'></td>").append("评论内容： "+array['content']);
         var tr_content = $("<tr></tr>");
         tr_content.append(content);
         $("#commentlist tbody").append(tr_content);

@@ -1,0 +1,84 @@
+[ 2015-09-04T23:01:04+08:00 ] 0.0.0.0 /xxxknight/admin.php/Album/uploadImg
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000637s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000724s ]
+
+[ 2015-09-04T23:04:18+08:00 ] 0.0.0.0 /xxxknight/admin.php/Album/uploadImg
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000621s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000728s ]
+
+[ 2015-09-04T23:06:39+08:00 ] 0.0.0.0 /xxxknight/admin.php/Album/uploadImg
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000510s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000567s ]
+
+[ 2015-09-04T23:08:28+08:00 ] 0.0.0.0 /xxxknight/admin.php/Album/uploadImg
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000451s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000503s ]
+NOTIC: [8] Undefined index: name /Applications/XAMPP/xamppfiles/htdocs/xxxknight/Admin/Lib/Action/AlbumAction.class.php 第 137 行.
+
+[ 2015-09-04T23:20:54+08:00 ] 0.0.0.0 /xxxknight/admin.php/Album/uploadImg
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000274s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000319s ]
+NOTIC: [8] Undefined index: name /Applications/XAMPP/xamppfiles/htdocs/xxxknight/Admin/Lib/Action/AlbumAction.class.php 第 137 行.
+
+[ 2015-09-04T23:21:37+08:00 ] 0.0.0.0 /xxxknight/admin.php/Album/uploadImg
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000475s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000527s ]
+NOTIC: [8] Undefined index: name /Applications/XAMPP/xamppfiles/htdocs/xxxknight/Admin/Lib/Action/AlbumAction.class.php 第 137 行.
+
+[ 2015-09-04T23:22:44+08:00 ] 0.0.0.0 /xxxknight/admin.php/Album/uploadImg
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000315s ]
+NOTIC: [8] Undefined index: name /Applications/XAMPP/xamppfiles/htdocs/xxxknight/Admin/Lib/Action/AlbumAction.class.php 第 137 行.
+
+[ 2015-09-04T23:28:07+08:00 ] 0.0.0.0 /xxxknight/admin.php/Album/uploadImg/name/111
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000425s ]
+
+[ 2015-09-04T23:49:45+08:00 ] 0.0.0.0 /xxxknight/admin.php/Album/uploadImg/name/111
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000271s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000305s ]
+
+[ 2015-09-04T23:49:58+08:00 ] 0.0.0.0 /xxxknight/admin.php/Album/uploadImg/name/111
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000387s ]
+
+[ 2015-09-04T23:50:01+08:00 ] 0.0.0.0 /xxxknight/admin.php/Album/uploadImg/name/111
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000332s ]
+
+[ 2015-09-04T23:50:02+08:00 ] 0.0.0.0 /xxxknight/admin.php/Album/uploadImg/name/111
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000531s ]
+
+[ 2015-09-04T23:50:33+08:00 ] 0.0.0.0 /xxxknight/admin.php/Album/uploadImg/name/111
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000360s ]
+
+[ 2015-09-04T23:50:55+08:00 ] 0.0.0.0 /xxxknight/admin.php/Album/uploadImg/name/111
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000736s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000821s ]
+
+[ 2015-09-04T23:50:57+08:00 ] 0.0.0.0 /xxxknight/admin.php/Album/uploadImg/name/111
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000332s ]
+
+[ 2015-09-04T23:50:59+08:00 ] 0.0.0.0 /xxxknight/admin.php/Album/uploadImg/name/111
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000347s ]
+

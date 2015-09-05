@@ -31,65 +31,33 @@ class AlbumAction extends CommonAction {
 
     }
 
-    public function updateAlbum(){
-        if(isset($_POST['id'])){
-            $m = M('Tag');
-            $where['id'] = $_POST['id'];
-
-            $data['name'] = $_POST['name'];
-            $data['type'] = $_POST['type'];
-            $data['flag'] = $_POST['flag'];
-
-            $updateNum = $m->where($where)->save($data);
-
-            if($updateNum){
-                echo "更新成功";
-            }else{
-                exit("您未做任何更新！");
-            }
-        }else{
-            exit("非法操作！");
-        }
-
-    }
-
     public function deleteAlbum(){
     	if(isset($_GET['id'])){
 			$id = $_GET['id'];
-			$where['id'] = $id;
-			$m = M("Tag");
-			$deleteNum = $m->where($where)->delete();
-			if($deleteNum){
-				echo "删除成功！";
-			}else{
-				exit("删除失败！");
-			}
 
+            if($this->deletePicturesByTypeid($id) === false){
+                exit("删除失败！");
+            }else{
+                $where['id'] = $id;
+                $m = M("Albumtype");
+                $deleteNum = $m->where($where)->delete();
+                if($deleteNum){
+                    echo "删除成功！";
+                }else{
+                    exit("删除失败！");
+                }
+            }
 		}else{
 			exit("非法操作！");
 		}
-
     }
 
-    public function listAlbum(){
-
-		$page = intval($_GET['pageNum']);
-
-		$m = M('Tag');
+    private function deletePicturesByTypeid($typeid){
+        $m = M("Album");
+        $where['$typeid'] = $typeid;
         
-		$total = $m->count();
-		$pageSize = 20; //每页显示数
-		$totalPage = ceil($total/$pageSize); //总页数
-		$startPage = $page*$pageSize;
-
-		$arr['total'] = $total;
-		$arr['pageSize'] = $pageSize;
-		$arr['totalPage'] = $totalPage;
-
-		$list= $m->order("id desc")->limit($startPage,$pageSize)->select();
-
-        $arr['list'] = $list;
-        $this->ajaxReturn($arr);
+        $deletePicNum = $m->where($where)->delete();
+        return $deletePicNum;
 
     }
 
@@ -157,6 +125,32 @@ class AlbumAction extends CommonAction {
             }else{
                 $this->error("您未做任何更新！","__URL__/editAlbum/type/".$_POST['albumid']);
             }
+        }
+    }
+
+
+    public function uploadPic(){
+        $this->display();
+    }
+
+    public function uploadImg(){
+        $name = $_POST['name'];
+
+        import('ORG.Net.UploadFile');
+        $upload = new UploadFile();// 实例化上传类
+        $upload->maxSize   =     3145728 ;// 设置附件上传大小
+        //$upload->exts      =     array('jpg', 'gif', 'png', 'jpeg');// 设置附件上传类型
+        $upload->savePath =  C('ALBUMTYPE_UPLOAD_PATH');// 设置附件上传目录
+        
+        // 上传文件 
+        $info   =   $upload->uploadOne($_FILES['weixin_image']);
+        if(!$info) {// 上传错误提示错误信息
+            //$this->error($upload->getError());
+            echo 0;
+        }else{// 上传成功 获取上传文件信息
+            //$this->display('templateList');
+            //echo "Uploads/".$info['savepath'].$info['savename'];
+            echo "name: ".$name;
         }
     }
 

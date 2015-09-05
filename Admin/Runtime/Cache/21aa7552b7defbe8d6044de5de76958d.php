@@ -198,7 +198,7 @@ $(function(){
                     </a>
                 </li>
                 <li>
-                    <a href="#"><i class="glyphicon glyphicon-th-list"></i>
+                    <a href="__APP__/Album/manageAlbum"><i class="glyphicon glyphicon-th-list"></i>
                     相册管理
                     </a>
                 </li>

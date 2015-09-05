@@ -60,7 +60,8 @@ $(function(){
             <li class="dropdown" style="margin-right:20px">
               <a class="dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" 
               href="<?php echo $_SESSION['admin']['id'] ?>">
-                <?php echo session('adminname');?>
+                <?php echo session('adminname');?> 
+                <span class="caret"></span>
               </a>
                 <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1" style="min-width:100px;">
                   <li role="presentation"><a role="menuitem" tabindex="-1" href="__APP__/System/profile">
@@ -167,19 +168,24 @@ $(function(){
 
     <li id="li-album">
         <a href="#albumModule" class="nav-header collapsed" data-toggle="collapse">
-            <i class="glyphicon glyphicon-picture"></i>
+            <i class="glyphicon glyphicon-camera"></i>
             相册模块
             <span class="pull-right glyphicon glyphicon-chevron-left"></span>
         </a>
         <div id="albumModule" class="collapse">
             <ul class="nav nav-sidebar secondmenu">
                 <li>
-                    <a href="#"><i class="glyphicon glyphicon-camera"></i>
+                    <a href="__APP__/Album/uploadPic"><i class="glyphicon glyphicon-picture"></i>
+                    上传照片
+                    </a>
+                </li>
+                <li>
+                    <a href="__APP__/Album/createAlbum"><i class="glyphicon glyphicon-camera"></i>
                     创建新相册
                     </a>
                 </li>
                 <li>
-                    <a href="#"><i class="glyphicon glyphicon-th-list"></i>
+                    <a href="__APP__/Album/manageAlbum"><i class="glyphicon glyphicon-th-list"></i>
                     相册管理
                     </a>
                 </li>

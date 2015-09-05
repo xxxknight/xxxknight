@@ -169,19 +169,24 @@ admin<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
     <li id="li-album">
         <a href="#albumModule" class="nav-header collapsed" data-toggle="collapse">
-            <i class="glyphicon glyphicon-picture"></i>
+            <i class="glyphicon glyphicon-camera"></i>
             相册模块
             <span class="pull-right glyphicon glyphicon-chevron-left"></span>
         </a>
         <div id="albumModule" class="collapse">
             <ul class="nav nav-sidebar secondmenu">
                 <li>
+                    <a href="__APP__/Album/uploadPic"><i class="glyphicon glyphicon-picture"></i>
+                    上传照片
+                    </a>
+                </li>
+                <li>
                     <a href="__APP__/Album/createAlbum"><i class="glyphicon glyphicon-camera"></i>
                     创建新相册
                     </a>
                 </li>
                 <li>
-                    <a href="#"><i class="glyphicon glyphicon-th-list"></i>
+                    <a href="__APP__/Album/manageAlbum"><i class="glyphicon glyphicon-th-list"></i>
                     相册管理
                     </a>
                 </li>
