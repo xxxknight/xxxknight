@@ -23,18 +23,23 @@
 	    <div class="tn3 description">Images with fixed dimensions</div>
 	    <div class="tn3 thumb">images/35x35/1.jpg</div> -->
 	    <ol>
-        <volist name="list" id="vo">
-        	<li>
-		        <h4><{$vo.title}></h4>
-		        <div class="tn3 description"><{$vo.remark}></div>
-		        <a href="<{$vo.link}>">
-			    <img src="<{$vo.link}>"/>
-		        </a>
-		    </li>
-
-        </volist>
-		
-		
+		    <empty name="list">
+		    	<li>
+		    		<a href="__IMG__/pictures/default.jpg">
+						<img src="__IMG__/pictures/default.jpg"/>
+					</a>
+		    	</li>
+		    <else /> 
+			    <volist name="list" id="vo">
+		        	<li>
+				        <h4><{$vo.title}></h4>
+				        <div class="tn3 description"><{$vo.remark}></div>
+					        <a href="<{$vo.link}>">
+						    	<img src="<{$vo.link}>"/>
+					        </a>
+				    </li>
+		        </volist>
+			</empty>
 	    </ol>
 	</div>
 	

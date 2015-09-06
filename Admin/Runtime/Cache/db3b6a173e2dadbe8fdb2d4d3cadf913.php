@@ -29,7 +29,7 @@ admin<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="__CSS__/Admin/common.css" rel="stylesheet">
 <link href="__CSS__/Admin/Album/module.css" rel="stylesheet">
 
-<script src="__ROOT__/Plugins/uploadify/jquery.uploadify.js" type="text/javascript"></script>
+<script src="__ROOT__/Plugins/uploadify/jquery.uploadify.min.js" type="text/javascript"></script>
 <link rel="stylesheet" type="text/css" href="__ROOT__/Plugins/uploadify/uploadify.css">
 <script type="text/javascript">
 $(function(){
@@ -156,14 +156,11 @@ $(function(){
                     标签管理
                     </a>
                 </li>
-
                 <li>
                     <a href="__APP__/Article/arttype"><i class="glyphicon glyphicon-th"></i>
                     分类管理
                     </a>
                 </li>
-
-
             </ul>
         </div>
     </li>
@@ -192,7 +189,7 @@ $(function(){
                     </a>
                 </li>
                 <li>
-                    <a href="#"><i class="glyphicon glyphicon-th"></i>
+                    <a href="__APP__/Album/module"><i class="glyphicon glyphicon-th"></i>
                     模块管理
                     </a>
                 </li>
@@ -226,14 +223,14 @@ $(function(){
     </li>
     
     <li id="li-export">
-        <a href="./plans.html">
+        <a href="__APP__/export">
             <i class="glyphicon glyphicon-credit-card"></i>
             导出模块        
         </a>
     </li>
                 
     <li id="li-analytics">
-        <a href="./charts.html">
+        <a href="__APP__/analytics">
             <i class="glyphicon glyphicon-calendar"></i>
             分析统计
         </a>
@@ -264,30 +261,112 @@ $(function(){
                     上传照片
                 </h3>
 
-                <form>
-                    <div id="queue"></div>
-                    <input id="file_upload" name="file_upload" type="file" multiple="true">
+                <form class="form-horizontal" id="form1">
+                    <div class="form-group">
+                        <label for="typeid" class="col-lg-2 control-label">所属相册</label>
+                        <div class="col-lg-5">
+                            <select class="form-control" id="typeid" required>
+                                <option value="">请选择相册类别</option>
+                                <?php if(is_array($albumTypeList)): foreach($albumTypeList as $key=>$vo): ?><option value="<?php echo ($vo["id"]); ?>"><?php echo ($vo["name"]); ?></option><?php endforeach; endif; ?>
+                                
+                            </select>
+                        </div>
+                        <div class="col-lg-5 hint help-block">
+                                注：所属相册必填.
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="title" class="col-lg-2 control-label">照片名称</label>
+                        <div class="col-lg-5">
+                          <input type="text" class="form-control" id="title" placeholder="照片名称">
+                        </div>
+                        <div class="col-lg-5 hint help-block">
+                                注：照片名可不填，默认为相册名，不超过20个字符.
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="alt" class="col-lg-2 control-label">替代文字</label>
+                        <div class="col-lg-5">
+                          <input type="text" class="form-control" id="alt" placeholder="替代文字">
+                        </div>
+                        <div class="col-lg-5 hint help-block">
+                                注：替代文字可不填，默认为相册名，不超过20个字符.
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div id="queue" class="col-lg-2"></div>
+                        <div class="col-lg-5">
+                            <input id="file_upload" name="file_upload" type="file" multiple="true" required/>
+                        </div>
+                        <div class="col-lg-5 hint help-block">
+                                注：按住ctrl可多选文件。
+                        </div>
+                    </div>
+                    <div id="data"></div>
                 </form>
-
-                <script type="text/javascript">
-                    <?php $timestamp = time();?>
-                    $(function() {
-                        $('#file_upload').uploadify({
-                        'formData'     : {
-                            'timestamp' : '<?php echo $timestamp;?>',
-                            'token'     : '<?php echo md5('unique_salt' . $timestamp);?>'
-                        },
-                        'swf'      : '__ROOT__/Plugins/uploadify/uploadify.swf',
-                        'uploader' : 'uploadify.php'
-                        });
-                    });
-                </script>
             </div>
         </div>
     </div>
 
-<script>
+<script type="text/javascript">
+$(function() {
+    $('#file_upload').uploadify({
+        'buttonText': "选择文件",
+        'height' : 35,
+        //'auto' : false,
+        'swf'      : '__ROOT__/Plugins/uploadify/uploadify.swf',
+        'uploader' : '__URL__/upload',
+        'fileSizeLimit': '0',  
+        'fileTypeExts': '*.gif; *.jpeg; *.jpg; *.png', 
+        //'progressData': 'speed',  
+        'onSelectError': function (file, errorCode, errorMsg) {  
+            switch (errorCode) {  
+                case -100:  
+                    alert("上传的文件数量已经超出系统限制的" + jQuery('#file_upload').uploadify('settings', 'queueSizeLimit') + "个文件！");  
+                    break;  
+                case -110:  
+                    alert("文件 [" + file.name + "] 大小超出系统限制的" + jQuery('#file_upload').uploadify('settings', 'fileSizeLimit') + "大小！");  
+                    break;  
+                case -120:  
+                    alert("文件 [" + file.name + "] 大小异常！");  
+                    break;  
+                case -130:  
+                    alert("文件 [" + file.name + "] 类型不正确！");  
+                    break;  
+            }  
+        },  
+        'onUploadStart': function (file) {
 
+            var typeid = $("#typeid").val();
+
+            if(!typeid){
+                alert("请选择所属相册！");
+                $("#file_upload").uploadify("cancel", "*");
+                return false;
+            }
+            var typename = $("#typeid").find('option:selected').text().trim();
+
+            $("#file_upload").uploadify("settings", "formData", {
+                'typename' : typename,
+                'typeid' : $("#typeid").val(),
+                'title' : $("#title").val().trim(),
+                'alt' : $("#alt").val().trim(),
+            });  
+            //在onUploadStart事件中，也就是上传之前，把参数写好传递到后台。  
+        },
+
+        'onUploadSuccess':function(file,data,response){
+                //alert(data);
+                // $("#data").html(data);
+                // //$("#form1")[0].reset();
+                // if(data !=1){
+                //     alert(data);
+                // }
+        }
+
+    });
+    
+});
 </script>
 <!-- Bootstrap core JavaScript ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->

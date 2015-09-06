@@ -48,15 +48,19 @@
 	    <div class="tn3 description">Images with fixed dimensions</div>
 	    <div class="tn3 thumb">images/35x35/1.jpg</div> -->
 	    <ol>
-        <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li>
-		        <h4><?php echo ($vo["title"]); ?></h4>
-		        <div class="tn3 description"><?php echo ($vo["remark"]); ?></div>
-		        <a href="<?php echo ($vo["link"]); ?>">
-			    <img src="<?php echo ($vo["link"]); ?>"/>
-		        </a>
-		    </li><?php endforeach; endif; else: echo "" ;endif; ?>
-		
-		
+		    <?php if(empty($list)): ?><li>
+		    		<a href="__IMG__/pictures/default.jpg">
+						<img src="__IMG__/pictures/default.jpg"/>
+					</a>
+		    	</li>
+		    <?php else: ?> 
+			    <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li>
+				        <h4><?php echo ($vo["title"]); ?></h4>
+				        <div class="tn3 description"><?php echo ($vo["remark"]); ?></div>
+					        <a href="<?php echo ($vo["link"]); ?>">
+						    	<img src="<?php echo ($vo["link"]); ?>"/>
+					        </a>
+				    </li><?php endforeach; endif; else: echo "" ;endif; endif; ?>
 	    </ol>
 	</div>
 	

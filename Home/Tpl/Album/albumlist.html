@@ -75,19 +75,19 @@
 <div id="myTabContent" class="tab-content">
   <div class="tab-pane active fade in" id="albums">
   	    <volist name="albumTypeList" id="vo">
-        <div class="albums col-xs-6 col-md-3">
-        	<div class="albumtype">
-        	
-			<a href="__URL__/showAlbum/type/<{$vo.id}>" class="thumbnail">
-				<img alt="100%x180" src="<{$vo.coverImg}>" style="height: 180px; width: 100%; display: block;" >
-			</a>
-			<div class="caption">
-				<div>&nbsp;&nbsp;<{$vo.name}>&nbsp;&nbsp; <span class="badge"><{$vo.imgnum}></span></div>
-				<p>&nbsp;&nbsp;<{$vo.summary}></p>
-			</div>  
-		    </div>
-		    
-		</div>
+	        <div class="albums col-xs-6 col-md-3">
+	        	<div class="albumtype">
+	        	
+					<a href="__URL__/showAlbum/type/<{$vo.id}>" class="thumbnail">
+						<img alt="封面图" src="<{$vo.coverImg}>" style="height:180px; width:240px; display: block;" >
+					</a>
+					<div class="caption">
+						<div>&nbsp;&nbsp;<{$vo.name}>&nbsp;&nbsp; <span class="badge"><{$vo.imgnum}></span></div>
+						<p>&nbsp;&nbsp;<{$vo.summary}></p>
+					</div>  
+			    </div>
+			    
+			</div>
 		</volist>
 		
 		

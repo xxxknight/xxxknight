@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="zh-CN">
+<head>
+<include file="Public:head" title="模块管理"/>
+
+<script type="text/javascript">
+$(function(){
+    $("#albumModule>ul>li:nth-child(4)").addClass("active");
+    $("#albumModule").addClass("in");
+    $("#li-album>a>span").removeClass("glyphicon-chevron-left").addClass("glyphicon-chevron-down");
+});
+</script>
+</head>
+<!-- NAVBAR
+================================================== -->
+<body>
+<include file="Public:nav"/>
+    <div class="container-fluid">
+        <div class="row">
+        
+            <div class="col-sm-3 col-md-2 sidebar">
+              <include file="Public:left"/>
+            </div>
+            <div id="mainpart" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+                <ol class="breadcrumb">
+                  <span>您的位置：</span>
+                  <li><a>相册模块</a></li>
+                  <li class="active">模块管理</li> 
+                </ol> 
+                        
+                <h3 class="page-header"><i class="glyphicon glyphicon-th"></i> 
+                    模块管理
+                </h3>
+                
+            </div>
+                
+
+        </div>
+    </div>
+
+<include file= "Public:tail" />
+</body>
+
+</html>

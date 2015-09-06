@@ -1,0 +1,18 @@
+[ 2015-09-05T17:49:57+08:00 ] ERR: (ThinkException) Network is unreachable
+[ 2015-09-05T18:57:09+08:00 ] 10.103.13.98 /xxxknight/index.php/Account/checkName?username=lvjianjun
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000243s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000274s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.010375s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Core/Db.class.php 第 568 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'lvjianjun' ) LIMIT 1   [ RunTime:0.002864s ]
+
+[ 2015-09-05T19:23:20+08:00 ] 10.103.14.216 /xxxknight/index.php/Article/submitComment
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000392s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_acomment` [ RunTime:0.008976s ]
+SQL: INSERT INTO `xk_acomment` (`aid`,`content`,`createtime`,`username`,`uid`) VALUES (1,'sdfghdfghfg','15-09-05 07:23:20','lvjianjun',7) [ RunTime:0.054127s ]
+

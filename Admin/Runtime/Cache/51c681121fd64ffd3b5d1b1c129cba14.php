@@ -55,7 +55,8 @@ $(function(){
             <li class="dropdown" style="margin-right:20px">
               <a class="dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" 
               href="<?php echo $_SESSION['admin']['id'] ?>">
-                <?php echo session('adminname');?>
+                <?php echo session('adminname');?> 
+                <span class="caret"></span>
               </a>
                 <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1" style="min-width:100px;">
                   <li role="presentation"><a role="menuitem" tabindex="-1" href="__APP__/System/profile">
@@ -149,14 +150,11 @@ $(function(){
                     标签管理
                     </a>
                 </li>
-
                 <li>
                     <a href="__APP__/Article/arttype"><i class="glyphicon glyphicon-th"></i>
                     分类管理
                     </a>
                 </li>
-
-
             </ul>
         </div>
     </li>
@@ -185,7 +183,7 @@ $(function(){
                     </a>
                 </li>
                 <li>
-                    <a href="#"><i class="glyphicon glyphicon-th"></i>
+                    <a href="__APP__/Album/module"><i class="glyphicon glyphicon-th"></i>
                     模块管理
                     </a>
                 </li>
@@ -219,14 +217,14 @@ $(function(){
     </li>
     
     <li id="li-export">
-        <a href="./plans.html">
+        <a href="__APP__/export">
             <i class="glyphicon glyphicon-credit-card"></i>
             导出模块        
         </a>
     </li>
                 
     <li id="li-analytics">
-        <a href="./charts.html">
+        <a href="__APP__/analytics">
             <i class="glyphicon glyphicon-calendar"></i>
             分析统计
         </a>
@@ -251,6 +249,7 @@ $(function(){
                     关于系统
                 </h3>
                 This is xxxknight's personal homepage.
+            </div>
                 
 
         </div>

@@ -1,0 +1,197 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="zh-CN">
+<head>
+<include file="Public:head" title="导出模块"/>
+<link href="__CSS__/Admin/Export/module.css" rel="stylesheet">
+<script type="text/javascript" src="__ROOT__/Plugins/date97/WdatePicker.js"></script>
+<!-- Include the plugin's CSS and JS: -->
+<script type="text/javascript" src="__ROOT__/Plugins/multiselect/bootstrap-multiselect.js"></script>
+<link rel="stylesheet" href="__ROOT__/Plugins/multiselect/bootstrap-multiselect.css" type="text/css"/>
+<script type="text/javascript">
+$(function(){
+    $("#li-export").addClass("active");  
+});
+
+$(function(){
+    $('#tables').multiselect({
+         maxHeight: 300,
+         buttonWidth: '230px',
+         dropRight: true,
+
+        buttonText: function(options, select) {
+            if (options.length === 0) {
+                return '请选择导出表...';
+            }
+            else if (options.length > 0) {
+                return "已有 "+options.length+' 张表被选!';
+            }
+        }
+        });
+})
+
+</script>
+
+<script type="text/javascript" src="__JS__/Admin/Export/export.js"></script>
+</head>
+<!-- NAVBAR
+================================================== -->
+<body>
+<include file="Public:nav"/>
+    <div class="container-fluid">
+        <div class="row">
+        
+            <div class="col-sm-3 col-md-2 sidebar">
+              <include file="Public:left"/>
+            </div>
+            <div id="mainpart" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+                <ol class="breadcrumb">
+                  <span>您的位置：</span>
+                  <li><a>导出模块</a></li>
+                  <li class="active">数据导出</li>
+                </ol> 
+                        
+                <h3 class="page-header"><i class="glyphicon glyphicon-credit-card"></i> 
+                    数据导出
+                </h3>
+
+                <div id="search-part">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#user" data-toggle="tab">用户数据</a></li>
+                        <li><a href="#article" data-toggle="tab">文章数据</a></li>
+                        <li><a href="#database" data-toggle="tab">数据库导出</a></li>
+                        <li><a href="#log" data-toggle="tab">日志导出</a></li>
+                    </ul>
+                    <div id="tab1" class="tab-content">
+                        <div class="tab-pane fade active in" id="user">
+                            <form class="form-horizontal" id="user-form">
+                                <div class="form-group">
+                                    <label for="user-starttime" class="col-lg-2 control-label">注册起始时间</label>
+                                    <div class="col-lg-3">
+                                        <input type="text" class="Wdate" id="user-starttime" placeholder="起始时间" onfocus="WdatePicker({maxDate:'#F{$dp.$D(\'user-endtime\')}'})"/>
+                                    </div>
+                                    <label for="user-endtime" class="col-lg-2 control-label">注册结束时间</label>
+                                    <div class="col-lg-3">
+                                        <input type="text" class="Wdate" id="user-endtime" placeholder="结束时间" onfocus="WdatePicker({minDate:'#F{$dp.$D(\'user-starttime\')}',})" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-lg-2 control-label">导出格式</label>
+                                    <div class="col-lg-3">
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="user-formmat" id="user-excel" value="0" checked="" />
+                                                        excel格式
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="user-formmat" id="user-txt" value="1" />
+                                                        txt格式
+                                            </label>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-lg-10 col-lg-offset-2">
+                                        <button type="reset" class="btn btn-default">Cancel</button>
+                                        <button type="submit" class="btn btn-primary" id="user-sub">Submit</button>
+                                    </div>
+                                </div>
+                  
+                            </form>
+
+                            
+                        </div>
+                        <div class="tab-pane fade" id="article">
+                            <form class="form-horizontal" id="database-form">
+                                <div class="form-group">
+                                    <label for="select" class="col-lg-2 control-label">选择导出表</label>
+                                    <div class="col-lg-5">
+                                        <select multiple="" size="10" class="form-control">
+                                            <volist name="tables" id="vo">
+                                                <option value="1">1</option>
+                                            </volist>
+                                        </select>
+                                       
+                                    </div>
+
+                                </div>
+
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="database">
+                            <form class="form-horizontal" id="database-form">
+                                <div class="form-group">
+                                    <label for="select" class="col-lg-2 control-label">选择导出表</label>
+                                    <div class="col-lg-3">
+                                        <select multiple="multiple" id="tables" size="10" class="form-control">
+                                            <volist name="tables" id="vo">
+                                                <option value="<{$vo.t}>"><{$vo.t}></option>
+                                            </volist>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <!-- <button type="reset" class="btn btn-default">重置</button> -->
+                                        <button type="button" class="btn btn-primary" id="db-sub">导出</button>
+                                    </div>
+
+
+                                </div>
+                                <div class="col-lg-10 col-lg-offset-2">
+                                       <label>注：导出格式为sql文件</label> 
+                                </div>
+
+
+
+                            </form>
+                            
+                        </div>
+                        <div class="tab-pane fade" id="log">
+                            <form class="form-horizontal" id="database-form">
+                                <div class="form-group">
+                                    <label for="select" class="col-lg-2 control-label">选择导出表</label>
+                                    <div class="col-lg-5">
+                                        <select multiple="" class="form-control">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-lg-10 col-lg-offset-2">
+                                        <button type="reset" class="btn btn-default">重置</button>
+                                        <button type="submit" class="btn btn-primary" id="db-sub">导出</button>
+                                        <button type="submit" class="btn btn-info" id="db-suball">导出全部</button>
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
+
+                        <div id="common-part">
+                            <form class="form-horizontal"Y>
+                                
+                            </form>
+                            
+
+                        </div>
+
+
+                    </div>
+
+                
+
+        </div>
+    </div>
+
+<include file= "Public:tail" />
+</body>
+
+<script>
+
+</script>
+</html>

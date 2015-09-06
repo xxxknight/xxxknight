@@ -154,14 +154,11 @@ $(function(){
                     标签管理
                     </a>
                 </li>
-
                 <li>
                     <a href="__APP__/Article/arttype"><i class="glyphicon glyphicon-th"></i>
                     分类管理
                     </a>
                 </li>
-
-
             </ul>
         </div>
     </li>
@@ -190,7 +187,7 @@ $(function(){
                     </a>
                 </li>
                 <li>
-                    <a href="#"><i class="glyphicon glyphicon-th"></i>
+                    <a href="__APP__/Album/module"><i class="glyphicon glyphicon-th"></i>
                     模块管理
                     </a>
                 </li>
@@ -224,14 +221,14 @@ $(function(){
     </li>
     
     <li id="li-export">
-        <a href="./plans.html">
+        <a href="__APP__/export">
             <i class="glyphicon glyphicon-credit-card"></i>
             导出模块        
         </a>
     </li>
                 
     <li id="li-analytics">
-        <a href="./charts.html">
+        <a href="__APP__/analytics">
             <i class="glyphicon glyphicon-calendar"></i>
             分析统计
         </a>

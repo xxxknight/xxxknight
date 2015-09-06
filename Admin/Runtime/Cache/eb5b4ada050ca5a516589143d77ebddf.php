@@ -37,7 +37,6 @@ $(function(){
 });
 </script>
 
-<script type="text/javascript" src="__JS__/Admin/Album/manageAlbum.js"></script>
 </head>
 
 <body>
@@ -59,7 +58,8 @@ $(function(){
             <li class="dropdown" style="margin-right:20px">
               <a class="dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" 
               href="<?php echo $_SESSION['admin']['id'] ?>">
-                <?php echo session('adminname');?>
+                <?php echo session('adminname');?> 
+                <span class="caret"></span>
               </a>
                 <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1" style="min-width:100px;">
                   <li role="presentation"><a role="menuitem" tabindex="-1" href="__APP__/System/profile">
@@ -152,14 +152,11 @@ $(function(){
                     标签管理
                     </a>
                 </li>
-
                 <li>
                     <a href="__APP__/Article/arttype"><i class="glyphicon glyphicon-th"></i>
                     分类管理
                     </a>
                 </li>
-
-
             </ul>
         </div>
     </li>
@@ -188,7 +185,7 @@ $(function(){
                     </a>
                 </li>
                 <li>
-                    <a href="#"><i class="glyphicon glyphicon-th"></i>
+                    <a href="__APP__/Album/module"><i class="glyphicon glyphicon-th"></i>
                     模块管理
                     </a>
                 </li>
@@ -222,14 +219,14 @@ $(function(){
     </li>
     
     <li id="li-export">
-        <a href="./plans.html">
+        <a href="__APP__/export">
             <i class="glyphicon glyphicon-credit-card"></i>
             导出模块        
         </a>
     </li>
                 
     <li id="li-analytics">
-        <a href="./charts.html">
+        <a href="__APP__/analytics">
             <i class="glyphicon glyphicon-calendar"></i>
             分析统计
         </a>
@@ -262,7 +259,7 @@ $(function(){
                 <?php if(is_array($albumTypeList)): $i = 0; $__LIST__ = $albumTypeList;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="col-xs-6 col-md-3">
                         <div>
                         <a href="__URL__/editAlbum/type/<?php echo ($vo["id"]); ?>" class="thumbnail">
-                            <img alt="相册" src="<?php echo ($vo["coverImg"]); ?>" style="height: 180px; width: 100%; display: block;" >
+                            <img alt="相册" src="<?php echo ($vo["coverImg"]); ?>" style="height: 150px; width: 200px; display: block;" >
                         </a>
                         <div class="caption">
                             <div>&nbsp;&nbsp;<?php echo ($vo["name"]); ?>&nbsp;&nbsp; <span class="badge"><?php echo ($vo["imgnum"]); ?>

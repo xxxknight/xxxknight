@@ -17,9 +17,7 @@
 				onsubmit="return checkForm1(this)">
 
 				<fieldset id="login">
-					<legend>
-						ADMIN LOGIN
-					</legend>
+					<div class="title">ADMIN LOGIN</div>
 
 					<table width="100%" cellspacing="10">
 						<tr class="login_table_left">

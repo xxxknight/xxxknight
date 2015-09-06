@@ -151,18 +151,18 @@
 <div id="myTabContent" class="tab-content">
   <div class="tab-pane active fade in" id="albums">
   	    <?php if(is_array($albumTypeList)): $i = 0; $__LIST__ = $albumTypeList;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="albums col-xs-6 col-md-3">
-        	<div class="albumtype">
-        	
-			<a href="__URL__/showAlbum/type/<?php echo ($vo["id"]); ?>" class="thumbnail">
-				<img alt="100%x180" src="<?php echo ($vo["coverImg"]); ?>" style="height: 180px; width: 100%; display: block;" >
-			</a>
-			<div class="caption">
-				<div>&nbsp;&nbsp;<?php echo ($vo["name"]); ?>&nbsp;&nbsp; <span class="badge"><?php echo ($vo["imgnum"]); ?></span></div>
-				<p>&nbsp;&nbsp;<?php echo ($vo["summary"]); ?></p>
-			</div>  
-		    </div>
-		    
-		</div><?php endforeach; endif; else: echo "" ;endif; ?>
+	        	<div class="albumtype">
+	        	
+					<a href="__URL__/showAlbum/type/<?php echo ($vo["id"]); ?>" class="thumbnail">
+						<img alt="封面图" src="<?php echo ($vo["coverImg"]); ?>" style="height:180px; width:240px; display: block;" >
+					</a>
+					<div class="caption">
+						<div>&nbsp;&nbsp;<?php echo ($vo["name"]); ?>&nbsp;&nbsp; <span class="badge"><?php echo ($vo["imgnum"]); ?></span></div>
+						<p>&nbsp;&nbsp;<?php echo ($vo["summary"]); ?></p>
+					</div>  
+			    </div>
+			    
+			</div><?php endforeach; endif; else: echo "" ;endif; ?>
 		
 		
   </div>

@@ -62,7 +62,8 @@ admin<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
             <li class="dropdown" style="margin-right:20px">
               <a class="dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" 
               href="<?php echo $_SESSION['admin']['id'] ?>">
-                <?php echo session('adminname');?>
+                <?php echo session('adminname');?> 
+                <span class="caret"></span>
               </a>
                 <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1" style="min-width:100px;">
                   <li role="presentation"><a role="menuitem" tabindex="-1" href="__APP__/System/profile">
@@ -155,14 +156,11 @@ admin<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
                     标签管理
                     </a>
                 </li>
-
                 <li>
                     <a href="__APP__/Article/arttype"><i class="glyphicon glyphicon-th"></i>
                     分类管理
                     </a>
                 </li>
-
-
             </ul>
         </div>
     </li>
@@ -191,7 +189,7 @@ admin<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
                     </a>
                 </li>
                 <li>
-                    <a href="#"><i class="glyphicon glyphicon-th"></i>
+                    <a href="__APP__/Album/module"><i class="glyphicon glyphicon-th"></i>
                     模块管理
                     </a>
                 </li>
@@ -225,14 +223,14 @@ admin<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     </li>
     
     <li id="li-export">
-        <a href="./plans.html">
+        <a href="__APP__/export">
             <i class="glyphicon glyphicon-credit-card"></i>
             导出模块        
         </a>
     </li>
                 
     <li id="li-analytics">
-        <a href="./charts.html">
+        <a href="__APP__/analytics">
             <i class="glyphicon glyphicon-calendar"></i>
             分析统计
         </a>

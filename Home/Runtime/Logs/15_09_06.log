@@ -1,0 +1,30 @@
+[ 2015-09-06T11:55:33+08:00 ] 10.103.14.216 /xxxknight/index.php/Contact/submitContact
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000543s ]
+NOTIC: [2048] Declaration of ContactAction::show() should be compatible with Action::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/xxxknight/Home/Lib/Action/ContactAction.class.php 第 30 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_contact` [ RunTime:0.005958s ]
+NOTIC: [8] Undefined variable: data /Applications/XAMPP/xamppfiles/htdocs/xxxknight/Home/Lib/Action/ContactAction.class.php 第 21 行.
+SQL: INSERT INTO `xk_contact` (`email`,`title`,`summary`,`createtime`,`flag`,`author`,`authorid`,`problem`) VALUES ('875345679@qq.com','123458','嫁汉嫁汉','15-09-06 11:55:32',0,'lvjianjun',7,'关于网站建议') [ RunTime:0.160407s ]
+
+[ 2015-09-06T11:56:09+08:00 ] 10.103.14.216 /xxxknight/index.php/Contact/submitContact
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000434s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000490s ]
+NOTIC: [2048] Declaration of ContactAction::show() should be compatible with Action::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/xxxknight/Home/Lib/Action/ContactAction.class.php 第 30 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_contact` [ RunTime:0.006359s ]
+NOTIC: [8] Undefined variable: data /Applications/XAMPP/xamppfiles/htdocs/xxxknight/Home/Lib/Action/ContactAction.class.php 第 21 行.
+SQL: INSERT INTO `xk_contact` (`email`,`title`,`summary`,`createtime`,`flag`,`author`,`authorid`,`problem`) VALUES ('875345679@qq.com','fghsdfghfg','sdfvgb','15-09-06 11:56:09',0,'lvjianjun',7,'关于网站建议') [ RunTime:0.102943s ]
+
+[ 2015-09-06T11:58:44+08:00 ] 0.0.0.0 /xxxknight/index.php/Contact/submitContact
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000508s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000597s ]
+NOTIC: [2048] Declaration of ContactAction::show() should be compatible with Action::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/xxxknight/Home/Lib/Action/ContactAction.class.php 第 30 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_contact` [ RunTime:0.006152s ]
+NOTIC: [8] Undefined variable: data /Applications/XAMPP/xamppfiles/htdocs/xxxknight/Home/Lib/Action/ContactAction.class.php 第 21 行.
+SQL: INSERT INTO `xk_contact` (`email`,`title`,`summary`,`createtime`,`flag`,`author`,`authorid`,`problem`) VALUES ('xxxknight@163.com','12345','','15-09-06 11:58:44',0,'xxxknight',2,'关于网站建议') [ RunTime:0.094237s ]
+

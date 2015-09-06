@@ -28,7 +28,22 @@ $(function(){
 	
 })
 
-function deletePicture(id){
+function deletePicture(id,typeid){
+	if(confirm("确定删除该图片？")){
+		$.post("/xxxknight/admin.php/Album/deletePicture",
+				{
+					'id' : id,
+					'typeid' : typeid,
+
+			    },
+				function(data){
+					alert(data);
+					window.location.href='/xxxknight/admin.php/Album/editAlbum/type/'+typeid;
+
+				}
+		);
+
+	}
 	
 }
 

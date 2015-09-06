@@ -34,7 +34,7 @@ class AlbumAction extends Action {
 
     public function albumlist(){
         $album = M("Album");
-        $list = $album->limit(10)->select();
+        $list = $album->order('id desc')->limit(10)->select();
         
         $this->assign("list",$list);
 

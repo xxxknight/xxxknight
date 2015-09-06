@@ -61,7 +61,8 @@ $(function(){
             <li class="dropdown" style="margin-right:20px">
               <a class="dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" 
               href="<?php echo $_SESSION['admin']['id'] ?>">
-                <?php echo session('adminname');?>
+                <?php echo session('adminname');?> 
+                <span class="caret"></span>
               </a>
                 <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1" style="min-width:100px;">
                   <li role="presentation"><a role="menuitem" tabindex="-1" href="__APP__/System/profile">
@@ -191,7 +192,7 @@ $(function(){
                     </a>
                 </li>
                 <li>
-                    <a href="#"><i class="glyphicon glyphicon-th"></i>
+                    <a href="__APP__/Album/module"><i class="glyphicon glyphicon-th"></i>
                     模块管理
                     </a>
                 </li>
@@ -300,22 +301,22 @@ $(function(){
                                             <div class="form-group">
                                                 <label for="title" class="col-lg-2 control-label">标题</label>
                                                 <div class="col-lg-7">
-                                                    <input type="text" value="<?php echo ($vo["title"]); ?>" class="form-control" id="title" placeholder="title" required maxlength="20">
+                                                    <input type="text" value="<?php echo ($vo["title"]); ?>" name="title" class="form-control" placeholder="title" required maxlength="20">
                                                 </div>
                                             </div>
 
                                             <div class="form-group">
                                                 <label for="alt"  class="col-lg-2 control-label">替代文字</label>
                                                 <div class="col-lg-7">
-                                                    <input type="text" value="<?php echo ($vo["alt"]); ?>" class="form-control" id="alt" placeholder="alt" maxlength="20">
+                                                    <input type="text" value="<?php echo ($vo["alt"]); ?>" class="form-control" placeholder="alt" name="alt" maxlength="20">
                                                 </div>
                                             </div>    
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-danger pull-left" onclick="javascript:deletePicture(<?php echo ($vo["id"]); ?>)">删除
+                                        <button type="button" class="btn btn-danger pull-left" onclick="javascript:deletePicture(<?php echo ($vo["id"]); ?>,<?php echo ($vo["typeid"]); ?>)">删除
                                         </button>
                                         <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
-                                        <button type="submit" class="btn btn-primary">更新</button>
+                                        <button type="submit" class="btn btn-primary" onclick="return checkUpdatePicture()">更新</button>
                                     </div>
                                     </form>
                                 </div>
