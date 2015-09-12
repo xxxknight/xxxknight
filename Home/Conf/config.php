@@ -24,5 +24,18 @@ return array(
 				'__IMG__'=>__ROOT__.'/Resources/images',
 				'__MED__'=>__ROOT__.'/Resources/media',
 		),
+
+		
+
+
+		//将一下(TYPE)换成你对应的SDK类型
+		'THINK_SDK_(sina)' => array(
+    	'APP_KEY'    => '133536376', //应用注册成功后分配的 APP ID
+    	'APP_SECRET' => '1f1b530f20b2d63220fd3573ae7cc23b', //应用注册成功后分配的KEY
+    	'CALLBACK'   => 'http://127.0.0.1/xxxknight/index.php', //注册应用填写的callback
+	)
 );
+
+
+
 ?>

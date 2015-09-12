@@ -8,7 +8,7 @@ admin<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="author" content="xxxknight">
 <link rel="icon" href="__IMG__/icons/favicon.ico">
 
-<title>类别管理</title>
+<title>文章统计</title>
 
 
 <!-- Bootstrap core CSS -->
@@ -27,24 +27,20 @@ admin<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <!-- Custom styles for this template -->
 <link href="__CSS__/Admin/common.css" rel="stylesheet">
-<link href="__CSS__/Admin/Article/module.css" rel="stylesheet">
 
 <script type="text/javascript">
-	$(function(){
-    $("#articleModule>ul>li:nth-child(6)").addClass("active");
-    $("#articleModule").addClass("in");
-    $("#li-article>a>span").removeClass("glyphicon-chevron-left").addClass("glyphicon-chevron-down");
+$(function(){
+    $("#analyticsModule>ul>li:nth-child(3)").addClass("active");
+    $("#analyticsModule").addClass("in");
+    $("#li-analytics>a>span").removeClass("glyphicon-chevron-left").addClass("glyphicon-chevron-down");
      
-	});
-
+});
 </script>
-<script type="text/javascript" src="__JS__/Admin/Article/arttype.js"></script>
-<script type="text/javascript" src="__JS__/Admin/Article/page-arttype.js"></script>
 </head>
 <!-- NAVBAR
 ================================================== -->
 <body>
-     <nav class="navbar navbar-inverse navbar-fixed-top">
+ <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -82,9 +78,10 @@ admin<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 
     <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-3 col-md-2 sidebar">
-          <ul id="main-nav" class="nav nav-sidebar">
+        <div class="row">
+        
+            <div class="col-sm-3 col-md-2 sidebar">
+              <ul id="main-nav" class="nav nav-sidebar">
     <li id="li-index">
         <a href="__APP__">
             <i class="glyphicon glyphicon-home"></i> 
@@ -221,6 +218,33 @@ admin<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
             </ul>
         </div>
     </li>
+
+    <li id="li-analytics">
+        <a href="#analyticsModule" class="nav-header collapsed" data-toggle="collapse">
+            <i class="glyphicon glyphicon-calendar"></i>
+            分析统计
+            <span class="pull-right glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <div id="analyticsModule" class="collapse">
+            <ul class="nav nav-sidebar secondmenu">
+                <li>
+                    <a href="__APP__/Analytics/analyseUser"><i class="glyphicon glyphicon-user"></i>
+                    用户分析
+                    </a>
+                </li>
+                <li>
+                    <a href="__APP__/Analytics/analyseFlow"><i class="glyphicon glyphicon-fire"></i>
+                    流量分析
+                    </a>
+                </li>
+                <li>
+                    <a href="__APP__/Analytics/analyseArticle"><i class="glyphicon glyphicon-book"></i>
+                    文章统计
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </li>
     
     <li id="li-export">
         <a href="__APP__/export">
@@ -229,12 +253,7 @@ admin<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         </a>
     </li>
                 
-    <li id="li-analytics">
-        <a href="__APP__/analytics">
-            <i class="glyphicon glyphicon-calendar"></i>
-            分析统计
-        </a>
-    </li>
+   
     
     <li id="li-about">
         <a href="__APP__/About/about">
@@ -248,114 +267,165 @@ admin<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
    
 
-        </div>
-        <div id="mainpart" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-            <ol class="breadcrumb">
-              <span>您的位置：</span>
-              <li><a>文章模块</a></li>
-              <li class="active">分类管理</li>
-            </ol>
-            
-            <h3 class="page-header"><i class="glyphicon glyphicon-th"></i> 
-            分类管理
-            </h3>
-            <button class="btn btn-primary" id="btn-type">增加类别</button>
-                <div class="table-responsive">
-                  <table class="table table-striped" id="typelist">
-                    <thead>
-                      <tr>
-                        <th width="20%">类别名称</th>
-                        <th width="30%">显示名称</th>
-                        <th width="15%">文章数目</th>
-                        <th width="15%">排序</th>
-                        <th width="20%">操作</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                    </tbody>
-                  </table>
-                  <div id="pagecount"></div>
+            </div>
+            <div id="mainpart" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+                <ol class="breadcrumb">
+                    <span>您的位置：</span>
+                    <li><a>分析统计</a></li>
+                    <li class="active">文章统计</li>
+                </ol>
+                        
+                <h3 class="page-header"><i class="glyphicon glyphicon-book"></i> 
+                    文章统计
+                </h3>
+                
+                <div class="row">
+                        <div id="ec1" style="height:400px"></div>
                 </div>
-          </div>
-      </div>
- </div>
 
-<div class="modal" id="typeModal">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal"
-              id="btnClose">
-              <span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
-            </button>
-            <h4 class="modal-title" id="t-title">
-              新增类别
-            </h4>
-          </div>
-          <div class="modal-body">
-            <form class="form-horizontal">
-                <fieldset>
-                    <input id="tid" type="hidden" />
-                    <div class="form-group">
-                      <label for="typename" class="col-lg-3 control-label">类别名称</label>
-                      <div class="col-lg-6">
-                        <input type="text" class="form-control" id="typename" maxlength="20"/>
-                        <span class="help-block">注：类别名称为1到20个字符.</span>
-                      </div>
-                      <div class="col-lg-3" id="tip">
-                      </div>
-                    
-                    </div>
+                <br/>
+                <hr/>
+                <br/>
 
-                    <div class="form-group">
-                      <label for="showname" class="col-lg-3 control-label">显示名称</label>
-                      <div class="col-lg-6">
-                        <input type="text" class="form-control" id="showname" maxlength="20"/>
-                        <span class="help-block">注：显示名称为1到20个字符.</span>
-                      </div>
-                      <div class="col-lg-3" id="tip">
-                      </div>
-                    
-                    </div>
+                <div class="row">
+                        <div id="ec2" style="height:400px"></div>
+                </div>
 
-                    <div class="form-group">
-                      <label for="rank" class="col-lg-3 control-label">显示顺序</label>
-                      <div class="col-lg-6">
-                        <input type="text" class="form-control" id="rank" maxlength="5"/>
-                        <span class="help-block">注：显示顺序可填1到99999的任意数，按从大到小的顺序显示.</span>
-                      </div>
-                      <div class="col-lg-3" id="tip">
-                      </div>
-                    
-                    </div>
+            </div>
+                
 
-
-                    
-
-                </fieldset>
-              </form>
-           
-          </div>
-          <div class="modal-footer">
-            <button class="btn btn-primary" id="btnSave">
-              保存
-            </button>
-            <button class="btn btn-primary" id="btnUpdate">
-              更新
-            </button>
-            <button class="btn btn-danger" data-dismiss="modal" id="btnCancel"
-              aria-hidden="true">
-              返回
-            </button>
-          </div>
         </div>
-        <!-- /.modal-content -->
-      </div>
-      <!-- /.modal-dialog -->
     </div>
-    <!-- /.modal --> 
+<!-- ECharts单文件引入 -->
+<script src="__ROOT__/Plugins/echarts/echarts.js"></script>
+<script type="text/javascript">
+// 路径配置
+require.config({
+    paths: {
+        echarts: '__ROOT__/Plugins/echarts'
+    }
+});
+                            
+// 使用
+require(
+[
+    'echarts',
+    'echarts/chart/bar', // 使用柱状图就加载bar模块，按需加载
+    'echarts/chart/line',
+],
+function (ec) {
+    // 基于准备好的dom，初始化echarts图表
+    var myChart1 = ec.init(document.getElementById('ec1')); 
+    var myChart2= ec.init(document.getElementById('ec2')); 
 
-	<!-- Bootstrap core JavaScript ================================================== -->
+    var option1 = {
+                    tooltip: {
+                        show: true
+                    },
+                    legend: {
+                        data:['销量']
+                    },
+                    xAxis : [
+                        {
+                            type : 'category',
+                            data : ["衬衫","羊毛衫","雪纺衫","裤子","高跟鞋","袜子"]
+                        }
+                    ],
+                    yAxis : [
+                        {
+                            type : 'value'
+                        }
+                    ],
+                    series : [
+                        {
+                            "name":"销量",
+                            "type":"bar",
+                            "data":[5, 20, 40, 10, 10, 20]
+                        }
+                    ]
+                };
+
+    var option2 = {
+    title : {
+        text: '未来一周气温变化',
+        subtext: '纯属虚构'
+    },
+    tooltip : {
+        trigger: 'axis'
+    },
+    legend: {
+        data:['最高气温','最低气温']
+    },
+    toolbox: {
+        show : true,
+        feature : {
+            mark : {show: true},
+            dataView : {show: true, readOnly: false},
+            magicType : {show: true, type: ['line', 'bar']},
+            restore : {show: true},
+            saveAsImage : {show: true}
+        }
+    },
+    calculable : true,
+    xAxis : [
+        {
+            type : 'category',
+            boundaryGap : false,
+            data : ['周一','周二','周三','周四','周五','周六','周日']
+        }
+    ],
+    yAxis : [
+        {
+            type : 'value',
+            axisLabel : {
+                formatter: '{value} °C'
+            }
+        }
+    ],
+    series : [
+        {
+            name:'最高气温',
+            type:'line',
+            data:[11, 11, 15, 13, 12, 13, 10],
+            markPoint : {
+                data : [
+                    {type : 'max', name: '最大值'},
+                    {type : 'min', name: '最小值'}
+                ]
+            },
+            markLine : {
+                data : [
+                    {type : 'average', name: '平均值'}
+                ]
+            }
+        },
+        {
+            name:'最低气温',
+            type:'line',
+            data:[1, -2, 2, 5, 3, 2, 0],
+            markPoint : {
+                data : [
+                    {name : '周最低', value : -2, xAxis: 1, yAxis: -1.5}
+                ]
+            },
+            markLine : {
+                data : [
+                    {type : 'average', name : '平均值'}
+                ]
+            }
+        }
+    ]
+};
+                    
+
+                            
+    // 为echarts对象加载数据 
+    myChart1.setOption(option1); 
+    myChart2.setOption(option2); 
+    }
+);
+</script>
+<!-- Bootstrap core JavaScript ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
 	
 	<script src="__ROOT__/Plugins/bootstrap/js/bootstrap.min.js"></script>
@@ -368,6 +438,5 @@ admin<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 
 </body>
-
 
 </html>

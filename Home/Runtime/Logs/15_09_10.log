@@ -1,0 +1,2 @@
+[ 2015-09-10T17:47:04+08:00 ] ERR: (ThinkException) 缓存文件写入失败！:./Home/Runtime/Cache/9eb5d18a4247113adb785640b1170487.php
+[ 2015-09-10T17:47:12+08:00 ] ERR: (ThinkException) 缓存文件写入失败！:./Home/Runtime/Cache/9eb5d18a4247113adb785640b1170487.php

@@ -38,5 +38,13 @@ $(function(){
       }
     });
 
+    $("#li-analytics>a").click(function(){
+      if($("#analyticsModule").hasClass("in")){
+        $("#li-analytics>a>span").removeClass("glyphicon-chevron-down").addClass("glyphicon-chevron-left");
+      }else{
+        $("#li-analytics>a>span").removeClass("glyphicon-chevron-left").addClass("glyphicon-chevron-down");
+      }
+    });
+
 
 });

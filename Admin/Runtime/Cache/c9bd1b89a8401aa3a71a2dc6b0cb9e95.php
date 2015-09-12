@@ -152,14 +152,11 @@ $(function(){
                     标签管理
                     </a>
                 </li>
-
                 <li>
                     <a href="__APP__/Article/arttype"><i class="glyphicon glyphicon-th"></i>
                     分类管理
                     </a>
                 </li>
-
-
             </ul>
         </div>
     </li>
@@ -220,20 +217,42 @@ $(function(){
             </ul>
         </div>
     </li>
+
+    <li id="li-analytics">
+        <a href="#analyticsModule" class="nav-header collapsed" data-toggle="collapse">
+            <i class="glyphicon glyphicon-calendar"></i>
+            分析统计
+            <span class="pull-right glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <div id="analyticsModule" class="collapse">
+            <ul class="nav nav-sidebar secondmenu">
+                <li>
+                    <a href="__APP__/Analytics/analyseUser"><i class="glyphicon glyphicon-user"></i>
+                    用户分析
+                    </a>
+                </li>
+                <li>
+                    <a href="__APP__/Analytics/analyseFlow"><i class="glyphicon glyphicon-fire"></i>
+                    流量分析
+                    </a>
+                </li>
+                <li>
+                    <a href="__APP__/Analytics/analyseArticle"><i class="glyphicon glyphicon-book"></i>
+                    文章统计
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </li>
     
     <li id="li-export">
-        <a href="./plans.html">
+        <a href="__APP__/export">
             <i class="glyphicon glyphicon-credit-card"></i>
             导出模块        
         </a>
     </li>
                 
-    <li id="li-analytics">
-        <a href="./charts.html">
-            <i class="glyphicon glyphicon-calendar"></i>
-            分析统计
-        </a>
-    </li>
+   
     
     <li id="li-about">
         <a href="__APP__/About/about">

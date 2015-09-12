@@ -29,11 +29,30 @@ admin<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="__CSS__/Admin/common.css" rel="stylesheet">
 <link href="__CSS__/Admin/Export/module.css" rel="stylesheet">
 <script type="text/javascript" src="__ROOT__/Plugins/date97/WdatePicker.js"></script>
-
+<!-- Include the plugin's CSS and JS: -->
+<script type="text/javascript" src="__ROOT__/Plugins/multiselect/bootstrap-multiselect.js"></script>
+<link rel="stylesheet" href="__ROOT__/Plugins/multiselect/bootstrap-multiselect.css" type="text/css"/>
 <script type="text/javascript">
 $(function(){
     $("#li-export").addClass("active");  
 });
+
+$(function(){
+    $('#tables').multiselect({
+         maxHeight: 300,
+         buttonWidth: '230px',
+         dropRight: true,
+
+        buttonText: function(options, select) {
+            if (options.length === 0) {
+                return '请选择导出表...';
+            }
+            else if (options.length > 0) {
+                return "已有 "+options.length+' 张表被选!';
+            }
+        }
+        });
+})
 
 </script>
 
@@ -220,6 +239,33 @@ $(function(){
             </ul>
         </div>
     </li>
+
+    <li id="li-analytics">
+        <a href="#analyticsModule" class="nav-header collapsed" data-toggle="collapse">
+            <i class="glyphicon glyphicon-calendar"></i>
+            分析统计
+            <span class="pull-right glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <div id="analyticsModule" class="collapse">
+            <ul class="nav nav-sidebar secondmenu">
+                <li>
+                    <a href="__APP__/Analytics/analyseUser"><i class="glyphicon glyphicon-user"></i>
+                    用户分析
+                    </a>
+                </li>
+                <li>
+                    <a href="__APP__/Analytics/analyseFlow"><i class="glyphicon glyphicon-fire"></i>
+                    流量分析
+                    </a>
+                </li>
+                <li>
+                    <a href="__APP__/Analytics/analyseArticle"><i class="glyphicon glyphicon-book"></i>
+                    文章统计
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </li>
     
     <li id="li-export">
         <a href="__APP__/export">
@@ -228,12 +274,7 @@ $(function(){
         </a>
     </li>
                 
-    <li id="li-analytics">
-        <a href="__APP__/analytics">
-            <i class="glyphicon glyphicon-calendar"></i>
-            分析统计
-        </a>
-    </li>
+   
     
     <li id="li-about">
         <a href="__APP__/About/about">
@@ -309,13 +350,68 @@ $(function(){
                             
                         </div>
                         <div class="tab-pane fade" id="article">
-                            <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit.</p>
+                            <form class="form-horizontal" id="database-form">
+                                <div class="form-group">
+                                    <label for="select" class="col-lg-2 control-label">选择导出表</label>
+                                    <div class="col-lg-5">
+                                        <select multiple="" size="10" class="form-control">
+                                            <?php if(is_array($tables)): $i = 0; $__LIST__ = $tables;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option value="1">1</option><?php endforeach; endif; else: echo "" ;endif; ?>
+                                        </select>
+                                       
+                                    </div>
+
+                                </div>
+
+                            </form>
                         </div>
                         <div class="tab-pane fade" id="database">
-                            <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit.</p>
+                            <form class="form-horizontal" id="database-form">
+                                <div class="form-group">
+                                    <label for="select" class="col-lg-2 control-label">选择导出表</label>
+                                    <div class="col-lg-3">
+                                        <select multiple="multiple" id="tables" size="10" class="form-control">
+                                            <?php if(is_array($tables)): $i = 0; $__LIST__ = $tables;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option value="<?php echo ($vo["t"]); ?>"><?php echo ($vo["t"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <!-- <button type="reset" class="btn btn-default">重置</button> -->
+                                        <button type="button" class="btn btn-primary" id="db-sub">导出</button>
+                                    </div>
+
+
+                                </div>
+                                <div class="col-lg-10 col-lg-offset-2">
+                                       <label>注：导出格式为sql文件</label> 
+                                </div>
+
+
+
+                            </form>
+                            
                         </div>
                         <div class="tab-pane fade" id="log">
-                            <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit.</p>
+                            <form class="form-horizontal" id="database-form">
+                                <div class="form-group">
+                                    <label for="select" class="col-lg-2 control-label">选择导出表</label>
+                                    <div class="col-lg-5">
+                                        <select multiple="" class="form-control">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-lg-10 col-lg-offset-2">
+                                        <button type="reset" class="btn btn-default">重置</button>
+                                        <button type="submit" class="btn btn-primary" id="db-sub">导出</button>
+                                        <button type="submit" class="btn btn-info" id="db-suball">导出全部</button>
+                                    </div>
+                                </div>
+
+                            </form>
                         </div>
 
                         <div id="common-part">
@@ -348,4 +444,7 @@ $(function(){
 
 </body>
 
+<script>
+
+</script>
 </html>

@@ -60,11 +60,11 @@ admin<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             <li class="dropdown" style="margin-right:20px">
-              <a class="dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" 
-              href="<?php echo $_SESSION['admin']['id'] ?>">
-                <?php echo session('adminname');?> 
-                <span class="caret"></span>
-              </a>
+                <a class="dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" 
+                  href="<?php echo $_SESSION['admin']['id'] ?>">
+                    <?php echo session('adminname');?> 
+                    <span class="caret"></span>
+                </a>
                 <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1" style="min-width:100px;">
                   <li role="presentation"><a role="menuitem" tabindex="-1" href="__APP__/System/profile">
                     <i class="glyphicon glyphicon-user"></i>
@@ -75,7 +75,7 @@ admin<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
                     注销</a></li>
                 </ul>
             </li>
-          </ul>
+            </ul>
         </div>
       </div>
 </nav>
