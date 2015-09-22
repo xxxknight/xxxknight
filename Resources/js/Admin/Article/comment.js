@@ -55,7 +55,7 @@ function getData(page){
 
 
         $("#del"+array['id']).click(function(){
-            deleteComment(array['id']);
+            deleteComment(array['id'],array['aid']);
         });
         
       });
@@ -119,10 +119,14 @@ $(function(){
   });
 });
 
-function deleteComment(id){
+function deleteComment(id,aid){
   if(confirm("是否删除该条评论")){
     $.get("/xxxknight/admin.php/Artcomment/deleteComment",
-      {'id':id},
+      {
+        'id' : id ,
+        'aid' : aid,
+
+      },
       function(data,status){
       alert(data);
       refreshArt();

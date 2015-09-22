@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<include file="Public:head" title="搜索"/>
+<link type="text/css" rel="stylesheet" href="__CSS__/Search/search.css"/>
+
+<script type="text/javascript">
+	$(function(){
+      $("#keyword").val('<{$keyword}>');
+      $("#rank0").width("<{$rSearch[0][num]/$sSearch*100}>"+"%");
+      $("#rank1").width("<{$rSearch[1][num]/$sSearch*100}>"+"%");
+      $("#rank2").width("<{$rSearch[2][num]/$sSearch*100}>"+"%");
+      $("#rank3").width("<{$rSearch[3][num]/$sSearch*100}>"+"%");
+      $("#rank4").width("<{$rSearch[4][num]/$sSearch*100}>"+"%");
+	});
+
+</script>
+
+<script src="__JS__/Search/search.js"></script>
+</head>
+
+<!-- NAVBAR
+================================================== -->
+<body>	
+<div class="container">
+	<div class="row main">
+		<div class="col-xs-12 col-sm-6">
+        <form class="form-horizontal" action="__URL__/search">
+            <div class="form-group">
+              <div class="input-group">
+                <input type="text" class="form-control" id="keyword" name="keyword">
+                <span class="input-group-btn">
+                  <button class="btn btn-primary" type="submit">搜索一下</button>
+                </span>
+
+              </div>
+            </div>
+        </form>
+		</div>
+    
+        <div id ="backto"><a href="__APP__">回到首页</a></div>
+	</div>
+    
+</div>
+
+<div id="type">
+      <span class="box"><a>文章</a></span>
+      <span class="box"><a>图片</a></span>
+      <span class="box"><a>视频</a></span>
+</div>
+
+<div class="container">
+<div id="totalnum">为您找到相关结果<{$count}>个</div>
+    <div class="row main">
+
+      <div class="col-xs-12 col-sm-7">
+          <volist name="result" id="vo">
+            <div class="result">
+              <div class="result-title">
+                <a href = "__APP__/Article/detailArt/id/<{$vo.id}>" target="_blank"><{$vo.title}></a>
+              </div>
+              <div class="result-content">
+                <{$vo.summary}>
+              </div>
+            </div>
+          </volist>
+          <div id="show"><{$show}></div>
+      </div>
+      <div class="col-xs-12 col-sm-5">
+      
+
+      <h4>搜索排行</h4>
+        <div class="progress progress-striped active">
+           &nbsp;<{$rSearch[0]['name']}>
+          <div id= "rank0" class="progress-bar">
+            <{$rSearch[0]['num']}>
+          </div>
+        </div>
+
+
+        <div class="progress progress-striped active">
+          &nbsp;<{$rSearch[1]['name']}>
+          <div id="rank1" class="progress-bar progress-bar-info">
+            <{$rSearch[1]['num']}>
+          </div>
+        </div>
+
+        <div class="progress progress-striped active">
+          &nbsp;<{$rSearch[2]['name']}>
+          <div id="rank2" class="progress-bar progress-bar-success">
+            <{$rSearch[2]['num']}>
+          </div>
+        </div>
+
+        <div class="progress progress-striped active">
+          &nbsp;<{$rSearch[3]['name']}>
+          <div id="rank3" class="progress-bar progress-bar-warning">
+            <{$rSearch[3]['num']}>
+          </div>
+        </div>
+
+        <div class="progress progress-striped active">
+          &nbsp;<{$rSearch[4]['name']}>
+          <div id="rank4" class="progress-bar progress-bar-danger">
+              <{$rSearch[4]['num']}>
+          </div>
+        </div>
+        <h4>猜你想搜</h4>
+      </div>
+    </div>
+  
+</div>
+<include file= "Public:tail" />
+</body>
+
+</html>

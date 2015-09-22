@@ -1,0 +1,563 @@
+[ 2015-09-16T00:15:40+08:00 ] ERR: (ThinkException) Network is unreachable
+[ 2015-09-16T00:15:43+08:00 ] ERR: (ThinkException) Network is unreachable
+[ 2015-09-16T00:15:47+08:00 ] ERR: (ThinkException) Network is unreachable
+[ 2015-09-16T19:09:17+08:00 ] ERR: (ThinkException) MySQL server has gone away
+[ 2015-09-16T20:47:51+08:00 ] 0.0.0.0 /xxxknight/index.php/Account/checkName?username=xxxknight
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000452s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.009651s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Core/Db.class.php 第 568 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight' ) LIMIT 1   [ RunTime:0.002846s ]
+
+[ 2015-09-16T20:53:42+08:00 ] ERR: (ThinkException) 无法加载模块:xxxknight
+[ 2015-09-16T21:00:54+08:00 ] 0.0.0.0 /xxxknight/index.php/Account/checkName?username=hahaha
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000457s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000547s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.013072s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Core/Db.class.php 第 568 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'hahaha' ) LIMIT 1   [ RunTime:0.009827s ]
+
+[ 2015-09-16T21:01:02+08:00 ] ERR: (ThinkException) 非法操作:createAccount
+[ 2015-09-16T21:09:19+08:00 ] 0.0.0.0 /xxxknight/index.php/Account/checkName?username=xxxknight
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000389s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.007628s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Core/Db.class.php 第 568 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight' ) LIMIT 1   [ RunTime:0.003481s ]
+
+[ 2015-09-16T21:09:27+08:00 ] 0.0.0.0 /xxxknight/index.php/Account/checkName?username=xxxknight1
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000460s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000515s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.013507s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Core/Db.class.php 第 568 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight1' ) LIMIT 1   [ RunTime:0.002776s ]
+
+[ 2015-09-16T21:11:08+08:00 ] 0.0.0.0 /xxxknight/index.php/Account/checkName?username=hahaha
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000260s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000294s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.008352s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Core/Db.class.php 第 568 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'hahaha' ) LIMIT 1   [ RunTime:0.002492s ]
+
+[ 2015-09-16T21:11:30+08:00 ] 0.0.0.0 /xxxknight/index.php/Account/checkName?username=hahaha
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000272s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000306s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.009721s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Core/Db.class.php 第 568 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'hahaha' ) LIMIT 1   [ RunTime:0.001994s ]
+
+[ 2015-09-16T21:23:01+08:00 ] 0.0.0.0 /xxxknight/index.php/Account/checkName?username=hahaha
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000642s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000717s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.008107s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Core/Db.class.php 第 568 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'hahaha' ) LIMIT 1   [ RunTime:0.002395s ]
+
+[ 2015-09-16T21:24:42+08:00 ] 0.0.0.0 /xxxknight/index.php/Account/checkName?username=xxxknight24
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000268s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000300s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.010643s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Core/Db.class.php 第 568 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight24' ) LIMIT 1   [ RunTime:0.006723s ]
+
+[ 2015-09-16T21:25:57+08:00 ] 0.0.0.0 /xxxknight/index.php/Account/checkName?username=xxxknight24
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000643s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000694s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.015328s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Core/Db.class.php 第 568 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight24' ) LIMIT 1   [ RunTime:0.007291s ]
+
+[ 2015-09-16T21:26:35+08:00 ] 0.0.0.0 /xxxknight/index.php/Account/checkName?username=xxxknight
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000816s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000892s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.014120s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Core/Db.class.php 第 568 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight' ) LIMIT 1   [ RunTime:0.005678s ]
+
+[ 2015-09-16T21:26:40+08:00 ] 0.0.0.0 /xxxknight/index.php/Account/checkName?username=xxxknight24
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000288s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.008025s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Core/Db.class.php 第 568 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight24' ) LIMIT 1   [ RunTime:0.004165s ]
+
+[ 2015-09-16T21:28:59+08:00 ] 0.0.0.0 /xxxknight/index.php/Account/checkName?username=hahahahahha
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000465s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000531s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.010369s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Core/Db.class.php 第 568 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'hahahahahha' ) LIMIT 1   [ RunTime:0.002138s ]
+
+[ 2015-09-16T21:30:42+08:00 ] 0.0.0.0 /xxxknight/index.php/Account/checkName?username=2014110430
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000255s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000287s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.025063s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Core/Db.class.php 第 568 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = '2014110430' ) LIMIT 1   [ RunTime:0.006694s ]
+
+[ 2015-09-16T21:34:26+08:00 ] 0.0.0.0 /xxxknight/index.php/Account/checkName?username=haha1234
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000370s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.047278s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Core/Db.class.php 第 568 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'haha1234' ) LIMIT 1   [ RunTime:0.045957s ]
+
+[ 2015-09-16T21:34:52+08:00 ] 0.0.0.0 /xxxknight/index.php/Account/checkName?username=buptwlj
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000285s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.020723s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Core/Db.class.php 第 568 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'buptwlj' ) LIMIT 1   [ RunTime:0.011222s ]
+
+[ 2015-09-16T21:36:05+08:00 ] 0.0.0.0 /xxxknight/index.php/Account/checkName?username=563456
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000591s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000671s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.008540s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Core/Db.class.php 第 568 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = '563456' ) LIMIT 1   [ RunTime:0.006147s ]
+
+[ 2015-09-16T21:41:04+08:00 ] 0.0.0.0 /xxxknight/index.php/Account/checkName?username=xxxknight242
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000537s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000610s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.112042s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Core/Db.class.php 第 568 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight242' ) LIMIT 1   [ RunTime:0.013752s ]
+
+[ 2015-09-16T21:49:09+08:00 ] 0.0.0.0 /xxxknight/index.php/Account/checkName?username=xxxknight2422
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000574s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000648s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.010364s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Core/Db.class.php 第 568 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight2422' ) LIMIT 1   [ RunTime:0.002441s ]
+
+[ 2015-09-16T21:49:12+08:00 ] 0.0.0.0 /xxxknight/index.php/Account/createAccount
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000578s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000652s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.011791s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Core/Db.class.php 第 568 行.
+SQL: SELECT * FROM `xk_account` WHERE ( `username` = 'xxxknight2422' ) LIMIT 1   [ RunTime:0.002266s ]
+SQL: INSERT INTO `xk_account` (`username`,`email`,`password`,`createtime`,`flag`) VALUES ('xxxknight2422','xxxknight@163.com','e10adc3949ba59abbe56e057f20f883e','15-09-16 09:49:12',1) [ RunTime:0.099287s ]
+
+[ 2015-09-16T21:52:32+08:00 ] 0.0.0.0 /xxxknight/index.php/Account/checkName?username=xxxknight24222
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000694s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.016881s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Core/Db.class.php 第 568 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight24222' ) LIMIT 1   [ RunTime:0.003377s ]
+
+[ 2015-09-16T21:52:36+08:00 ] 0.0.0.0 /xxxknight/index.php/Account/createAccount
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000466s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000541s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.008076s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Core/Db.class.php 第 568 行.
+SQL: SELECT * FROM `xk_account` WHERE ( `username` = 'xxxknight24222' ) LIMIT 1   [ RunTime:0.003270s ]
+SQL: INSERT INTO `xk_account` (`username`,`email`,`password`,`createtime`,`flag`) VALUES ('xxxknight24222','xxxknight@163.com','e10adc3949ba59abbe56e057f20f883e','15-09-16 09:52:36',1) [ RunTime:0.049636s ]
+
+[ 2015-09-16T22:07:01+08:00 ] 0.0.0.0 /xxxknight/index.php/Account/checkName?username=xxxknight24222222
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000571s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.016439s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Core/Db.class.php 第 568 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight24222222' ) LIMIT 1   [ RunTime:0.012137s ]
+
+[ 2015-09-16T22:07:06+08:00 ] 0.0.0.0 /xxxknight/index.php/Account/createAccount
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000371s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000421s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.016539s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Core/Db.class.php 第 568 行.
+SQL: SELECT * FROM `xk_account` WHERE ( `username` = 'xxxknight24222222' ) LIMIT 1   [ RunTime:0.017052s ]
+SQL: INSERT INTO `xk_account` (`username`,`email`,`password`,`createtime`,`flag`) VALUES ('xxxknight24222222','xxxknight@163.com','e10adc3949ba59abbe56e057f20f883e','15-09-16 10:07:06',1) [ RunTime:0.064170s ]
+
+[ 2015-09-16T22:08:16+08:00 ] 0.0.0.0 /xxxknight/index.php/Account/checkName?username=xxxknight24222222
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000294s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.017465s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Core/Db.class.php 第 568 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight24222222' ) LIMIT 1   [ RunTime:0.009804s ]
+
+[ 2015-09-16T22:08:26+08:00 ] 0.0.0.0 /xxxknight/index.php/Account/checkName?username=xxxknight24222222333
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000252s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000283s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.014944s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Core/Db.class.php 第 568 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight24222222333' ) LIMIT 1   [ RunTime:0.013225s ]
+
+[ 2015-09-16T22:08:28+08:00 ] 0.0.0.0 /xxxknight/index.php/Account/createAccount
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000411s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.013930s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Core/Db.class.php 第 568 行.
+SQL: SELECT * FROM `xk_account` WHERE ( `username` = 'xxxknight24222222333' ) LIMIT 1   [ RunTime:0.007247s ]
+SQL: INSERT INTO `xk_account` (`username`,`email`,`password`,`createtime`,`flag`) VALUES ('xxxknight24222222333','xxxknight@163.com','e10adc3949ba59abbe56e057f20f883e','15-09-16 10:08:28',1) [ RunTime:0.070197s ]
+
+[ 2015-09-16T22:15:55+08:00 ] 0.0.0.0 /xxxknight/index.php/Account/checkName?username=xxxtest
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000379s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.022833s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Core/Db.class.php 第 568 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxtest' ) LIMIT 1   [ RunTime:0.010473s ]
+
+[ 2015-09-16T22:15:59+08:00 ] 0.0.0.0 /xxxknight/index.php/Account/createAccount
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000361s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.014566s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Core/Db.class.php 第 568 行.
+SQL: SELECT * FROM `xk_account` WHERE ( `username` = 'xxxtest' ) LIMIT 1   [ RunTime:0.008240s ]
+SQL: INSERT INTO `xk_account` (`username`,`email`,`password`,`createtime`,`flag`) VALUES ('xxxtest','xxxknight@163.com','e10adc3949ba59abbe56e057f20f883e','15-09-16 10:15:59',1) [ RunTime:0.059171s ]
+
+[ 2015-09-16T22:17:14+08:00 ] 0.0.0.0 /xxxknight/index.php/Account/checkName?username=qwerty
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000532s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.011029s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Core/Db.class.php 第 568 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'qwerty' ) LIMIT 1   [ RunTime:0.007799s ]
+
+[ 2015-09-16T22:17:22+08:00 ] 0.0.0.0 /xxxknight/index.php/Account/createAccount
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000644s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000752s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.019996s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Core/Db.class.php 第 568 行.
+SQL: SELECT * FROM `xk_account` WHERE ( `username` = 'qwerty' ) LIMIT 1   [ RunTime:0.012977s ]
+SQL: INSERT INTO `xk_account` (`username`,`email`,`password`,`createtime`,`flag`) VALUES ('qwerty','xxxknight@154.com','e10adc3949ba59abbe56e057f20f883e','15-09-16 10:17:22',1) [ RunTime:0.058392s ]
+
+[ 2015-09-16T22:19:00+08:00 ] 0.0.0.0 /xxxknight/index.php/Account/checkName?username=test12345
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000259s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000291s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.016079s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Core/Db.class.php 第 568 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'test12345' ) LIMIT 1   [ RunTime:0.010195s ]
+
+[ 2015-09-16T22:19:04+08:00 ] 0.0.0.0 /xxxknight/index.php/Account/createAccount
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000761s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000989s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.015051s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Core/Db.class.php 第 568 行.
+SQL: SELECT * FROM `xk_account` WHERE ( `username` = 'test12345' ) LIMIT 1   [ RunTime:0.003134s ]
+SQL: INSERT INTO `xk_account` (`username`,`email`,`password`,`createtime`,`flag`) VALUES ('test12345','xxxknight@123.com','e10adc3949ba59abbe56e057f20f883e','15-09-16 10:19:04',1) [ RunTime:0.056598s ]
+
+[ 2015-09-16T22:21:12+08:00 ] 0.0.0.0 /xxxknight/index.php/Account/checkName?username=ertyyy
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000286s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.016856s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Core/Db.class.php 第 568 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'ertyyy' ) LIMIT 1   [ RunTime:0.009478s ]
+
+[ 2015-09-16T22:21:17+08:00 ] 0.0.0.0 /xxxknight/index.php/Account/createAccount
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000331s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.015875s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Core/Db.class.php 第 568 行.
+SQL: SELECT * FROM `xk_account` WHERE ( `username` = 'ertyyy' ) LIMIT 1   [ RunTime:0.010467s ]
+SQL: INSERT INTO `xk_account` (`username`,`email`,`password`,`createtime`,`flag`) VALUES ('ertyyy','xxxknight@134.com','e10adc3949ba59abbe56e057f20f883e','15-09-16 10:21:17',1) [ RunTime:0.053539s ]
+
+[ 2015-09-16T22:21:59+08:00 ] 0.0.0.0 /xxxknight/index.php/Account/checkName?username=eeeeeeee
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.016150s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Core/Db.class.php 第 568 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'eeeeeeee' ) LIMIT 1   [ RunTime:0.010628s ]
+
+[ 2015-09-16T22:22:03+08:00 ] 0.0.0.0 /xxxknight/index.php/Account/createAccount
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000541s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.015528s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Core/Db.class.php 第 568 行.
+SQL: SELECT * FROM `xk_account` WHERE ( `username` = 'eeeeeeee' ) LIMIT 1   [ RunTime:0.011324s ]
+SQL: INSERT INTO `xk_account` (`username`,`email`,`password`,`createtime`,`flag`) VALUES ('eeeeeeee','xxxknight@154.com','e10adc3949ba59abbe56e057f20f883e','15-09-16 10:22:03',1) [ RunTime:0.058095s ]
+
+[ 2015-09-16T22:22:25+08:00 ] 0.0.0.0 /xxxknight/index.php/Account/checkName?username=xxdeggg
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000277s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000310s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.016192s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Core/Db.class.php 第 568 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxdeggg' ) LIMIT 1   [ RunTime:0.008680s ]
+
+[ 2015-09-16T22:22:29+08:00 ] 0.0.0.0 /xxxknight/index.php/Account/createAccount
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000480s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000565s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.016265s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Core/Db.class.php 第 568 行.
+SQL: SELECT * FROM `xk_account` WHERE ( `username` = 'xxdeggg' ) LIMIT 1   [ RunTime:0.010075s ]
+SQL: INSERT INTO `xk_account` (`username`,`email`,`password`,`createtime`,`flag`) VALUES ('xxdeggg','xxxknight@134.com','e10adc3949ba59abbe56e057f20f883e','15-09-16 10:22:29',1) [ RunTime:0.054837s ]
+
+[ 2015-09-16T22:22:49+08:00 ] 0.0.0.0 /xxxknight/index.php/Account/checkName?username=fffffffff
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000263s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000297s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.012583s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Core/Db.class.php 第 568 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'fffffffff' ) LIMIT 1   [ RunTime:0.002554s ]
+
+[ 2015-09-16T22:22:53+08:00 ] 0.0.0.0 /xxxknight/index.php/Account/createAccount
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000534s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.017218s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Core/Db.class.php 第 568 行.
+SQL: SELECT * FROM `xk_account` WHERE ( `username` = 'fffffffff' ) LIMIT 1   [ RunTime:0.013306s ]
+SQL: INSERT INTO `xk_account` (`username`,`email`,`password`,`createtime`,`flag`) VALUES ('fffffffff','xxxknight@123.com','e10adc3949ba59abbe56e057f20f883e','15-09-16 10:22:53',1) [ RunTime:0.067744s ]
+
+[ 2015-09-16T23:25:43+08:00 ] 0.0.0.0 /xxxknight/index.php/Account/checkName?username=xxxknight2424
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000364s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.007747s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Core/Db.class.php 第 568 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xxxknight2424' ) LIMIT 1   [ RunTime:0.001499s ]
+
+[ 2015-09-16T23:25:44+08:00 ] 0.0.0.0 /xxxknight/index.php/Account/createAccount
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000513s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000585s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.006209s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Core/Db.class.php 第 568 行.
+SQL: SELECT * FROM `xk_account` WHERE ( `username` = 'xxxknight2424' ) LIMIT 1   [ RunTime:0.001469s ]
+SQL: INSERT INTO `xk_account` (`id`,`username`,`password`,`email`,`createtime`,`flag`) VALUES ('25','xxxknight2424','e10adc3949ba59abbe56e057f20f883e','xxxknight@163.com','2015-09-16 11:25:44',1) [ RunTime:0.025097s ]
+ERR: Duplicate entry '25' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `xk_account` (`id`,`username`,`password`,`email`,`createtime`,`flag`) VALUES ('25','xxxknight2424','e10adc3949ba59abbe56e057f20f883e','xxxknight@163.com','2015-09-16 11:25:44',1)
+
+[ 2015-09-16T23:25:44+08:00 ] 0.0.0.0 /xxxknight/index.php/Account/createAccount
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000452s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.006395s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Core/Db.class.php 第 568 行.
+SQL: SELECT * FROM `xk_account` WHERE ( `username` = 'xxxknight2424' ) LIMIT 1   [ RunTime:0.001571s ]
+SQL: INSERT INTO `xk_account` (`id`,`username`,`password`,`email`,`createtime`,`flag`) VALUES ('25','xxxknight2424','e10adc3949ba59abbe56e057f20f883e','xxxknight@163.com','2015-09-16 11:25:44',1) [ RunTime:0.000845s ]
+ERR: Duplicate entry '25' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `xk_account` (`id`,`username`,`password`,`email`,`createtime`,`flag`) VALUES ('25','xxxknight2424','e10adc3949ba59abbe56e057f20f883e','xxxknight@163.com','2015-09-16 11:25:44',1)
+
+[ 2015-09-16T23:25:44+08:00 ] 0.0.0.0 /xxxknight/index.php
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000462s ]
+NOTIC: [2048] Declaration of IndexAction::show() should be compatible with Action::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/xxxknight/Home/Lib/Action/IndexAction.class.php 第 11 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000352s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000422s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 273 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 273 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 273 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 273 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 273 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 168 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 197 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 137 行.
+NOTIC: [8] Undefined index: username /Applications/XAMPP/xamppfiles/htdocs/xxxknight/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 120 行.
+NOTIC: [8] Undefined index: password /Applications/XAMPP/xamppfiles/htdocs/xxxknight/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 123 行.
+NOTIC: [8] Undefined index: remember /Applications/XAMPP/xamppfiles/htdocs/xxxknight/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 130 行.
+NOTIC: [8] Undefined index: remember /Applications/XAMPP/xamppfiles/htdocs/xxxknight/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 131 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.014574s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014622s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000278s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000226s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000124s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000247s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000972s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000326s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000356s ]
+
+[ 2015-09-16T23:28:28+08:00 ] 0.0.0.0 /xxxknight/index.php/Account/checkName?username=xingshiyang24342
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000498s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000579s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.006362s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Core/Db.class.php 第 568 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xingshiyang24342' ) LIMIT 1   [ RunTime:0.001413s ]
+
+[ 2015-09-16T23:28:54+08:00 ] 0.0.0.0 /xxxknight/index.php/Account/checkName?username=xingshiyang2434233
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000611s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.006506s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Core/Db.class.php 第 568 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'xingshiyang2434233' ) LIMIT 1   [ RunTime:0.001352s ]
+
+[ 2015-09-16T23:29:30+08:00 ] 0.0.0.0 /xxxknight/index.php/Account/checkName?username=ffff333
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000611s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000739s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_account` [ RunTime:0.006281s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Core/Db.class.php 第 568 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_account` WHERE ( `username` = 'ffff333' ) LIMIT 1   [ RunTime:0.001276s ]
+

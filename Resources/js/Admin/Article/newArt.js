@@ -43,6 +43,7 @@ $(function(){
     	var typeid = $("#type").val();
     	var flag = $("input[name='options']:checked").val();
     	var content = ue.getContent();
+      var summary = ue.getContentTxt();
       var tags = $("#t1").val().trim();
       //alert(tags);
 
@@ -64,6 +65,7 @@ $(function(){
             "flag": flag,
             "tags":tags,
             "content": content,
+            "summary": summary,
         },
         function(data,status){
             alert(data);

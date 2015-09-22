@@ -11,6 +11,7 @@ class ArtcommentAction extends CommonAction {
 			$m = M("Acomment");
 			$deleteNum = $m->where($where)->delete();
 			if($deleteNum){
+				$this->decCommentNum($_GET['aid']);
 				echo "删除成功！";
 			}else{
 				exit("删除失败！");
@@ -21,6 +22,12 @@ class ArtcommentAction extends CommonAction {
 		}
 
     }
+
+    public function decCommentNum($aid){
+	    $m = M("Articles");
+	    $where['id'] = $aid;
+	    $m->where($where)->setDec('commentnum',1); 
+	}
 
     public function listComment(){
 

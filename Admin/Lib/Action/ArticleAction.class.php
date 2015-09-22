@@ -16,6 +16,8 @@ class ArticleAction extends Action {
 	public function addArt(){
 		$art = D("Articles");
         $art->create();
+        $summary = $_POST['summary'];
+        $art->summary = $this->handleSummary($summary);
         $typeid = $_POST['typeid'];
     	$lastid = $art->add();
     	if ($lastid) {
@@ -24,6 +26,16 @@ class ArticleAction extends Action {
 		} else {
 			exit($con->getError());
 		}
+	}
+
+	private function handleSummary($summary){
+		// $len = strlen($summary);
+		// if ($len<=300) {
+		// 	return $summary;
+		// }else{
+		// 	return substr($summary, 0, 300)."...";
+		// }
+		return strlen($summary) <=500 ? $summary : substr($summary, 0, 500)."...";
 	}
 
 	protected function incTypeNum($typeid){

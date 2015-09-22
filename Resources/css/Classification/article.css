@@ -179,3 +179,10 @@ footer p:last-child {
   text-align: center;
 
 }
+
+.overflow-title{
+  white-space:nowrap; 
+  width:17em; 
+  overflow:hidden;
+  text-overflow:ellipsis; 
+}

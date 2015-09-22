@@ -16,7 +16,7 @@ class ArticlesModel extends Model{
 	);
 	
 	protected function setTime(){
-		return date('y-m-d h:i:s',time());
+		return date('Y-m-d H:i:s',time());
 	}
 
 	protected function setUser(){

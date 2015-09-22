@@ -45,7 +45,14 @@
             <foreach name="typelist" item="vo">
                 <a href="__URL__/showArticles/type/<{$vo.id}>" id="type<{$vo.id}>" class="list-group-item"><span class="badge"><{$vo.typenum}></span><{$vo.showname}></a>
             </foreach>
+            </div>
 
+            <div class="list-group">
+            <div class="list-group-item list-group-item-info">文章归档</div>
+            <foreach name="monthlist" item="vo">
+            <a class="list-group-item"><span class="badge"><{$vo.monthnum}></span><div class="overflow-title"><{$vo.month}></div></a>
+            </foreach>
+           
             </div>
 
             <div id="reading-rank">

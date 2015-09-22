@@ -97,11 +97,8 @@ $(function(){
                 <li><a href="__APP__/Account/index"><i class="glyphicon glyphicon-user"></i>
                     用户管理</a>
                 </li>
-                <li><a href="#"><i class="glyphicon glyphicon-th-list"></i>
-                    菜单管理</a>
-                </li>
-                <li><a href="#"><i class="glyphicon glyphicon-asterisk"></i>
-                    角色管理</a>
+                <li><a href="__APP__/System/indexManage"><i class="glyphicon glyphicon-asterisk"></i>
+                    首页管理</a>
                 </li>
                 <li><a href="__APP__/System/profile"><i class="glyphicon glyphicon-edit"></i>
                     个人中心</a>
@@ -109,7 +106,10 @@ $(function(){
                 <li><a href="__APP__/Contact/contact"><i class="glyphicon glyphicon-phone"></i>
                     问题反馈</a>
                 </li>
-                <li><a href="#"><i class="glyphicon glyphicon-eye-open"></i>
+                <li class="disabled"><a href="#"><i class="glyphicon glyphicon-th-list"></i>
+                    菜单管理</a>
+                </li>
+                <li class="disabled"><a href="#"><i class="glyphicon glyphicon-eye-open"></i>
                     日志查看</a>
                 </li>
             </ul>
@@ -286,6 +286,62 @@ $(function(){
                         <div id="ec3" class="ec-pic" style="height:300px"></div>
                         <span class="text-muted">负载率</span>
                     </div>
+                </div>
+                <h3 class="page-header"><i class="glyphicon glyphicon-stats"></i> 
+                    版本参数
+                </h3>
+                <div class="row">
+                    <div class="col-xs-6 col-sm-6">
+                        <div class="panel panel-info">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">软件参数</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div class="row-content">
+                                    <span class="row-content-title">操作系统版本</span>&nbsp;
+                                    <span class="row-content-body"><?php echo ($os_version); ?></span>
+                                </div>
+                                <div class="row-content">
+                                    <span class="row-content-title">服务器版本</span>&nbsp;
+                                    <span class="row-content-body"><?php echo ($apache); ?></span>
+                                </div>
+                                <div class="row-content">
+                                    <span class="row-content-title">PHP版本</span>&nbsp;
+                                    <span class="row-content-body"><?php echo ($php_version); ?></span>
+                                </div>
+                                <div class="row-content">
+                                    <span class="row-content-title">MySQL版本</span>&nbsp;
+                                    <span class="row-content-body"><?php echo ($db); ?></span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="col-xs-6 col-sm-6">
+                        <div class="panel panel-success">
+                          <div class="panel-heading">
+                            <h3 class="panel-title">关于作者</h3>
+                          </div>
+                          <div class="panel-body">
+                            <div class="row-content">
+                                    <span class="row-content-title">作者姓名</span>&nbsp;
+                                    <span class="row-content-body"><?php echo ($author["value"]); ?></span>
+                                </div>
+                                <div class="row-content">
+                                    <span class="row-content-title">创建时间</span>&nbsp;
+                                    <span class="row-content-body"><?php echo ($createtime["value"]); ?></span>
+                                </div>
+                                <div class="row-content">
+                                    <span class="row-content-title">网站版本</span>&nbsp;
+                                    <span class="row-content-body"><?php echo ($version["value"]); ?></span>
+                                </div>
+                          </div>
+                        </div>
+                    </div>
+
+                </div>
+
 
             </div>
 
@@ -320,11 +376,11 @@ function (ec) {
         series : [
             {
             name:'在线人数统计',
-            max: 500,
+            max: 200,
             min: 0,
             type:'gauge',
             // detail : {formatter:'{value}%'},
-            data:[{value: 500, name: '在线人数'}],
+            data:[{value: <?php echo ($onlineNum); ?>, name: '在线人数'}],
 
             }
         ]
@@ -339,7 +395,7 @@ function (ec) {
             type:'gauge',
             max: 1000,
             //detail : {formatter:'{value}%'},
-            data:[{value: 500, name: '注册人数'}]
+            data:[{value: <?php echo ($accountNum); ?>, name: '注册人数'}]
             }
         ]
     };
@@ -353,7 +409,7 @@ function (ec) {
             name:'负载指标',
             type:'gauge',
             detail : {formatter:'{value}%'},
-            data:[{value: 50, name: '负载率'}]
+            data:[{value: <?php echo ($press); ?>, name: '负载率'}]
             }
         ]
     };

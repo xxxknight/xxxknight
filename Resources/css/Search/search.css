@@ -1,0 +1,56 @@
+.main{
+	margin-top: 15px;
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+.form-control , .btn{
+	border-radius: 0px;
+
+}
+
+
+#backto{
+	padding-top: 7px;
+	float: right;
+}
+
+#type{
+	padding:10px 80px;
+	background-color: #eee;
+	height: 40px;
+}
+.box{
+	margin-right: 20px;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.result{
+	margin-bottom: 25px;
+}
+
+.result-content{
+	margin-top: 7px;
+	font-size: 
+
+	/*white-space:nowrap; 
+  	overflow:hidden;
+  	text-overflow:ellipsis; */
+}
+
+.result-title{
+	font-size: 18px;
+	text-decoration:underline;
+}
+
+#totalnum{
+	margin-top: 10px;
+	margin-left: 30px;
+	margin-bottom: 10px;
+}
+
+#show{
+	margin-bottom: 100px;
+
+}

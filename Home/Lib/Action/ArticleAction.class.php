@@ -10,6 +10,9 @@ class ArticleAction extends Action {
 		$wordlist = $keywords->where($where)->field('name,value')->order("value desc")->select();
 		$this->assign("wordlist",json_encode($wordlist));
 
+		$monthlist = $this->countArtsByMonth();
+		$this->assign("monthlist", $monthlist);
+
 		$articlestype = M('articlestype');
 		$typelist = $articlestype->order("typenum desc")->select();
 		$temp = M("Articles");
@@ -63,9 +66,9 @@ class ArticleAction extends Action {
 	public function detailArt(){
 		
 		$id=$_GET['id'];
-		$article= M('Articles');
+		$article= D("Articles");
 		$where['id']=$id;
-		$art= $article->where($where)->find();
+		$art= $article->relation(true)->where($where)->find();
 		$tags = $art['tags'];
 		if($tags){
 			$taglist = explode(",", $tags);
@@ -82,8 +85,20 @@ class ArticleAction extends Action {
 		if($after){
 			$this->assign("after",$after);
 		}
+
+		$typeid = $art['typeid'];
+		$where['typeid'] = $typeid;
+		$where['id'] = array('neq',$id);
+		$otherArticles = M("Articles");
+
+		$otherArts = $otherArticles->limit(10)->order("createtime desc")->where($where)->select();
 		
 		$this->assign('detail',$art);
+
+		$this->assign('otherArts',$otherArts);
+
+
+		//dump($art);
 		$this->display("detail");
 	}
 
@@ -132,11 +147,40 @@ class ArticleAction extends Action {
 		$acomment->create ();
 		$lastId = $acomment->add ();
 		if ($lastId) {
+			$this->incCommentNum($_POST['aid']);
 			echo "提交评论成功.";
 		} else {
 			exit($acomment->getError());
 		}
 	}
+
+	protected function incCommentNum($aid){
+	    $m = M("Articles");
+	    $where['id'] = $aid;
+	    $m->where($where)->setInc('commentnum',1); 
+	}
+
+	public function countArtsByMonth(){
+		$model = M("Articles");
+		$monthlist = $model->query('select left(createtime,7) as month,count(left(createtime,7)) as monthnum from __TABLE__ GROUP BY month order by month desc;');
+		return $monthlist;
+	}
+
+	// public function selOtherArtsInType($typeid , $id){
+	// 	$m = M(Articles);
+	// 	$where['typeid'] = $typeid;
+	// 	$otherArts = $m->select();
+	// 	return $otherArts;
+
+
+	// }
+
+	public function incViewNum($aid){
+	    $m = M("Articles");
+	    $where['id'] = $aid;
+	    $m->where($where)->setInc('viewnum',1); 
+	}
+	
 }
 
 

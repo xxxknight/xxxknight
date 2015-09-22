@@ -114,11 +114,8 @@ $(function(){
                 <li><a href="__APP__/Account/index"><i class="glyphicon glyphicon-user"></i>
                     用户管理</a>
                 </li>
-                <li><a href="#"><i class="glyphicon glyphicon-th-list"></i>
-                    菜单管理</a>
-                </li>
-                <li><a href="#"><i class="glyphicon glyphicon-asterisk"></i>
-                    角色管理</a>
+                <li><a href="__APP__/System/indexManage"><i class="glyphicon glyphicon-asterisk"></i>
+                    首页管理</a>
                 </li>
                 <li><a href="__APP__/System/profile"><i class="glyphicon glyphicon-edit"></i>
                     个人中心</a>
@@ -126,7 +123,10 @@ $(function(){
                 <li><a href="__APP__/Contact/contact"><i class="glyphicon glyphicon-phone"></i>
                     问题反馈</a>
                 </li>
-                <li><a href="#"><i class="glyphicon glyphicon-eye-open"></i>
+                <li class="disabled"><a href="#"><i class="glyphicon glyphicon-th-list"></i>
+                    菜单管理</a>
+                </li>
+                <li class="disabled"><a href="#"><i class="glyphicon glyphicon-eye-open"></i>
                     日志查看</a>
                 </li>
             </ul>
@@ -233,6 +233,33 @@ $(function(){
             </ul>
         </div>
     </li>
+
+    <li id="li-analytics">
+        <a href="#analyticsModule" class="nav-header collapsed" data-toggle="collapse">
+            <i class="glyphicon glyphicon-calendar"></i>
+            分析统计
+            <span class="pull-right glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <div id="analyticsModule" class="collapse">
+            <ul class="nav nav-sidebar secondmenu">
+                <li>
+                    <a href="__APP__/Analytics/analyseUser"><i class="glyphicon glyphicon-user"></i>
+                    用户分析
+                    </a>
+                </li>
+                <li>
+                    <a href="__APP__/Analytics/analyseFlow"><i class="glyphicon glyphicon-fire"></i>
+                    流量分析
+                    </a>
+                </li>
+                <li>
+                    <a href="__APP__/Analytics/analyseArticle"><i class="glyphicon glyphicon-book"></i>
+                    文章统计
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </li>
     
     <li id="li-export">
         <a href="__APP__/export">
@@ -241,12 +268,7 @@ $(function(){
         </a>
     </li>
                 
-    <li id="li-analytics">
-        <a href="__APP__/analytics">
-            <i class="glyphicon glyphicon-calendar"></i>
-            分析统计
-        </a>
-    </li>
+   
     
     <li id="li-about">
         <a href="__APP__/About/about">

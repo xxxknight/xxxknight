@@ -11,13 +11,24 @@ class AccountAction extends Action {
 		$account->create ();
 		$lastId = $account->add ();
 		if ($lastId) {
-			$this->success ( '注册成功', 'signin' );
+			$user = $account->where($data)->find();
+			session ( 'isExist', true );
+			session ( 'user' , $user);
+			session ( 'username', $_POST ['username'] );
+			
+			if (isset($_SERVER['HTTP_REFERER'])) { 
+				redirect ( $_SERVER['HTTP_REFERER']);
+     			//print "The page you were on previously was {$_SERVER['HTTP_REFERER']}<br />"; 
+   			} else { 
+     			$this->redirect ( 'Index/index' );
+      		} 
+
 		} else {
-			$this->error ( '用户注册失败' );
+			echo 0;
 		}
 	}
 	public function signin() {
-		$this->display ();
+		$this->display();
 	}
 	
 	// 记住密码功能
@@ -51,7 +62,14 @@ class AccountAction extends Action {
 			session ( 'isExist', true );
 			session ( 'user' , $user);
 			session ( 'username', $_POST ['username'] );
-			$this->redirect ( 'Index/index' );
+			
+			if (isset($_SERVER['HTTP_REFERER'])) { 
+				redirect ( $_SERVER['HTTP_REFERER'] );
+     			//print "The page you were on previously was {$_SERVER['HTTP_REFERER']}<br />"; 
+   			} else { 
+     			$this->redirect ( 'Index/index' );
+      		} 
+			//$this->redirect ( 'Index/index' );
 		} else {
 			$this->error ( 'Please check your account' );
 		}

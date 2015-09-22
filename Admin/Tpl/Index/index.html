@@ -40,6 +40,62 @@ $(function(){
                         <div id="ec3" class="ec-pic" style="height:300px"></div>
                         <span class="text-muted">负载率</span>
                     </div>
+                </div>
+                <h3 class="page-header"><i class="glyphicon glyphicon-stats"></i> 
+                    版本参数
+                </h3>
+                <div class="row">
+                    <div class="col-xs-6 col-sm-6">
+                        <div class="panel panel-info">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">软件参数</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div class="row-content">
+                                    <span class="row-content-title">操作系统版本</span>&nbsp;
+                                    <span class="row-content-body"><{$os_version}></span>
+                                </div>
+                                <div class="row-content">
+                                    <span class="row-content-title">服务器版本</span>&nbsp;
+                                    <span class="row-content-body"><{$apache}></span>
+                                </div>
+                                <div class="row-content">
+                                    <span class="row-content-title">PHP版本</span>&nbsp;
+                                    <span class="row-content-body"><{$php_version}></span>
+                                </div>
+                                <div class="row-content">
+                                    <span class="row-content-title">MySQL版本</span>&nbsp;
+                                    <span class="row-content-body"><{$db}></span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="col-xs-6 col-sm-6">
+                        <div class="panel panel-success">
+                          <div class="panel-heading">
+                            <h3 class="panel-title">关于作者</h3>
+                          </div>
+                          <div class="panel-body">
+                            <div class="row-content">
+                                    <span class="row-content-title">作者姓名</span>&nbsp;
+                                    <span class="row-content-body"><{$author.value}></span>
+                                </div>
+                                <div class="row-content">
+                                    <span class="row-content-title">创建时间</span>&nbsp;
+                                    <span class="row-content-body"><{$createtime.value}></span>
+                                </div>
+                                <div class="row-content">
+                                    <span class="row-content-title">网站版本</span>&nbsp;
+                                    <span class="row-content-body"><{$version.value}></span>
+                                </div>
+                          </div>
+                        </div>
+                    </div>
+
+                </div>
+
 
             </div>
 
@@ -74,11 +130,11 @@ function (ec) {
         series : [
             {
             name:'在线人数统计',
-            max: 500,
+            max: 200,
             min: 0,
             type:'gauge',
             // detail : {formatter:'{value}%'},
-            data:[{value: 500, name: '在线人数'}],
+            data:[{value: <{$onlineNum}>, name: '在线人数'}],
 
             }
         ]
@@ -93,7 +149,7 @@ function (ec) {
             type:'gauge',
             max: 1000,
             //detail : {formatter:'{value}%'},
-            data:[{value: 500, name: '注册人数'}]
+            data:[{value: <{$accountNum}>, name: '注册人数'}]
             }
         ]
     };
@@ -107,7 +163,7 @@ function (ec) {
             name:'负载指标',
             type:'gauge',
             detail : {formatter:'{value}%'},
-            data:[{value: 50, name: '负载率'}]
+            data:[{value: <{$press}>, name: '负载率'}]
             }
         ]
     };

@@ -56,6 +56,10 @@ class SystemAction extends CommonAction {
             exit("非法操作！");
         }
     }
+
+    public function indexManage(){
+        $this->display();
+    }
 }
 
 ?>

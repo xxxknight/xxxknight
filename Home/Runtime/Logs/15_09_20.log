@@ -1,0 +1,347 @@
+[ 2015-09-20T10:17:11+08:00 ] ERR: (ThinkException) MySQL server has gone away
+[ 2015-09-20T10:23:19+08:00 ] ERR: (ThinkException) Operation timed out
+[ 2015-09-20T11:18:27+08:00 ] 0.0.0.0 /xxxknight/index.php/Article/submitComment
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000248s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000280s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_acomment` [ RunTime:0.011440s ]
+SQL: INSERT INTO `xk_acomment` (`aid`,`content`,`createtime`,`username`,`uid`) VALUES (1,'hahahahahha','15-09-20 11:18:27','xxxknight',2) [ RunTime:0.062792s ]
+
+[ 2015-09-20T12:15:10+08:00 ] ERR: (ThinkException) Action:incCommmentNum您所请求的方法不存在！
+[ 2015-09-20T12:18:32+08:00 ] ERR: (ThinkException) Action:incCommmentNum您所请求的方法不存在！
+[ 2015-09-20T12:19:50+08:00 ] ERR: (ThinkException) Action:incCommmentNum您所请求的方法不存在！
+[ 2015-09-20T12:20:32+08:00 ] 0.0.0.0 /xxxknight/index.php/Article/submitComment
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000247s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000279s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_acomment` [ RunTime:0.007936s ]
+SQL: INSERT INTO `xk_acomment` (`aid`,`content`,`createtime`,`username`,`uid`) VALUES (4,'haha','15-09-20 12:20:32','xxxknight',2) [ RunTime:0.066869s ]
+SQL: SHOW COLUMNS FROM `xk_articles` [ RunTime:0.007876s ]
+SQL: UPDATE `xk_articles` SET `commentnum`=commentnum+1 WHERE ( `id` = 4 ) [ RunTime:0.063996s ]
+
+[ 2015-09-20T12:21:22+08:00 ] 0.0.0.0 /xxxknight/index.php/Article/submitComment
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000338s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_acomment` [ RunTime:0.009090s ]
+SQL: INSERT INTO `xk_acomment` (`aid`,`content`,`createtime`,`username`,`uid`) VALUES (4,'qwerty','15-09-20 12:21:22','xxxknight',2) [ RunTime:0.072219s ]
+SQL: SHOW COLUMNS FROM `xk_articles` [ RunTime:0.011478s ]
+SQL: UPDATE `xk_articles` SET `commentnum`=commentnum+1 WHERE ( `id` = 4 ) [ RunTime:0.066021s ]
+
+[ 2015-09-20T12:22:04+08:00 ] 0.0.0.0 /xxxknight/index.php/Article/submitComment
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000421s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000479s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_acomment` [ RunTime:0.012015s ]
+SQL: INSERT INTO `xk_acomment` (`aid`,`content`,`createtime`,`username`,`uid`) VALUES (4,'ww','15-09-20 12:22:03','xxxknight',2) [ RunTime:0.064123s ]
+SQL: SHOW COLUMNS FROM `xk_articles` [ RunTime:0.025551s ]
+SQL: UPDATE `xk_articles` SET `commentnum`=commentnum+1 WHERE ( `id` = 4 ) [ RunTime:0.045567s ]
+
+[ 2015-09-20T12:22:59+08:00 ] 0.0.0.0 /xxxknight/index.php/Article/submitComment
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000433s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_acomment` [ RunTime:0.008317s ]
+SQL: INSERT INTO `xk_acomment` (`aid`,`content`,`createtime`,`username`,`uid`) VALUES (1,'qwe','15-09-20 12:22:59','xxxknight',2) [ RunTime:0.065057s ]
+SQL: SHOW COLUMNS FROM `xk_articles` [ RunTime:0.009777s ]
+SQL: UPDATE `xk_articles` SET `commentnum`=commentnum+1 WHERE ( `id` = 1 ) [ RunTime:0.044571s ]
+
+[ 2015-09-20T13:15:18+08:00 ] ERR: (ThinkException) Network is unreachable
+[ 2015-09-20T13:41:43+08:00 ] 0.0.0.0 /xxxknight/index.php/Article/incViewNum/aid/1
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000751s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000839s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_articles` [ RunTime:0.304449s ]
+SQL: UPDATE `xk_articles` SET `viewnum`=viewnum+1 WHERE ( `id` = 1 ) [ RunTime:0.060045s ]
+
+[ 2015-09-20T13:41:47+08:00 ] 0.0.0.0 /xxxknight/index.php/Article/incViewNum/aid/1
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000606s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000672s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_articles` [ RunTime:0.011473s ]
+SQL: UPDATE `xk_articles` SET `viewnum`=viewnum+1 WHERE ( `id` = 1 ) [ RunTime:0.075836s ]
+
+[ 2015-09-20T13:41:49+08:00 ] 0.0.0.0 /xxxknight/index.php/Article/incViewNum/aid/1
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000433s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000493s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_articles` [ RunTime:0.008109s ]
+SQL: UPDATE `xk_articles` SET `viewnum`=viewnum+1 WHERE ( `id` = 1 ) [ RunTime:0.045706s ]
+
+[ 2015-09-20T13:41:54+08:00 ] 0.0.0.0 /xxxknight/index.php/Article/incViewNum/aid/1
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000441s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000499s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_articles` [ RunTime:0.008576s ]
+SQL: UPDATE `xk_articles` SET `viewnum`=viewnum+1 WHERE ( `id` = 1 ) [ RunTime:0.044423s ]
+
+[ 2015-09-20T13:42:18+08:00 ] 0.0.0.0 /xxxknight/index.php/Article/incViewNum/aid/1
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000504s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000581s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_articles` [ RunTime:0.008616s ]
+SQL: UPDATE `xk_articles` SET `viewnum`=viewnum+1 WHERE ( `id` = 1 ) [ RunTime:0.069501s ]
+
+[ 2015-09-20T13:42:23+08:00 ] 0.0.0.0 /xxxknight/index.php/Article/incViewNum/aid/1
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000465s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000536s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_articles` [ RunTime:0.009801s ]
+SQL: UPDATE `xk_articles` SET `viewnum`=viewnum+1 WHERE ( `id` = 1 ) [ RunTime:0.049749s ]
+
+[ 2015-09-20T13:42:30+08:00 ] 0.0.0.0 /xxxknight/index.php/Article/incViewNum/aid/1
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000451s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000515s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_articles` [ RunTime:0.017682s ]
+SQL: UPDATE `xk_articles` SET `viewnum`=viewnum+1 WHERE ( `id` = 1 ) [ RunTime:0.062142s ]
+
+[ 2015-09-20T13:45:42+08:00 ] 0.0.0.0 /xxxknight/index.php/Article/incViewNum/aid/1
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000482s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000550s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_articles` [ RunTime:0.008618s ]
+SQL: UPDATE `xk_articles` SET `viewnum`=viewnum+1 WHERE ( `id` = 1 ) [ RunTime:0.056727s ]
+
+[ 2015-09-20T13:45:46+08:00 ] 0.0.0.0 /xxxknight/index.php/Article/incViewNum/aid/4
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000452s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000513s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_articles` [ RunTime:0.009082s ]
+SQL: UPDATE `xk_articles` SET `viewnum`=viewnum+1 WHERE ( `id` = 4 ) [ RunTime:0.051055s ]
+
+[ 2015-09-20T13:45:50+08:00 ] 0.0.0.0 /xxxknight/index.php/Article/incViewNum/aid/4
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000487s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000557s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_articles` [ RunTime:0.010381s ]
+SQL: UPDATE `xk_articles` SET `viewnum`=viewnum+1 WHERE ( `id` = 4 ) [ RunTime:0.058466s ]
+
+[ 2015-09-20T13:45:53+08:00 ] 0.0.0.0 /xxxknight/index.php/Article/incViewNum/aid/4
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000463s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000530s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_articles` [ RunTime:0.009590s ]
+SQL: UPDATE `xk_articles` SET `viewnum`=viewnum+1 WHERE ( `id` = 4 ) [ RunTime:0.059514s ]
+
+[ 2015-09-20T13:45:57+08:00 ] 0.0.0.0 /xxxknight/index.php/Article/incViewNum/aid/1
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000498s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000585s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_articles` [ RunTime:0.012961s ]
+SQL: UPDATE `xk_articles` SET `viewnum`=viewnum+1 WHERE ( `id` = 1 ) [ RunTime:0.071800s ]
+
+[ 2015-09-20T13:46:01+08:00 ] 0.0.0.0 /xxxknight/index.php/Article/incViewNum/aid/2
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000540s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_articles` [ RunTime:0.028503s ]
+SQL: UPDATE `xk_articles` SET `viewnum`=viewnum+1 WHERE ( `id` = 2 ) [ RunTime:0.043866s ]
+
+[ 2015-09-20T13:46:04+08:00 ] 0.0.0.0 /xxxknight/index.php/Article/incViewNum/aid/2
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000427s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000488s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_articles` [ RunTime:0.014733s ]
+SQL: UPDATE `xk_articles` SET `viewnum`=viewnum+1 WHERE ( `id` = 2 ) [ RunTime:0.066113s ]
+
+[ 2015-09-20T13:46:06+08:00 ] 0.0.0.0 /xxxknight/index.php/Article/incViewNum/aid/2
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000532s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000603s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_articles` [ RunTime:0.011184s ]
+SQL: UPDATE `xk_articles` SET `viewnum`=viewnum+1 WHERE ( `id` = 2 ) [ RunTime:0.051231s ]
+
+[ 2015-09-20T13:46:09+08:00 ] 0.0.0.0 /xxxknight/index.php/Article/incViewNum/aid/2
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000456s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_articles` [ RunTime:0.036443s ]
+SQL: UPDATE `xk_articles` SET `viewnum`=viewnum+1 WHERE ( `id` = 2 ) [ RunTime:0.081763s ]
+
+[ 2015-09-20T13:46:13+08:00 ] 0.0.0.0 /xxxknight/index.php/Article/incViewNum/aid/2
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000469s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000535s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_articles` [ RunTime:0.009642s ]
+SQL: UPDATE `xk_articles` SET `viewnum`=viewnum+1 WHERE ( `id` = 2 ) [ RunTime:0.068146s ]
+
+[ 2015-09-20T13:51:12+08:00 ] 0.0.0.0 /xxxknight/index.php/Article/incViewNum/aid/5
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000446s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000505s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_articles` [ RunTime:0.021359s ]
+SQL: UPDATE `xk_articles` SET `viewnum`=viewnum+1 WHERE ( `id` = 5 ) [ RunTime:0.057247s ]
+
+[ 2015-09-20T13:51:27+08:00 ] 0.0.0.0 /xxxknight/index.php/Article/incViewNum/aid/5
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000519s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000582s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_articles` [ RunTime:0.018585s ]
+SQL: UPDATE `xk_articles` SET `viewnum`=viewnum+1 WHERE ( `id` = 5 ) [ RunTime:0.051792s ]
+
+[ 2015-09-20T13:51:35+08:00 ] 0.0.0.0 /xxxknight/index.php/Article/submitComment
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000261s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000293s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_acomment` [ RunTime:0.007883s ]
+SQL: INSERT INTO `xk_acomment` (`aid`,`content`,`createtime`,`username`,`uid`) VALUES (5,'ghhj','15-09-20 01:51:34','xxxknight',2) [ RunTime:0.060720s ]
+SQL: SHOW COLUMNS FROM `xk_articles` [ RunTime:0.318959s ]
+SQL: UPDATE `xk_articles` SET `commentnum`=commentnum+1 WHERE ( `id` = 5 ) [ RunTime:0.045750s ]
+
+[ 2015-09-20T13:51:54+08:00 ] 0.0.0.0 /xxxknight/index.php/Article/incViewNum/aid/5
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000480s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000547s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_articles` [ RunTime:0.010300s ]
+SQL: UPDATE `xk_articles` SET `viewnum`=viewnum+1 WHERE ( `id` = 5 ) [ RunTime:0.046814s ]
+
+[ 2015-09-20T13:52:12+08:00 ] 0.0.0.0 /xxxknight/index.php/Article/incViewNum/aid/5
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000392s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_articles` [ RunTime:0.012148s ]
+SQL: UPDATE `xk_articles` SET `viewnum`=viewnum+1 WHERE ( `id` = 5 ) [ RunTime:0.055223s ]
+
+[ 2015-09-20T13:52:47+08:00 ] 0.0.0.0 /xxxknight/index.php/Article/incViewNum/aid/4
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000658s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_articles` [ RunTime:0.012638s ]
+SQL: UPDATE `xk_articles` SET `viewnum`=viewnum+1 WHERE ( `id` = 4 ) [ RunTime:0.051269s ]
+
+[ 2015-09-20T14:08:11+08:00 ] ERR: (ThinkException) 无法加载模块:Search
+[ 2015-09-20T14:08:18+08:00 ] ERR: (ThinkException) 无法加载模块:Search
+[ 2015-09-20T14:10:04+08:00 ] ERR: (ThinkException) 模板不存在[./Home/Tpl/Search/index.html]
+[ 2015-09-20T19:31:16+08:00 ] 0.0.0.0 /xxxknight/index.php/Article/incViewNum/aid/4
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000489s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000692s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_articles` [ RunTime:0.010658s ]
+SQL: UPDATE `xk_articles` SET `viewnum`=viewnum+1 WHERE ( `id` = 4 ) [ RunTime:0.046684s ]
+
+[ 2015-09-20T19:42:28+08:00 ] 0.0.0.0 /xxxknight/index.php/Article/incViewNum/aid/2
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_articles` [ RunTime:0.007589s ]
+SQL: UPDATE `xk_articles` SET `viewnum`=viewnum+1 WHERE ( `id` = 2 ) [ RunTime:0.052745s ]
+
+[ 2015-09-20T19:42:52+08:00 ] 0.0.0.0 /xxxknight/index.php/Article/incViewNum/aid/2
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000420s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000485s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_articles` [ RunTime:0.008126s ]
+SQL: UPDATE `xk_articles` SET `viewnum`=viewnum+1 WHERE ( `id` = 2 ) [ RunTime:0.057093s ]
+
+[ 2015-09-20T19:42:56+08:00 ] 0.0.0.0 /xxxknight/index.php/Article/incViewNum/aid/2
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000451s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000510s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_articles` [ RunTime:0.008528s ]
+SQL: UPDATE `xk_articles` SET `viewnum`=viewnum+1 WHERE ( `id` = 2 ) [ RunTime:0.051237s ]
+
+[ 2015-09-20T19:43:16+08:00 ] 0.0.0.0 /xxxknight/index.php/Article/incViewNum/aid/2
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000434s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000498s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_articles` [ RunTime:0.008630s ]
+SQL: UPDATE `xk_articles` SET `viewnum`=viewnum+1 WHERE ( `id` = 2 ) [ RunTime:0.053744s ]
+
+[ 2015-09-20T20:54:46+08:00 ] 0.0.0.0 /xxxknight/index.php/Article/incViewNum/aid/11
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000516s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000588s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_articles` [ RunTime:0.011795s ]
+SQL: UPDATE `xk_articles` SET `viewnum`=viewnum+1 WHERE ( `id` = 11 ) [ RunTime:0.072015s ]
+
+[ 2015-09-20T20:54:56+08:00 ] 0.0.0.0 /xxxknight/index.php/Article/incViewNum/aid/11
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000483s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000550s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_articles` [ RunTime:0.008173s ]
+SQL: UPDATE `xk_articles` SET `viewnum`=viewnum+1 WHERE ( `id` = 11 ) [ RunTime:0.040069s ]
+
+[ 2015-09-20T20:55:00+08:00 ] 0.0.0.0 /xxxknight/index.php/Article/incViewNum/aid/10
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000511s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000583s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_articles` [ RunTime:0.007922s ]
+SQL: UPDATE `xk_articles` SET `viewnum`=viewnum+1 WHERE ( `id` = 10 ) [ RunTime:0.050150s ]
+
+[ 2015-09-20T20:55:02+08:00 ] 0.0.0.0 /xxxknight/index.php/Article/incViewNum/aid/10
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000642s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000720s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_articles` [ RunTime:0.018931s ]
+SQL: UPDATE `xk_articles` SET `viewnum`=viewnum+1 WHERE ( `id` = 10 ) [ RunTime:0.056191s ]
+
+[ 2015-09-20T20:55:11+08:00 ] 0.0.0.0 /xxxknight/index.php/Article/incViewNum/aid/13
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000882s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000975s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_articles` [ RunTime:0.011179s ]
+SQL: UPDATE `xk_articles` SET `viewnum`=viewnum+1 WHERE ( `id` = 13 ) [ RunTime:0.047915s ]
+
+[ 2015-09-20T20:55:18+08:00 ] 0.0.0.0 /xxxknight/index.php/Article/incViewNum/aid/13
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000457s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000544s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_articles` [ RunTime:0.011932s ]
+SQL: UPDATE `xk_articles` SET `viewnum`=viewnum+1 WHERE ( `id` = 13 ) [ RunTime:0.349822s ]
+
+[ 2015-09-20T22:05:01+08:00 ] 0.0.0.0 /xxxknight/index.php/Article/incViewNum/aid/5
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000528s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000600s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_articles` [ RunTime:0.009032s ]
+SQL: UPDATE `xk_articles` SET `viewnum`=viewnum+1 WHERE ( `id` = 5 ) [ RunTime:0.060083s ]
+
+[ 2015-09-20T22:27:17+08:00 ] 0.0.0.0 /xxxknight/index.php/Article/incViewNum/aid/14
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000446s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/xxxknight/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `xk_articles` [ RunTime:0.046610s ]
+SQL: UPDATE `xk_articles` SET `viewnum`=viewnum+1 WHERE ( `id` = 14 ) [ RunTime:0.126581s ]
+

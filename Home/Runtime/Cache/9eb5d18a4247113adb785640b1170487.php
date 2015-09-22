@@ -76,6 +76,9 @@
 </head>
 
 <body>
+<link href="__CSS__/Account/sign.css" rel="stylesheet">
+<script type="text/javascript" src="__JS__/Account/signup.js">
+</script>
 <div class="container">
 
 		<nav class="navbar navbar-default navbar-fixed-top">
@@ -88,6 +91,8 @@
 							class="icon-bar"></span> <span class="icon-bar"></span> <span
 							class="icon-bar"></span>
 					</button>
+					<!-- <span class="pull-left"><img src="__IMG__/admin/login/xk.png" style="width:50px;height:50px;margin-right:20px;">
+          			</span> -->
 					<a class="navbar-brand" href="__APP__">xxxknight</a>
 				</div>
 				<div id="navbar" class="navbar-collapse collapse">
@@ -121,8 +126,8 @@
 						&nbsp;&nbsp;&nbsp;
 						<a class="btn btn-danger" href="__APP__/Account/signout">Sign out</a>
 						<?php }else{?>
-						   <a class="btn btn-primary" href="__APP__/Account/signup">Sign up</a>
-						   <a class="btn btn-default" href="__APP__/Account/signin">Sign in</a>
+						   <a class="btn btn-primary" id="btn-signup">Sign up</a>
+						   <a class="btn btn-default" id="btn-signin">Sign in</a>
 						<?php }?>
 					</form>
 				</div>
@@ -130,6 +135,72 @@
 		</nav>
 
 	</div>
+
+<div class="modal" id="mymodal">
+    <div class="modal-dialog" id="dialog1">
+        <div class="modal-content" id="content1">
+    		
+			<div class="modal-body" id="body1">
+				<ul class="nav nav-tabs">
+
+  					<li id="li-signin"><a href="#signin" data-toggle="tab">登陆</a></li>
+  					<li id="li-signup"><a href="#signup" data-toggle="tab">注册</a></li>
+				</ul>
+				<div id="myTabContent" class="tab-content">
+  					<div class="tab-pane fade" id="signin">
+    					<form class="form-signin" method="post" action="__APP__/Account/login">
+							<label for="username" class="sr-only">Username</label> 
+							<input type="text" id="username" class="form-control" name="username"
+								placeholder="Username" value="<?php echo $_COOKIE['username']; ?>" required autofocus /> 
+							<label for="password" class="sr-only">Password</label> 
+							<input type="password" id="password" class="form-control"
+								name="password" placeholder="Password" value="<?php echo $_COOKIE['password']; ?>" required />
+							<label for="captcha" class="sr-only">Captcha</label> 
+								<input type="text" id="captcha" class="form-control" name="captcha"
+									placeholder="Captcha" required /> 
+								<img src="__APP__/Public/verify/" width="100px" height="38px"
+									onclick='this.src=this.src+"?"+Math.random()' />
+							<div class="checkbox">
+								<label> <?php if($_COOKIE['remember'] == 1){?><input type="checkbox"
+								name="remember" value="1" checked><?php }else{($_COOKIE['remember'] == "")?><input
+								type="checkbox" name="remember" value="1"><?php }?>
+									Remember me
+								</label>
+							</div>
+							<button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+						</form>
+  					</div>
+  					<div class="tab-pane fade" id="signup">
+    					<form  class="form-signin" method="post">
+							<label for="inputUsername" class="sr-only">Username</label> 
+							<input
+								type="text" id="inputUsername" class="form-control" name="username"
+								placeholder="Username" required autofocus/>
+							<label for="inputEmail" class="sr-only">Email address</label> 
+							<input
+								type="email" id="inputEmail" class="form-control" name="email"
+								placeholder="Email address" required/>
+							<label
+								for="inputPassword" class="sr-only">Password</label>
+							<input
+								type="password" id="inputPassword" class="form-control" name="password"
+								placeholder="Password" required/>
+							<button class="btn btn-lg btn-primary btn-block" id="sub-signup">Sign
+								up for Shadow</button>
+							
+							<div id ="err1" class="err"></div>
+							<div id ="err2" class="err"></div>
+							<div id ="err3" class="err"></div>
+							
+						</form>
+  					</div>
+				</div>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
 <div id ="outer">
     <div id="wrapper">
 	    <div id="carousel">

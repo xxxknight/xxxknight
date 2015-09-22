@@ -1,14 +1,39 @@
+$(function(){
+    $("#btn-signin").click(function(){
+    	$("#li-signup").removeClass("active");
+		$("#signup").removeClass("in");
+		$("#signup").removeClass("active");
+
+    	$("#li-signin").addClass("active");
+    	$("#signin").addClass("in");
+    	$("#signin").addClass("active");
+      	$("#mymodal").modal("toggle");
+    });
+
+    $("#btn-signup").click(function(){
+    	$("#li-signin").removeClass("active");
+		$("#signin").removeClass("in");
+		$("#signin").removeClass("active");
+    	
+		$("#li-signup").addClass("active");
+		$("#signup").addClass("in");
+		$("#signup").addClass("active");
+      	$("#mymodal").modal("toggle");
+    });
+
+   
+});
 $(function() {
 	var error=new Array();	
 	
 	$('#inputUsername').blur(function() {
-		 var username = $(this).val();
-		 if (!checkUsername(username)) {
+		var username = $(this).val();
+		if (!checkUsername(username)) {
 			    error['username']=1;
 			    $('#err1').html('用户名为6到20个字符');
 			    $('#err1').show();
-		 }else{
-			 $.get('/xxxknight/index.php/Account/checkName',{'username':username},function(data){
+		}else{
+			$.get('/xxxknight/index.php/Account/checkName',{'username':username},function(data){
 				   if(data == 0){
 					 error['username']=1;
 					 $('#err1').html('该用户名已注册');
@@ -18,16 +43,16 @@ $(function() {
 					 $('#err1').html('');
 					 $('#err1').hide();
 				   }
-			  });
-		 }
+			 });
+		}
 	});
 	
 	$("#inputEmail").blur(function(){
 		var email = $("#inputEmail").val();
 		if (!checkEmail(email)) {
 			error['email']=1;
-			 $('#err2').html('邮箱格式错误');
-			 $('#err2').show();
+			$('#err2').html('邮箱格式错误');
+			$('#err2').show();
 			 
 		}else{
 			error['email']=0;
@@ -49,13 +74,28 @@ $(function() {
 		}
 	});
 	
-	$("#sub").click(function() {
+	$("#sub-signup").click(function() {
 		var username = $("#inputUsername").val();
 		var email = $("#inputEmail").val();
 		var password = $("#inputPassword").val();
 
 		if(error['username'] == 1 || error['email'] == 1 || error['password'] == 1){
 			return false;
+		}else{
+			$.post('/xxxknight/index.php/Account/createAccount',
+					{
+						'username':username,
+						'email': email,
+						'password' : password
+						
+					},
+					function(data){
+						if(data==0){
+							alert("创建用户失败");
+							
+						}
+					}
+			)
 		}
 
 	});

@@ -60,11 +60,11 @@ admin<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             <li class="dropdown" style="margin-right:20px">
-                <a class="dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" 
-                  href="<?php echo $_SESSION['admin']['id'] ?>">
-                    <?php echo session('adminname');?> 
-                    <span class="caret"></span>
-                </a>
+              <a class="dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" 
+              href="<?php echo $_SESSION['admin']['id'] ?>">
+                <?php echo session('adminname');?> 
+                <span class="caret"></span>
+              </a>
                 <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1" style="min-width:100px;">
                   <li role="presentation"><a role="menuitem" tabindex="-1" href="__APP__/System/profile">
                     <i class="glyphicon glyphicon-user"></i>
@@ -75,7 +75,7 @@ admin<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
                     注销</a></li>
                 </ul>
             </li>
-            </ul>
+          </ul>
         </div>
       </div>
 </nav>
@@ -156,14 +156,11 @@ admin<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
                     标签管理
                     </a>
                 </li>
-
                 <li>
                     <a href="__APP__/Article/arttype"><i class="glyphicon glyphicon-th"></i>
                     分类管理
                     </a>
                 </li>
-
-
             </ul>
         </div>
     </li>
@@ -192,7 +189,7 @@ admin<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
                     </a>
                 </li>
                 <li>
-                    <a href="#"><i class="glyphicon glyphicon-th"></i>
+                    <a href="__APP__/Album/module"><i class="glyphicon glyphicon-th"></i>
                     模块管理
                     </a>
                 </li>
@@ -224,20 +221,42 @@ admin<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
             </ul>
         </div>
     </li>
+
+    <li id="li-analytics">
+        <a href="#analyticsModule" class="nav-header collapsed" data-toggle="collapse">
+            <i class="glyphicon glyphicon-calendar"></i>
+            分析统计
+            <span class="pull-right glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <div id="analyticsModule" class="collapse">
+            <ul class="nav nav-sidebar secondmenu">
+                <li>
+                    <a href="__APP__/Analytics/analyseUser"><i class="glyphicon glyphicon-user"></i>
+                    用户分析
+                    </a>
+                </li>
+                <li>
+                    <a href="__APP__/Analytics/analyseFlow"><i class="glyphicon glyphicon-fire"></i>
+                    流量分析
+                    </a>
+                </li>
+                <li>
+                    <a href="__APP__/Analytics/analyseArticle"><i class="glyphicon glyphicon-book"></i>
+                    文章统计
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </li>
     
     <li id="li-export">
-        <a href="./plans.html">
+        <a href="__APP__/export">
             <i class="glyphicon glyphicon-credit-card"></i>
             导出模块        
         </a>
     </li>
                 
-    <li id="li-analytics">
-        <a href="./charts.html">
-            <i class="glyphicon glyphicon-calendar"></i>
-            分析统计
-        </a>
-    </li>
+   
     
     <li id="li-about">
         <a href="__APP__/About/about">

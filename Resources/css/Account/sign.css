@@ -1,17 +1,19 @@
 @CHARSET "UTF-8";
 
-body {
+/*body {
 	padding-top: 40px;
 	padding-bottom: 40px;
 	background-color: #eee;
-}
+}*/
 
 .form-signin {
 	max-width: 330px;
-	padding: 30px;
-	margin: 25px auto;
+	padding: 10px;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-left: auto;
 	border: 1px solid #ffffff;
-	border-radius: 8px;
+	border-radius: 0px;
 }
 
 .form-signin .form-signin-heading,.form-signin .checkbox {
@@ -30,6 +32,7 @@ body {
 	box-sizing: border-box;
 	padding: 10px;
 	font-size: 16px;
+	border-radius: 0px;
 }
 
 .form-signin .form-control:focus {
@@ -53,7 +56,26 @@ body {
 }
 
 .err{
-	display:none;
+	display: none;
     color:red;
     margin-bottom: 3px;
+}
+
+.form-signin button{
+	border-radius: 0px;
+}
+
+#body1{
+	min-height: 360px;
+}
+#dialog1{
+	width: 350px;
+	margin: 100px auto;
+}
+#content1{
+	border-radius: 0px;
+}
+#btn-close{
+	margin-right: 20px;
+	margin-top: 10px;
 }
